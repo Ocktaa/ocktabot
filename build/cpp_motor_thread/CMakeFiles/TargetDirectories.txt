@@ -1,0 +1,10 @@
+/home/ockta/ocktabot_ws/build/cpp_motor_thread/CMakeFiles/uninstall.dir
+/home/ockta/ocktabot_ws/build/cpp_motor_thread/CMakeFiles/cpp_motor_thread_uninstall.dir
+/home/ockta/ocktabot_ws/build/cpp_motor_thread/CMakeFiles/epos_motor_thread.dir
+/home/ockta/ocktabot_ws/build/cpp_motor_thread/CMakeFiles/test.dir
+/home/ockta/ocktabot_ws/build/cpp_motor_thread/CMakeFiles/edit_cache.dir
+/home/ockta/ocktabot_ws/build/cpp_motor_thread/CMakeFiles/rebuild_cache.dir
+/home/ockta/ocktabot_ws/build/cpp_motor_thread/CMakeFiles/list_install_components.dir
+/home/ockta/ocktabot_ws/build/cpp_motor_thread/CMakeFiles/install.dir
+/home/ockta/ocktabot_ws/build/cpp_motor_thread/CMakeFiles/install/local.dir
+/home/ockta/ocktabot_ws/build/cpp_motor_thread/CMakeFiles/install/strip.dir

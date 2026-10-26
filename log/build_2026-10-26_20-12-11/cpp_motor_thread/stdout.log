@@ -1,0 +1,19 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/epos_motor_thread.dir/src/epos_motor_thread.cpp.o[0m
+[100%] [32m[1mLinking CXX executable epos_motor_thread[0m
+[100%] Built target epos_motor_thread
+-- Install configuration: ""
+-- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/ament_index/resource_index/package_run_dependencies/cpp_motor_thread
+-- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/ament_index/resource_index/parent_prefix_path/cpp_motor_thread
+-- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/environment/ament_prefix_path.sh
+-- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/environment/ament_prefix_path.dsv
+-- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/environment/path.sh
+-- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/environment/path.dsv
+-- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/local_setup.bash
+-- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/local_setup.sh
+-- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/local_setup.zsh
+-- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/local_setup.dsv
+-- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/package.dsv
+-- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/ament_index/resource_index/packages/cpp_motor_thread
+-- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/cpp_motor_threadConfig.cmake
+-- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/cpp_motor_threadConfig-version.cmake
+-- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/package.xml

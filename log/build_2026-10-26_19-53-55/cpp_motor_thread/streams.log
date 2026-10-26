@@ -1,0 +1,48 @@
+[0.007s] Invoking command in '/home/ockta/ocktabot_ws/build/cpp_motor_thread': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ockta/ocktabot_ws/src/cpp_motor_thread -DCMAKE_INSTALL_PREFIX=/home/ockta/ocktabot_ws/install/cpp_motor_thread
+[0.182s] -- The C compiler identification is GNU 13.3.0
+[0.229s] -- The CXX compiler identification is GNU 13.3.0
+[0.244s] -- Detecting C compiler ABI info
+[0.354s] -- Detecting C compiler ABI info - done
+[0.366s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.367s] -- Detecting C compile features
+[0.367s] -- Detecting C compile features - done
+[0.375s] -- Detecting CXX compiler ABI info
+[0.449s] -- Detecting CXX compiler ABI info - done
+[0.455s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.456s] -- Detecting CXX compile features
+[0.456s] -- Detecting CXX compile features - done
+[0.458s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.554s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.631s] -- Found rclcpp: 28.1.22 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.665s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.675s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.688s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.703s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.767s] -- Found rmw_implementation_cmake: 7.3.4 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.770s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.824s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[0.838s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[0.853s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.922s] -- Found sensor_msgs: 5.3.8 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[0.976s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.048s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.048s] -- Configured cppcheck include dirs: 
+[1.048s] -- Configured cppcheck exclude dirs and/or files: 
+[1.049s] -- Added test 'lint_cmake' to check CMake code style
+[1.049s] -- Added test 'uncrustify' to check C / C++ code style
+[1.049s] -- Configured uncrustify additional arguments: 
+[1.050s] -- Added test 'xmllint' to check XML markup files
+[1.051s] -- Configuring done (1.0s)
+[1.058s] -- Generating done (0.0s)
+[1.062s] -- Build files have been written to: /home/ockta/ocktabot_ws/build/cpp_motor_thread
+[1.068s] Invoked command in '/home/ockta/ocktabot_ws/build/cpp_motor_thread' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ockta/ocktabot_ws/src/cpp_motor_thread -DCMAKE_INSTALL_PREFIX=/home/ockta/ocktabot_ws/install/cpp_motor_thread
+[1.069s] Invoking command in '/home/ockta/ocktabot_ws/build/cpp_motor_thread': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ockta/ocktabot_ws/build/cpp_motor_thread -- -j12 -l12
+[1.106s] [ 50%] [32mBuilding CXX object CMakeFiles/epos_motor_thread.dir/src/epos_motor_thread.cpp.o[0m
+[1.162s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Kcstido: No such file or directory
+[1.162s]     6 | #include [01;31m[K<cstido>[m[K
+[1.162s]       |          [01;31m[K^~~~~~~~[m[K
+[1.162s] compilation terminated.
+[1.163s] gmake[2]: *** [CMakeFiles/epos_motor_thread.dir/build.make:76: CMakeFiles/epos_motor_thread.dir/src/epos_motor_thread.cpp.o] Error 1
+[1.163s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/epos_motor_thread.dir/all] Error 2
+[1.163s] gmake: *** [Makefile:146: all] Error 2
+[1.164s] Invoked command in '/home/ockta/ocktabot_ws/build/cpp_motor_thread' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ockta/ocktabot_ws/build/cpp_motor_thread -- -j12 -l12

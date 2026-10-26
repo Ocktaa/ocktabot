@@ -1,0 +1,132 @@
+[0.005s] Invoking command in '/home/ockta/ocktabot_ws/build/cpp_motor_thread': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ockta/ocktabot_ws/build/cpp_motor_thread -- -j12 -l12
+[0.044s] [ 50%] [32mBuilding CXX object CMakeFiles/epos_motor_thread.dir/src/epos_motor_thread.cpp.o[0m
+[1.267s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp:[m[K In lambda function:
+[1.267s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp:68:40:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::__cxx11::basic_string<char>::basic_string(short unsigned int&)[m[K’
+[1.267s]    68 |         message.name = std::string(node[01;31m[K)[m[K;
+[1.267s]       |                                        [01;31m[K^[m[K
+[1.267s] In file included from [01m[K/usr/include/c++/13/string:54[m[K,
+[1.267s]                  from [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp:3[m[K:
+[1.267s] [01m[K/usr/include/c++/13/bits/basic_string.h:795:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class> std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::[01;32m[Kbasic_string[m[K(const _Tp&, const _Alloc&) [35m[K[with <template-parameter-2-2> = _Tp; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K[m[K’
+[1.267s]   795 |         [01;36m[Kbasic_string[m[K(const _Tp& __t, const _Alloc& __a = _Alloc())
+[1.267s]       |         [01;36m[K^~~~~~~~~~~~[m[K
+[1.267s] [01m[K/usr/include/c++/13/bits/basic_string.h:795:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.267s] In file included from [01m[K/usr/include/c++/13/ratio:39[m[K,
+[1.267s]                  from [01m[K/usr/include/c++/13/bits/chrono.h:37[m[K,
+[1.267s]                  from [01m[K/usr/include/c++/13/chrono:41[m[K,
+[1.267s]                  from [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp:1[m[K:
+[1.268s] /usr/include/c++/13/type_traits: In substitution of ‘[01m[Ktemplate<bool _Cond, class _Tp> using std::enable_if_t = typename std::enable_if::type [35m[K[with bool _Cond = false; _Tp = void][m[K[m[K’:
+[1.268s] [01m[K/usr/include/c++/13/bits/basic_string.h:144:8:[m[K   required by substitution of ‘[01m[Ktemplate<class _CharT, class _Traits, class _Alloc> template<class _Tp, class _Res> using std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::_If_sv = std::enable_if_t<std::__and_<std::is_convertible<const _Tp&, std::basic_string_view<_CharT, _Traits> >, std::__not_<std::is_convertible<const _Tp*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>*> >, std::__not_<std::is_convertible<const _Tp&, const _CharT*> > >::value, _Res> [35m[K[with _Tp = short unsigned int; _Res = void; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K[m[K’
+[1.268s] [01m[K/usr/include/c++/13/bits/basic_string.h:792:30:[m[K   required from here
+[1.268s] [01m[K/usr/include/c++/13/type_traits:2610:11:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, void>[m[K’
+[1.268s]  2610 |     using [01;31m[Kenable_if_t[m[K = typename enable_if<_Cond, _Tp>::type;
+[1.268s]       |           [01;31m[K^~~~~~~~~~~[m[K
+[1.268s] [01m[K/usr/include/c++/13/bits/basic_string.h:783:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class> std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::[01;32m[Kbasic_string[m[K(const _Tp&, size_type, size_type, const _Alloc&) [35m[K[with <template-parameter-2-2> = _Tp; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K[m[K’
+[1.268s]   783 |         [01;36m[Kbasic_string[m[K(const _Tp& __t, size_type __pos, size_type __n,
+[1.268s]       |         [01;36m[K^~~~~~~~~~~~[m[K
+[1.268s] [01m[K/usr/include/c++/13/bits/basic_string.h:783:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.268s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp:68:40:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[1.268s]    68 |         message.name = std::string(node[01;36m[K)[m[K;
+[1.268s]       |                                        [01;36m[K^[m[K
+[1.268s] [01m[K/usr/include/c++/13/bits/basic_string.h:760:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _InputIterator, class> std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::[01;32m[Kbasic_string[m[K(_InputIterator, _InputIterator, const _Alloc&) [35m[K[with <template-parameter-2-2> = _InputIterator; _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K[m[K’
+[1.268s]   760 |         [01;36m[Kbasic_string[m[K(_InputIterator __beg, _InputIterator __end,
+[1.268s]       |         [01;36m[K^~~~~~~~~~~~[m[K
+[1.268s] [01m[K/usr/include/c++/13/bits/basic_string.h:760:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.268s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp:68:40:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+[1.268s]    68 |         message.name = std::string(node[01;36m[K)[m[K;
+[1.268s]       |                                        [01;36m[K^[m[K
+[1.268s] [01m[K/usr/include/c++/13/bits/basic_string.h:664:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class> std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::[01;32m[Kbasic_string[m[K(size_type, _CharT, const _Alloc&) [35m[K[with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K[m[K’
+[1.268s]   664 |       [01;36m[Kbasic_string[m[K(size_type __n, _CharT __c, const _Alloc& __a = _Alloc())
+[1.268s]       |       [01;36m[K^~~~~~~~~~~~[m[K
+[1.269s] [01m[K/usr/include/c++/13/bits/basic_string.h:664:7:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.269s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp:68:40:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+[1.269s]    68 |         message.name = std::string(node[01;36m[K)[m[K;
+[1.269s]       |                                        [01;36m[K^[m[K
+[1.269s] [01m[K/usr/include/c++/13/bits/basic_string.h:641:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class> std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::[01;32m[Kbasic_string[m[K(const _CharT*, const _Alloc&) [35m[K[with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K[m[K’
+[1.269s]   641 |       [01;36m[Kbasic_string[m[K(const _CharT* __s, const _Alloc& __a = _Alloc())
+[1.269s]       |       [01;36m[K^~~~~~~~~~~~[m[K
+[1.269s] [01m[K/usr/include/c++/13/bits/basic_string.h:641:7:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[1.269s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp:68:36:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Knode[m[K’ (type ‘[01m[Kshort unsigned int[m[K’) to type ‘[01m[Kconst char*[m[K’
+[1.269s]    68 |         message.name = std::string([01;36m[Knode[m[K);
+[1.269s]       |                                    [01;36m[K^~~~[m[K
+[1.269s] [01m[K/usr/include/c++/13/bits/basic_string.h:716:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>::[01;32m[Kbasic_string[m[K(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&, const _Alloc&) [35m[K[with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K[m[K’
+[1.269s]   716 |       [01;36m[Kbasic_string[m[K(basic_string&& __str, const _Alloc& __a)
+[1.269s]       |       [01;36m[K^~~~~~~~~~~~[m[K
+[1.269s] [01m[K/usr/include/c++/13/bits/basic_string.h:716:7:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[1.269s] [01m[K/usr/include/c++/13/bits/basic_string.h:711:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>::[01;32m[Kbasic_string[m[K(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _Alloc&) [35m[K[with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K[m[K’
+[1.269s]   711 |       [01;36m[Kbasic_string[m[K(const basic_string& __str, const _Alloc& __a)
+[1.269s]       |       [01;36m[K^~~~~~~~~~~~[m[K
+[1.269s] [01m[K/usr/include/c++/13/bits/basic_string.h:711:7:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[1.269s] [01m[K/usr/include/c++/13/bits/basic_string.h:706:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>::[01;32m[Kbasic_string[m[K(std::initializer_list<_Tp>, const _Alloc&) [35m[K[with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K[m[K’
+[1.269s]   706 |       [01;36m[Kbasic_string[m[K(initializer_list<_CharT> __l, const _Alloc& __a = _Alloc())
+[1.269s]       |       [01;36m[K^~~~~~~~~~~~[m[K
+[1.269s] [01m[K/usr/include/c++/13/bits/basic_string.h:706:45:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kshort unsigned int[m[K’ to ‘[01m[Kstd::initializer_list<char>[m[K’
+[1.270s]   706 |       basic_string([01;36m[Kinitializer_list<_CharT> __l[m[K, const _Alloc& __a = _Alloc())
+[1.270s]       |                    [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[1.270s] [01m[K/usr/include/c++/13/bits/basic_string.h:677:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>::[01;32m[Kbasic_string[m[K(std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&&) [35m[K[with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K[m[K’
+[1.270s]   677 |       [01;36m[Kbasic_string[m[K(basic_string&& __str) noexcept
+[1.270s]       |       [01;36m[K^~~~~~~~~~~~[m[K
+[1.270s] [01m[K/usr/include/c++/13/bits/basic_string.h:677:35:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kshort unsigned int[m[K’ to ‘[01m[Kstd::__cxx11::basic_string<char>&&[m[K’
+[1.270s]   677 |       basic_string([01;36m[Kbasic_string&& __str[m[K) noexcept
+[1.270s]       |                    [01;36m[K~~~~~~~~~~~~~~~^~~~~[m[K
+[1.270s] [01m[K/usr/include/c++/13/bits/basic_string.h:619:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>::[01;32m[Kbasic_string[m[K(const _CharT*, size_type, const _Alloc&) [35m[K[with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; size_type = long unsigned int][m[K[m[K’
+[1.270s]   619 |       [01;36m[Kbasic_string[m[K(const _CharT* __s, size_type __n,
+[1.270s]       |       [01;36m[K^~~~~~~~~~~~[m[K
+[1.270s] [01m[K/usr/include/c++/13/bits/basic_string.h:619:7:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+[1.270s] [01m[K/usr/include/c++/13/bits/basic_string.h:599:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>::[01;32m[Kbasic_string[m[K(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, size_type, size_type, const _Alloc&) [35m[K[with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; size_type = long unsigned int][m[K[m[K’
+[1.270s]   599 |       [01;36m[Kbasic_string[m[K(const basic_string& __str, size_type __pos,
+[1.270s]       |       [01;36m[K^~~~~~~~~~~~[m[K
+[1.270s] [01m[K/usr/include/c++/13/bits/basic_string.h:599:7:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 1 provided
+[1.270s] [01m[K/usr/include/c++/13/bits/basic_string.h:581:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>::[01;32m[Kbasic_string[m[K(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, size_type, size_type) [35m[K[with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; size_type = long unsigned int][m[K[m[K’
+[1.270s]   581 |       [01;36m[Kbasic_string[m[K(const basic_string& __str, size_type __pos,
+[1.270s]       |       [01;36m[K^~~~~~~~~~~~[m[K
+[1.270s] [01m[K/usr/include/c++/13/bits/basic_string.h:581:7:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+[1.270s] [01m[K/usr/include/c++/13/bits/basic_string.h:564:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>::[01;32m[Kbasic_string[m[K(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, size_type, const _Alloc&) [35m[K[with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; size_type = long unsigned int][m[K[m[K’
+[1.270s]   564 |       [01;36m[Kbasic_string[m[K(const basic_string& __str, size_type __pos,
+[1.271s]       |       [01;36m[K^~~~~~~~~~~~[m[K
+[1.271s] [01m[K/usr/include/c++/13/bits/basic_string.h:564:7:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+[1.271s] [01m[K/usr/include/c++/13/bits/basic_string.h:547:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>::[01;32m[Kbasic_string[m[K(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&) [35m[K[with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K[m[K’
+[1.271s]   547 |       [01;36m[Kbasic_string[m[K(const basic_string& __str)
+[1.271s]       |       [01;36m[K^~~~~~~~~~~~[m[K
+[1.271s] [01m[K/usr/include/c++/13/bits/basic_string.h:547:40:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kshort unsigned int[m[K’ to ‘[01m[Kconst std::__cxx11::basic_string<char>&[m[K’
+[1.271s]   547 |       basic_string([01;36m[Kconst basic_string& __str[m[K)
+[1.271s]       |                    [01;36m[K~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[1.271s] [01m[K/usr/include/c++/13/bits/basic_string.h:535:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>::[01;32m[Kbasic_string[m[K(const _Alloc&) [35m[K[with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K[m[K’
+[1.271s]   535 |       [01;36m[Kbasic_string[m[K(const _Alloc& __a) _GLIBCXX_NOEXCEPT
+[1.271s]       |       [01;36m[K^~~~~~~~~~~~[m[K
+[1.271s] [01m[K/usr/include/c++/13/bits/basic_string.h:535:34:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kshort unsigned int[m[K’ to ‘[01m[Kconst std::allocator<char>&[m[K’
+[1.271s]   535 |       basic_string([01;36m[Kconst _Alloc& __a[m[K) _GLIBCXX_NOEXCEPT
+[1.271s]       |                    [01;36m[K~~~~~~~~~~~~~~^~~[m[K
+[1.271s] [01m[K/usr/include/c++/13/bits/basic_string.h:522:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>::[01;32m[Kbasic_string[m[K() [35m[K[with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K[m[K’
+[1.271s]   522 |       [01;36m[Kbasic_string[m[K()
+[1.271s]       |       [01;36m[K^~~~~~~~~~~~[m[K
+[1.271s] [01m[K/usr/include/c++/13/bits/basic_string.h:522:7:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[1.271s] [01m[K/usr/include/c++/13/bits/basic_string.h:176:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::__cxx11::basic_string<_CharT, _Traits, _Alloc>::[01;32m[Kbasic_string[m[K(__sv_wrapper, const _Alloc&) [35m[K[with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>][m[K[m[K’
+[1.271s]   176 |       [01;36m[Kbasic_string[m[K(__sv_wrapper __svw, const _Alloc& __a)
+[1.271s]       |       [01;36m[K^~~~~~~~~~~~[m[K
+[1.271s] [01m[K/usr/include/c++/13/bits/basic_string.h:176:7:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[1.271s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp:69:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass {anonymous}::Epos2Gateway[m[K’ has no member named ‘[01m[Kposition[m[K’
+[1.272s]    69 |         message.position = this->[01;31m[Kposition[m[K(node);
+[1.272s]       |                                  [01;31m[K^~~~~~~~[m[K
+[1.272s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[1.272s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[1.272s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:175[m[K,
+[1.272s]                  from [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp:12[m[K:
+[1.272s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp:71:92:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing sensor_msgs::msg::JointState_<std::allocator<void> >::_name_type = class std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > >[m[K’ {aka ‘[01m[Kclass std::vector<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > >[m[K’} has no member named ‘[01m[Kc_str[m[K’
+[1.272s]    71 | ger(), "Publishing: node '%s', position '%i'", message.name.[01;31m[Kc_str[m[K(), message.position);
+[1.272s]       |                                                             [01;31m[K^~~~~[m[K
+[1.272s] 
+[1.272s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp:[m[K In member function ‘[01m[Kbool {anonymous}::Epos2Gateway::[01;32m[KinFault[m[K(short unsigned int)[m[K’:
+[1.272s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp:92:36:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[1.272s]    92 |   int position(unsigned short node)[01;31m[K{[m[K
+[1.272s]       |                                    [01;31m[K^[m[K
+[1.272s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp:98:51:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[1.272s]    98 |   void prepareProfilePosition(unsigned short node)[01;31m[K{[m[K
+[1.272s]       |                                                   [01;31m[K^[m[K
+[1.815s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp:[m[K At global scope:
+[1.815s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp:28:6:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid {anonymous}::[01;32m[KonSignal[m[K(int)[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+[1.815s]    28 | void [01;35m[KonSignal[m[K(int) {g_stopRequested = true;};
+[1.815s]       |      [01;35m[K^~~~~~~~[m[K
+[1.831s] gmake[2]: *** [CMakeFiles/epos_motor_thread.dir/build.make:76: CMakeFiles/epos_motor_thread.dir/src/epos_motor_thread.cpp.o] Error 1
+[1.831s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/epos_motor_thread.dir/all] Error 2
+[1.831s] gmake: *** [Makefile:146: all] Error 2
+[1.832s] Invoked command in '/home/ockta/ocktabot_ws/build/cpp_motor_thread' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ockta/ocktabot_ws/build/cpp_motor_thread -- -j12 -l12

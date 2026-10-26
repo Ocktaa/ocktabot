@@ -1,0 +1,28 @@
+[0.005s] Invoking command in '/home/ockta/ocktabot_ws/build/cpp_motor_thread': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ockta/ocktabot_ws/build/cpp_motor_thread -- -j12 -l12
+[0.048s] [ 50%] [32mBuilding CXX object CMakeFiles/epos_motor_thread.dir/src/epos_motor_thread.cpp.o[0m
+[1.262s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp:[m[K In lambda function:
+[1.262s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp:75:36:[m[K [01;31m[Kerror: [m[K‘[01m[Khis[m[K’ was not declared in this scope; did you mean ‘[01m[Kthis[m[K’?
+[1.262s]    75 |         message.position.push_back([01;31m[Khis[m[K->position(node));
+[1.262s]       |                                    [01;31m[K^~~[m[K
+[1.262s]       |                                    [32m[Kthis[m[K
+[1.262s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[1.262s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[1.262s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:175[m[K,
+[1.263s]                  from [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp:12[m[K:
+[1.263s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp:77:39:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%i[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Ksensor_msgs::msg::JointState_<std::allocator<void> >::_position_type[m[K’ {aka ‘[01m[Kstd::vector<double, std::allocator<double> >[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[1.263s]    77 |       RCLCPP_INFO(this->get_logger(), [01;35m[K"Publishing: node 1, position '%i'"[m[K, message.position);//message.name.c_str(), message.position);
+[1.263s]       |                                       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.263s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp:77:71:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[1.263s]    77 | PP_INFO(this->get_logger(), "Publishing: node 1, position '[01;36m[K%i[m[K'", message.position);//message.name.c_str(), message.position);
+[1.263s]       |                                                            [01;36m[K~^[m[K
+[1.263s]       |                                                             [01;36m[K|[m[K
+[1.263s]       |                                                             [01;36m[Kint[m[K
+[1.263s] 
+[1.799s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp:[m[K At global scope:
+[1.799s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp:28:6:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid {anonymous}::[01;32m[KonSignal[m[K(int)[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-function-Wunused-function]8;;[m[K]
+[1.799s]    28 | void [01;35m[KonSignal[m[K(int) {g_stopRequested = true;};
+[1.799s]       |      [01;35m[K^~~~~~~~[m[K
+[1.813s] gmake[2]: *** [CMakeFiles/epos_motor_thread.dir/build.make:76: CMakeFiles/epos_motor_thread.dir/src/epos_motor_thread.cpp.o] Error 1
+[1.813s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/epos_motor_thread.dir/all] Error 2
+[1.813s] gmake: *** [Makefile:146: all] Error 2
+[1.815s] Invoked command in '/home/ockta/ocktabot_ws/build/cpp_motor_thread' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ockta/ocktabot_ws/build/cpp_motor_thread -- -j12 -l12

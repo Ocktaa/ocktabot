@@ -1,0 +1,10 @@
+[0.005s] Invoking command in '/home/ockta/ocktabot_ws/build/cpp_motor_thread': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ockta/ocktabot_ws/build/cpp_motor_thread -- -j12 -l12
+[0.037s] [ 50%] [32mBuilding CXX object CMakeFiles/epos_motor_thread.dir/src/epos_motor_thread.cpp.o[0m
+[0.085s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Kcstudio: No such file or directory
+[0.085s]     6 | #include [01;31m[K<cstudio>[m[K
+[0.085s]       |          [01;31m[K^~~~~~~~~[m[K
+[0.085s] compilation terminated.
+[0.085s] gmake[2]: *** [CMakeFiles/epos_motor_thread.dir/build.make:76: CMakeFiles/epos_motor_thread.dir/src/epos_motor_thread.cpp.o] Error 1
+[0.085s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/epos_motor_thread.dir/all] Error 2
+[0.086s] gmake: *** [Makefile:146: all] Error 2
+[0.087s] Invoked command in '/home/ockta/ocktabot_ws/build/cpp_motor_thread' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ockta/ocktabot_ws/build/cpp_motor_thread -- -j12 -l12
