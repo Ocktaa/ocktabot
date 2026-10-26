@@ -19,12 +19,15 @@ class MinimalPublisher(Node):
         self.epos.VSC_OpenDevice.restype = c_void_p
         self.epos.VSC_OpenDevice.argtypess = [c_char_p, c_char_p, c_char_p, c_char_p, c_void_p]
 
-        self.err - c_uint32()
-        
-        self.publisher_ = self.create_publisher(String, 'topic', 10)
-        timer_period = 0.5  # seconds
-        self.timer = self.create_timer(timer_period, self.timer_callback)
-        self.i = 0
+        self.err = c_uint32()
+
+        self.motor_mover_srv = self.create_service(
+            MotorMoverThread,
+            'motor_mover_thread',
+            self.motor_mover_callback
+        )        
+
+
 
     def timer_callback(self):
         msg = String()
@@ -36,8 +39,21 @@ class MinimalPublisher(Node):
     def motor_check(ok, what):
         if not ok:
             buf = create_string_buffer(256)
-            self.epos.VCS_GetErrorInfo(c_uint32())
+            self.epos.VCS_GetErrorInfo(c_uint32(self.err.value), buf, c_ushort(256))
+            raise RuntimeError(f"{what} failed: 0x{self.err.value:08x} {buf.value.decode(errors='replace')}")
 
+    def motor_mover_callback(self, request, response):
+        self.get_logger().info('Incoming request\n')
+
+        try:
+            for nid in self.get_parameter('epos_nodes').get_parameter_value()
+            N = c_ushort(nid)
+            fault = c_int()
+            self.motor_check(epos.VCS_GetFaultState(H, N, byref(fault), byref(self.err)), f"GetFaultState node {nid}")
+            self.get_logger().info(f"node {nid}: fault={bool(fault.value)} position={position(H, N)} qc")
+
+            for nid in 
+        return response
 
 def main(args=None):
     rclpy.init(args=args)
