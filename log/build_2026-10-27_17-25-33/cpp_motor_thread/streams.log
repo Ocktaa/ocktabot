@@ -1,0 +1,113 @@
+[0.006s] Invoking command in '/home/ockta/ocktabot_ws/build/cpp_motor_thread': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ockta/ocktabot_ws/build/cpp_motor_thread -- -j12 -l12
+[0.021s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.091s] -- Found rclcpp: 28.1.22 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.109s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.115s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.122s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.131s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.173s] -- Found rmw_implementation_cmake: 7.3.4 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.174s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.216s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.264s] -- Found sensor_msgs: 5.3.8 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[0.302s] -- Found std_srvs: 5.3.8 (/opt/ros/jazzy/share/std_srvs/cmake)
+[0.313s] -- Found rclcpp_action: 28.1.22 (/opt/ros/jazzy/share/rclcpp_action/cmake)
+[0.340s] -- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.346s] -- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.521s] -- Found ament_cmake_ros: 0.12.2 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[0.643s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.684s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.685s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[0.861s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[0.890s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.892s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.897s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.897s] -- Configured cppcheck include dirs: /home/ockta/ocktabot_ws/src/cpp_motor_thread/include
+[0.897s] -- Configured cppcheck exclude dirs and/or files: 
+[0.897s] -- Added test 'lint_cmake' to check CMake code style
+[0.898s] -- Added test 'uncrustify' to check C / C++ code style
+[0.898s] -- Configured uncrustify additional arguments: 
+[0.898s] -- Added test 'xmllint' to check XML markup files
+[0.899s] -- Configuring done (0.9s)
+[0.927s] -- Generating done (0.0s)
+[0.936s] -- Build files have been written to: /home/ockta/ocktabot_ws/build/cpp_motor_thread
+[0.958s] [  5%] Built target cpp_motor_thread__rosidl_generator_type_description
+[0.958s] [  5%] Built target cpp_motor_thread__rs
+[0.963s] [  5%] Built target ament_cmake_python_copy_cpp_motor_thread
+[0.970s] [  7%] Built target cpp_motor_thread__cpp
+[0.972s] [ 21%] Built target cpp_motor_thread__rosidl_generator_c
+[0.992s] [ 28%] Built target cpp_motor_thread__rosidl_typesupport_c
+[0.992s] [ 36%] Built target cpp_motor_thread__rosidl_typesupport_introspection_c
+[0.995s] [ 44%] Built target cpp_motor_thread__rosidl_typesupport_fastrtps_c
+[0.995s] [ 52%] Built target cpp_motor_thread__rosidl_typesupport_introspection_cpp
+[0.995s] [ 60%] Built target cpp_motor_thread__rosidl_typesupport_fastrtps_cpp
+[0.996s] [ 68%] Built target cpp_motor_thread__rosidl_typesupport_cpp
+[1.008s] [ 68%] Built target cpp_motor_thread
+[1.015s] [ 71%] [32mBuilding CXX object CMakeFiles/epos_motor_thread.dir/src/epos_motor_thread.cpp.o[0m
+[1.015s] [ 73%] [32mBuilding CXX object CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o[0m
+[1.019s] [ 76%] Built target cpp_motor_thread__py
+[1.032s] [ 81%] Built target cpp_motor_thread__rosidl_generator_py
+[1.045s] [ 97%] Built target cpp_motor_thread_s__rosidl_typesupport_fastrtps_c
+[1.045s] [ 97%] Built target cpp_motor_thread_s__rosidl_typesupport_introspection_c
+[1.045s] [ 97%] Built target cpp_motor_thread_s__rosidl_typesupport_c
+[1.105s] running egg_info
+[1.115s] writing cpp_motor_thread.egg-info/PKG-INFO
+[1.115s] writing dependency_links to cpp_motor_thread.egg-info/dependency_links.txt
+[1.115s] writing top-level names to cpp_motor_thread.egg-info/top_level.txt
+[1.145s] reading manifest file 'cpp_motor_thread.egg-info/SOURCES.txt'
+[1.145s] writing manifest file 'cpp_motor_thread.egg-info/SOURCES.txt'
+[1.162s] [ 97%] Built target ament_cmake_python_build_cpp_motor_thread_egg
+[2.454s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:[m[K In member function ‘[01m[Kvoid cpp_motor_thread::Epos2Gateway::[01;32m[KhaltMovement[m[K(short unsigned int)[m[K’:
+[2.454s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:108:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kvcs_mutex_[m[K’ was not declared in this scope
+[2.454s]   108 |     std::lock_guard<std::mutex> lock([01;31m[Kvcs_mutex_[m[K);
+[2.454s]       |                                      [01;31m[K^~~~~~~~~~[m[K
+[2.455s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:[m[K In member function ‘[01m[Kvoid cpp_motor_thread::Epos2Gateway::[01;32m[KprepareProfilePosition[m[K(std::shared_ptr<std_srvs::srv::Trigger_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Trigger_Response_<std::allocator<void> > >)[m[K’:
+[2.455s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:113:98:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krequest[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.455s]   113 | void Epos2Gateway::prepareProfilePosition([01;35m[Kconst std::shared_ptr<std_srvs::srv::Trigger::Request> request[m[K,
+[2.455s]       |                                           [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[2.464s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:[m[K In member function ‘[01m[Kvoid cpp_motor_thread::Epos2Gateway::[01;32m[KmoveProfilePosition[m[K(std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition> >)[m[K’:
+[2.464s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:154:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kvcs_mutex_[m[K’ was not declared in this scope
+[2.464s]   154 |         std::lock_guard<std::mutex> lock([01;31m[Kvcs_mutex_[m[K);
+[2.464s]       |                                          [01;31m[K^~~~~~~~~~[m[K
+[2.464s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:167:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std::__shared_ptr_access<cpp_motor_thread::action::MoveProfilePosition_Result_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::element_type = struct cpp_motor_thread::action::MoveProfilePosition_Result_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct cpp_motor_thread::action::MoveProfilePosition_Result_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kend_position[m[K’; did you mean ‘[01m[Kend_positoin[m[K’?
+[2.464s]   167 |                 result->[01;31m[Kend_position[m[K = getPosition(goal->node);
+[2.464s]       |                         [01;31m[K^~~~~~~~~~~~[m[K
+[2.464s]       |                         [32m[Kend_positoin[m[K
+[2.471s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:180:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kvcs_mutex_[m[K’ was not declared in this scope
+[2.471s]   180 |                 std::lock_guard<std::mutex> lock([01;31m[Kvcs_mutex_[m[K);
+[2.471s]       |                                                  [01;31m[K^~~~~~~~~~[m[K
+[2.471s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:194:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std::__shared_ptr_access<cpp_motor_thread::action::MoveProfilePosition_Result_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::element_type = struct cpp_motor_thread::action::MoveProfilePosition_Result_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct cpp_motor_thread::action::MoveProfilePosition_Result_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kend_position[m[K’; did you mean ‘[01m[Kend_positoin[m[K’?
+[2.471s]   194 |         result->[01;31m[Kend_position[m[K = getPosition(goal->node);
+[2.471s]       |                 [01;31m[K^~~~~~~~~~~~[m[K
+[2.472s]       |                 [32m[Kend_positoin[m[K
+[2.474s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.474s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[2.474s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:175[m[K,
+[2.474s]                  from [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:4[m[K,
+[2.474s]                  from [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:3[m[K:
+[2.474s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:[m[K In member function ‘[01m[Krclcpp_action::GoalResponse cpp_motor_thread::Epos2Gateway::[01;32m[Khandle_goal_move_profile_position[m[K(const rclcpp_action::GoalUUID&, std::shared_ptr<const cpp_motor_thread::action::MoveProfilePosition_Goal_<std::allocator<void> > >)[m[K’:
+[2.474s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:206:35:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 5 has type ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[2.474s]   206 |         RCLCPP_INFO(get_logger(), [01;35m[K"Received goal request, move node: %.4f, to position: %.4f"[m[K, [32m[Kgoal->node[m[K, goal->goal_position);
+[2.474s]       |                                   [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~[m[K
+[2.474s]       |                                                                                                      [32m[K|[m[K
+[2.474s]       |                                                                                                      [32m[Kint[m[K
+[2.475s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:206:73:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[2.475s]   206 |         RCLCPP_INFO(get_logger(), "Received goal request, move node: [01;36m[K%.4f[m[K, to position: %.4f", goal->node, goal->goal_position);
+[2.475s]       |                                                                      [01;36m[K~~~^[m[K
+[2.475s]       |                                                                         [01;36m[K|[m[K
+[2.475s]       |                                                                         [01;36m[Kdouble[m[K
+[2.475s]       |                                                                      [32m[K%.4d[m[K
+[2.475s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:206:35:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 6 has type ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[2.475s]   206 |         RCLCPP_INFO(get_logger(), [01;35m[K"Received goal request, move node: %.4f, to position: %.4f"[m[K, goal->node, [32m[Kgoal->goal_position[m[K);
+[2.475s]       |                                   [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K              [32m[K~~~~~~~~~~~~~~~~~~~[m[K
+[2.475s]       |                                                                                                                  [32m[K|[m[K
+[2.475s]       |                                                                                                                  [32m[Kint[m[K
+[2.475s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:206:92:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[2.475s]   206 |         RCLCPP_INFO(get_logger(), "Received goal request, move node: %.4f, to position: [01;36m[K%.4f[m[K", goal->node, goal->goal_position);
+[2.475s]       |                                                                                         [01;36m[K~~~^[m[K
+[2.475s]       |                                                                                            [01;36m[K|[m[K
+[2.475s]       |                                                                                            [01;36m[Kdouble[m[K
+[2.475s]       |                                                                                         [32m[K%.4d[m[K
+[3.471s] gmake[2]: *** [CMakeFiles/epos_motor_thread.dir/build.make:90: CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o] Error 1
+[3.472s] gmake[1]: *** [CMakeFiles/Makefile2:644: CMakeFiles/epos_motor_thread.dir/all] Error 2
+[3.472s] gmake: *** [Makefile:146: all] Error 2
+[3.473s] Invoked command in '/home/ockta/ocktabot_ws/build/cpp_motor_thread' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ockta/ocktabot_ws/build/cpp_motor_thread -- -j12 -l12

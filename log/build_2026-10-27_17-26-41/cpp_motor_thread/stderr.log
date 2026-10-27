@@ -1,0 +1,8 @@
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:5:10:[m[K [01;31m[Kfatal error: [m[Kalgorith: No such file or directory
+    5 | #include [01;31m[K<algorith>[m[K
+      |          [01;31m[K^~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/epos_motor_thread.dir/build.make:90: CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:644: CMakeFiles/epos_motor_thread.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

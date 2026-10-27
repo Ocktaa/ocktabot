@@ -1,0 +1,372 @@
+[0.005s] Invoking command in '/home/ockta/ocktabot_ws/build/cpp_motor_thread': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ockta/ocktabot_ws/build/cpp_motor_thread -- -j12 -l12
+[0.021s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.087s] -- Found rclcpp: 28.1.22 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.103s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.109s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.116s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.124s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.162s] -- Found rmw_implementation_cmake: 7.3.4 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.163s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.201s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.245s] -- Found sensor_msgs: 5.3.8 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[0.280s] -- Found std_srvs: 5.3.8 (/opt/ros/jazzy/share/std_srvs/cmake)
+[0.292s] -- Found rclcpp_action: 28.1.22 (/opt/ros/jazzy/share/rclcpp_action/cmake)
+[0.322s] -- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.329s] -- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.482s] -- Found ament_cmake_ros: 0.12.2 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[0.593s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.637s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.638s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[0.805s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[0.833s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.835s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.840s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.840s] -- Configured cppcheck include dirs: /home/ockta/ocktabot_ws/src/cpp_motor_thread/include
+[0.840s] -- Configured cppcheck exclude dirs and/or files: 
+[0.840s] -- Added test 'lint_cmake' to check CMake code style
+[0.841s] -- Added test 'uncrustify' to check C / C++ code style
+[0.841s] -- Configured uncrustify additional arguments: 
+[0.841s] -- Added test 'xmllint' to check XML markup files
+[0.842s] -- Configuring done (0.8s)
+[0.869s] -- Generating done (0.0s)
+[0.879s] -- Build files have been written to: /home/ockta/ocktabot_ws/build/cpp_motor_thread
+[0.901s] [  5%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[0.901s] [  5%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[0.906s] [  5%] Built target ament_cmake_python_copy_cpp_motor_thread
+[1.023s] [  5%] Built target cpp_motor_thread__rosidl_generator_type_description
+[1.028s] [  7%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.029s] running egg_info
+[1.034s] [ 10%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.041s] writing cpp_motor_thread.egg-info/PKG-INFO
+[1.041s] writing dependency_links to cpp_motor_thread.egg-info/dependency_links.txt
+[1.041s] writing top-level names to cpp_motor_thread.egg-info/top_level.txt
+[1.049s] [ 10%] Built target cpp_motor_thread__rs
+[1.070s] reading manifest file 'cpp_motor_thread.egg-info/SOURCES.txt'
+[1.070s] writing manifest file 'cpp_motor_thread.egg-info/SOURCES.txt'
+[1.087s] [ 10%] Built target ament_cmake_python_build_cpp_motor_thread_egg
+[1.265s] [ 10%] Built target cpp_motor_thread__cpp
+[1.280s] [ 15%] [32mBuilding C object CMakeFiles/cpp_motor_thread__rosidl_generator_c.dir/rosidl_generator_c/cpp_motor_thread/action/detail/move_profile_position__description.c.o[0m
+[1.280s] [ 15%] [32mBuilding C object CMakeFiles/cpp_motor_thread__rosidl_generator_c.dir/rosidl_generator_c/cpp_motor_thread/action/detail/move_profile_position__functions.c.o[0m
+[1.280s] [ 18%] [32mBuilding C object CMakeFiles/cpp_motor_thread__rosidl_generator_c.dir/rosidl_generator_c/cpp_motor_thread/action/detail/move_profile_position__type_support.c.o[0m
+[1.379s] [ 21%] [32m[1mLinking C shared library libcpp_motor_thread__rosidl_generator_c.so[0m
+[1.402s] [ 21%] Built target cpp_motor_thread__rosidl_generator_c
+[1.412s] [ 31%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.413s] [ 31%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.413s] [ 31%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.413s] [ 31%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.413s] [ 34%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.413s] [ 36%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.600s] [ 39%] [32mBuilding CXX object CMakeFiles/cpp_motor_thread__rosidl_typesupport_c.dir/rosidl_typesupport_c/cpp_motor_thread/action/move_profile_position__type_support.cpp.o[0m
+[1.605s] [ 42%] [32mBuilding CXX object CMakeFiles/cpp_motor_thread__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cpp_motor_thread/action/move_profile_position__type_support.cpp.o[0m
+[1.633s] [ 44%] [32m[1mLinking CXX shared library libcpp_motor_thread__rosidl_typesupport_c.so[0m
+[1.634s] [ 47%] [32mBuilding CXX object CMakeFiles/cpp_motor_thread__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cpp_motor_thread/action/detail/move_profile_position__type_support.cpp.o[0m
+[1.645s] [ 50%] [32mBuilding C object CMakeFiles/cpp_motor_thread__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cpp_motor_thread/action/detail/move_profile_position__type_support.c.o[0m
+[1.656s] [ 50%] Built target cpp_motor_thread__rosidl_typesupport_c
+[1.682s] [ 52%] [32m[1mLinking C shared library libcpp_motor_thread__rosidl_typesupport_introspection_c.so[0m
+[1.700s] [ 52%] Built target cpp_motor_thread__rosidl_typesupport_introspection_c
+[1.710s] [ 55%] [32mBuilding CXX object CMakeFiles/cpp_motor_thread__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cpp_motor_thread/action/detail/dds_fastrtps/move_profile_position__type_support.cpp.o[0m
+[1.729s] [ 57%] [32mBuilding CXX object CMakeFiles/cpp_motor_thread__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cpp_motor_thread/action/detail/move_profile_position__type_support_c.cpp.o[0m
+[1.986s] [ 60%] [32m[1mLinking CXX shared library libcpp_motor_thread__rosidl_typesupport_cpp.so[0m
+[2.032s] [ 60%] Built target cpp_motor_thread__rosidl_typesupport_cpp
+[2.051s] [ 68%] [32mBuilding CXX object CMakeFiles/epos_motor_thread.dir/src/epos_motor_thread.cpp.o[0m
+[2.051s] [ 68%] [32m[1mLinking CXX shared library libcpp_motor_thread__rosidl_typesupport_introspection_cpp.so[0m
+[2.051s] [ 68%] [32mBuilding CXX object CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o[0m
+[2.059s] [ 71%] [32m[1mLinking CXX shared library libcpp_motor_thread__rosidl_typesupport_fastrtps_c.so[0m
+[2.089s] [ 71%] Built target cpp_motor_thread__rosidl_typesupport_fastrtps_c
+[2.097s] [ 71%] Built target cpp_motor_thread__rosidl_typesupport_introspection_cpp
+[2.276s] [ 73%] [32m[1mLinking CXX shared library libcpp_motor_thread__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.323s] [ 73%] Built target cpp_motor_thread__rosidl_typesupport_fastrtps_cpp
+[2.334s] [ 73%] Built target cpp_motor_thread
+[2.346s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.709s] [ 76%] Built target cpp_motor_thread__py
+[2.722s] [ 78%] [32mBuilding C object CMakeFiles/cpp_motor_thread__rosidl_generator_py.dir/rosidl_generator_py/cpp_motor_thread/action/_move_profile_position_s.c.o[0m
+[2.839s] [ 81%] [32m[1mLinking C shared library libcpp_motor_thread__rosidl_generator_py.so[0m
+[2.865s] [ 81%] Built target cpp_motor_thread__rosidl_generator_py
+[2.879s] [ 89%] [32mBuilding C object CMakeFiles/cpp_motor_thread_s__rosidl_typesupport_c.dir/rosidl_generator_py/cpp_motor_thread/_cpp_motor_thread_s.ep.rosidl_typesupport_c.c.o[0m
+[2.879s] [ 89%] [32mBuilding C object CMakeFiles/cpp_motor_thread_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/cpp_motor_thread/_cpp_motor_thread_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[2.879s] [ 89%] [32mBuilding C object CMakeFiles/cpp_motor_thread_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/cpp_motor_thread/_cpp_motor_thread_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.955s] [ 94%] [32m[1mLinking C shared module rosidl_generator_py/cpp_motor_thread/cpp_motor_thread_s__rosidl_typesupport_c.so[0m
+[2.955s] [ 94%] [32m[1mLinking C shared module rosidl_generator_py/cpp_motor_thread/cpp_motor_thread_s__rosidl_typesupport_introspection_c.so[0m
+[2.956s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/cpp_motor_thread/cpp_motor_thread_s__rosidl_typesupport_fastrtps_c.so[0m
+[2.973s] [ 97%] Built target cpp_motor_thread_s__rosidl_typesupport_introspection_c
+[2.973s] [ 97%] Built target cpp_motor_thread_s__rosidl_typesupport_c
+[2.974s] [ 97%] Built target cpp_motor_thread_s__rosidl_typesupport_fastrtps_c
+[3.313s] In file included from [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp:6[m[K:
+[3.313s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:33:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ does not name a type
+[3.313s]    33 |     [01;31m[Krclcpp_action[m[K::GoalResponse handle_goal_move_profile_position(const rclcpp_action::GoalUUID & uuid,
+[3.313s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[3.315s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:36:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ does not name a type
+[3.315s]    36 |     [01;31m[Krclcpp_action[m[K::CancelResponse handle_cancel_move_profile_position(
+[3.315s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[3.320s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:31:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ was not declared in this scope
+[3.320s]    40 |         const std::shared_ptr<[01;31m[Krclcpp_action[m[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);
+[3.320s]       |                               [01;31m[K^~~~~~~~~~~~~[m[K
+[3.320s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:108:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.320s]    40 |         const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition[01;31m[K>>[m[K goal_handle);
+[3.320s]       |                                                                                                            [01;31m[K^~[m[K
+[3.325s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:31:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ was not declared in this scope
+[3.325s]    40 |         const std::shared_ptr<[01;31m[Krclcpp_action[m[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);
+[3.326s]       |                               [01;31m[K^~~~~~~~~~~~~[m[K
+[3.326s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:108:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.326s]    40 |         const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition[01;31m[K>>[m[K goal_handle);
+[3.326s]       |                                                                                                            [01;31m[K^~[m[K
+[3.331s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:31:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ was not declared in this scope
+[3.331s]    40 |         const std::shared_ptr<[01;31m[Krclcpp_action[m[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);
+[3.331s]       |                               [01;31m[K^~~~~~~~~~~~~[m[K
+[3.331s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:108:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.331s]    40 |         const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition[01;31m[K>>[m[K goal_handle);
+[3.331s]       |                                                                                                            [01;31m[K^~[m[K
+[3.331s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:15:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+[3.331s]    40 |         const [01;31m[Kstd[m[K::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);
+[3.331s]       |               [01;31m[K^~~[m[K
+[3.332s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:31:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ has not been declared
+[3.332s]    40 |         const std::shared_ptr<[01;31m[Krclcpp_action[m[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);
+[3.332s]       |                               [01;31m[K^~~~~~~~~~~~~[m[K
+[3.332s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:81:[m[K [01;31m[Kerror: [m[K‘[01m[Kcpp_motor_thread::action[m[K’ has not been declared
+[3.332s]    40 |         const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::[01;31m[Kaction[m[K::MoveProfilePosition>> goal_handle);
+[3.332s]       |                                                                                 [01;31m[K^~~~~~[m[K
+[3.332s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:9:[m[K [01;31m[Kerror: [m[Kmissing template argument list after ‘[01m[Kstd::shared_ptr[m[K’; template placeholder not permitted in parameter
+[3.332s]    40 |         [01;31m[Kconst[m[K std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);
+[3.332s]       |         [01;31m[K^~~~~[m[K
+[3.332s]       |              [32m[K<>[m[K
+[3.332s] In file included from [01m[K/usr/include/c++/13/bits/shared_ptr.h:53[m[K,
+[3.332s]                  from [01m[K/usr/include/c++/13/memory:80[m[K,
+[3.332s]                  from [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp:1[m[K:
+[3.332s] [01m[K/usr/include/c++/13/bits/shared_ptr_base.h:395:11:[m[K [01;36m[Knote: [m[K‘[01m[Ktemplate<class _Tp> class std::shared_ptr[m[K’ declared here
+[3.332s]   395 |     class [01;36m[Kshared_ptr[m[K;
+[3.332s]       |           [01;36m[K^~~~~~~~~~[m[K
+[3.332s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:108:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K>[m[K’ token
+[3.332s]    40 |         const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition[01;31m[K>>[m[K goal_handle);
+[3.332s]       |                                                                                                            [01;31m[K^~[m[K
+[3.332s] In file included from [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:3[m[K:
+[3.332s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:33:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ does not name a type
+[3.332s]    33 |     [01;31m[Krclcpp_action[m[K::GoalResponse handle_goal_move_profile_position(const rclcpp_action::GoalUUID & uuid,
+[3.332s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[3.333s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:36:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ does not name a type
+[3.333s]    36 |     [01;31m[Krclcpp_action[m[K::CancelResponse handle_cancel_move_profile_position(
+[3.333s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[3.337s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:52:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ was not declared in this scope
+[3.337s]    42 |     void moveProfilePosition(const std::shared_ptr<[01;31m[Krclcpp_action[m[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);
+[3.337s]       |                                                    [01;31m[K^~~~~~~~~~~~~[m[K
+[3.337s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:129:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.337s]    42 |     void moveProfilePosition(const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition[01;31m[K>>[m[K goal_handle);
+[3.337s]       |                                                                                                                                 [01;31m[K^~[m[K
+[3.339s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:31:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ was not declared in this scope
+[3.339s]    40 |         const std::shared_ptr<[01;31m[Krclcpp_action[m[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);
+[3.339s]       |                               [01;31m[K^~~~~~~~~~~~~[m[K
+[3.339s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:108:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.339s]    40 |         const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition[01;31m[K>>[m[K goal_handle);
+[3.339s]       |                                                                                                            [01;31m[K^~[m[K
+[3.342s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:52:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ was not declared in this scope
+[3.342s]    42 |     void moveProfilePosition(const std::shared_ptr<[01;31m[Krclcpp_action[m[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);
+[3.342s]       |                                                    [01;31m[K^~~~~~~~~~~~~[m[K
+[3.342s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:129:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.342s]    42 |     void moveProfilePosition(const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition[01;31m[K>>[m[K goal_handle);
+[3.342s]       |                                                                                                                                 [01;31m[K^~[m[K
+[3.344s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:31:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ was not declared in this scope
+[3.344s]    40 |         const std::shared_ptr<[01;31m[Krclcpp_action[m[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);
+[3.344s]       |                               [01;31m[K^~~~~~~~~~~~~[m[K
+[3.344s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:108:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.344s]    40 |         const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition[01;31m[K>>[m[K goal_handle);
+[3.344s]       |                                                                                                            [01;31m[K^~[m[K
+[3.347s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:52:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ was not declared in this scope
+[3.347s]    42 |     void moveProfilePosition(const std::shared_ptr<[01;31m[Krclcpp_action[m[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);
+[3.347s]       |                                                    [01;31m[K^~~~~~~~~~~~~[m[K
+[3.348s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:129:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.348s]    42 |     void moveProfilePosition(const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition[01;31m[K>>[m[K goal_handle);
+[3.348s]       |                                                                                                                                 [01;31m[K^~[m[K
+[3.348s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:36:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+[3.348s]    42 |     void moveProfilePosition(const [01;31m[Kstd[m[K::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);
+[3.348s]       |                                    [01;31m[K^~~[m[K
+[3.348s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:52:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ has not been declared
+[3.348s]    42 |     void moveProfilePosition(const std::shared_ptr<[01;31m[Krclcpp_action[m[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);
+[3.348s]       |                                                    [01;31m[K^~~~~~~~~~~~~[m[K
+[3.348s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:102:[m[K [01;31m[Kerror: [m[K‘[01m[Kcpp_motor_thread::action[m[K’ has not been declared
+[3.348s]    42 |     void moveProfilePosition(const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::[01;31m[Kaction[m[K::MoveProfilePosition>> goal_handle);
+[3.348s]       |                                                                                                      [01;31m[K^~~~~~[m[K
+[3.348s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:30:[m[K [01;31m[Kerror: [m[Kmissing template argument list after ‘[01m[Kstd::shared_ptr[m[K’; template placeholder not permitted in parameter
+[3.348s]    42 |     void moveProfilePosition([01;31m[Kconst[m[K std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);
+[3.348s]       |                              [01;31m[K^~~~~[m[K
+[3.348s]       |                                   [32m[K<>[m[K
+[3.348s] [01m[K/usr/include/c++/13/bits/shared_ptr_base.h:395:11:[m[K [01;36m[Knote: [m[K‘[01m[Ktemplate<class _Tp> class std::shared_ptr[m[K’ declared here
+[3.348s]   395 |     class [01;36m[Kshared_ptr[m[K;
+[3.348s]       |           [01;36m[K^~~~~~~~~~[m[K
+[3.348s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:129:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K>[m[K’ token
+[3.348s]    42 |     void moveProfilePosition(const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition[01;31m[K>>[m[K goal_handle);
+[3.348s]       |                                                                                                                                 [01;31m[K^~[m[K
+[3.350s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:31:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ was not declared in this scope
+[3.350s]    40 |         const std::shared_ptr<[01;31m[Krclcpp_action[m[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);
+[3.350s]       |                               [01;31m[K^~~~~~~~~~~~~[m[K
+[3.350s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:108:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.350s]    40 |         const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition[01;31m[K>>[m[K goal_handle);
+[3.350s]       |                                                                                                            [01;31m[K^~[m[K
+[3.350s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:15:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+[3.350s]    40 |         const [01;31m[Kstd[m[K::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);
+[3.350s]       |               [01;31m[K^~~[m[K
+[3.350s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:31:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ has not been declared
+[3.350s]    40 |         const std::shared_ptr<[01;31m[Krclcpp_action[m[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);
+[3.350s]       |                               [01;31m[K^~~~~~~~~~~~~[m[K
+[3.350s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:81:[m[K [01;31m[Kerror: [m[K‘[01m[Kcpp_motor_thread::action[m[K’ has not been declared
+[3.350s]    40 |         const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::[01;31m[Kaction[m[K::MoveProfilePosition>> goal_handle);
+[3.350s]       |                                                                                 [01;31m[K^~~~~~[m[K
+[3.350s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:9:[m[K [01;31m[Kerror: [m[Kmissing template argument list after ‘[01m[Kstd::shared_ptr[m[K’; template placeholder not permitted in parameter
+[3.350s]    40 |         [01;31m[Kconst[m[K std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);
+[3.350s]       |         [01;31m[K^~~~~[m[K
+[3.350s]       |              [32m[K<>[m[K
+[3.351s] In file included from [01m[K/usr/include/c++/13/bits/shared_ptr.h:53[m[K,
+[3.351s]                  from [01m[K/usr/include/c++/13/memory:80[m[K,
+[3.351s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:173[m[K,
+[3.351s]                  from [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:4[m[K:
+[3.351s] [01m[K/usr/include/c++/13/bits/shared_ptr_base.h:395:11:[m[K [01;36m[Knote: [m[K‘[01m[Ktemplate<class _Tp> class std::shared_ptr[m[K’ declared here
+[3.351s]   395 |     class [01;36m[Kshared_ptr[m[K;
+[3.351s]       |           [01;36m[K^~~~~~~~~~[m[K
+[3.351s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:108:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K>[m[K’ token
+[3.351s]    40 |         const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition[01;31m[K>>[m[K goal_handle);
+[3.351s]       |                                                                                                            [01;31m[K^~[m[K
+[3.355s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:52:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ was not declared in this scope
+[3.356s]    42 |     void moveProfilePosition(const std::shared_ptr<[01;31m[Krclcpp_action[m[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);
+[3.356s]       |                                                    [01;31m[K^~~~~~~~~~~~~[m[K
+[3.356s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:129:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.356s]    42 |     void moveProfilePosition(const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition[01;31m[K>>[m[K goal_handle);
+[3.356s]       |                                                                                                                                 [01;31m[K^~[m[K
+[3.357s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:49:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ does not name a type
+[3.357s]    49 |     [01;31m[Krclcpp_action[m[K::Server<cpp_motor_thread::action::MoveProfilePosition>::SharedPtr move_profile_position_action_;
+[3.357s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[3.361s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:52:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ was not declared in this scope
+[3.361s]    42 |     void moveProfilePosition(const std::shared_ptr<[01;31m[Krclcpp_action[m[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);
+[3.361s]       |                                                    [01;31m[K^~~~~~~~~~~~~[m[K
+[3.361s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:129:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.361s]    42 |     void moveProfilePosition(const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition[01;31m[K>>[m[K goal_handle);
+[3.361s]       |                                                                                                                                 [01;31m[K^~[m[K
+[3.367s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:52:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ was not declared in this scope
+[3.367s]    42 |     void moveProfilePosition(const std::shared_ptr<[01;31m[Krclcpp_action[m[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);
+[3.367s]       |                                                    [01;31m[K^~~~~~~~~~~~~[m[K
+[3.367s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:129:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.367s]    42 |     void moveProfilePosition(const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition[01;31m[K>>[m[K goal_handle);
+[3.367s]       |                                                                                                                                 [01;31m[K^~[m[K
+[3.367s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:36:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+[3.367s]    42 |     void moveProfilePosition(const [01;31m[Kstd[m[K::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);
+[3.367s]       |                                    [01;31m[K^~~[m[K
+[3.367s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:52:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ has not been declared
+[3.367s]    42 |     void moveProfilePosition(const std::shared_ptr<[01;31m[Krclcpp_action[m[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);
+[3.367s]       |                                                    [01;31m[K^~~~~~~~~~~~~[m[K
+[3.367s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:102:[m[K [01;31m[Kerror: [m[K‘[01m[Kcpp_motor_thread::action[m[K’ has not been declared
+[3.367s]    42 |     void moveProfilePosition(const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::[01;31m[Kaction[m[K::MoveProfilePosition>> goal_handle);
+[3.367s]       |                                                                                                      [01;31m[K^~~~~~[m[K
+[3.367s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:30:[m[K [01;31m[Kerror: [m[Kmissing template argument list after ‘[01m[Kstd::shared_ptr[m[K’; template placeholder not permitted in parameter
+[3.367s]    42 |     void moveProfilePosition([01;31m[Kconst[m[K std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);
+[3.367s]       |                              [01;31m[K^~~~~[m[K
+[3.367s]       |                                   [32m[K<>[m[K
+[3.367s] [01m[K/usr/include/c++/13/bits/shared_ptr_base.h:395:11:[m[K [01;36m[Knote: [m[K‘[01m[Ktemplate<class _Tp> class std::shared_ptr[m[K’ declared here
+[3.367s]   395 |     class [01;36m[Kshared_ptr[m[K;
+[3.367s]       |           [01;36m[K^~~~~~~~~~[m[K
+[3.367s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:129:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K>[m[K’ token
+[3.367s]    42 |     void moveProfilePosition(const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition[01;31m[K>>[m[K goal_handle);
+[3.367s]       |                                                                                                                                 [01;31m[K^~[m[K
+[3.377s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:49:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ does not name a type
+[3.377s]    49 |     [01;31m[Krclcpp_action[m[K::Server<cpp_motor_thread::action::MoveProfilePosition>::SharedPtr move_profile_position_action_;
+[3.377s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[3.398s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:[m[K In constructor ‘[01m[Kcpp_motor_thread::Epos2Gateway::[01;32m[KEpos2Gateway[m[K()[m[K’:
+[3.398s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:76:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmove_profile_position_action_[m[K’ was not declared in this scope
+[3.398s]    76 |     [01;31m[Kmove_profile_position_action_[m[K = rclcpp_action::create_server<cpp_motor_thread::action::MoveProfilePosition>(
+[3.398s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.398s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:76:37:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ has not been declared
+[3.398s]    76 |     move_profile_position_action_ = [01;31m[Krclcpp_action[m[K::create_server<cpp_motor_thread::action::MoveProfilePosition>(
+[3.398s]       |                                     [01;31m[K^~~~~~~~~~~~~[m[K
+[3.398s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:76:84:[m[K [01;31m[Kerror: [m[K‘[01m[Kcpp_motor_thread::action[m[K’ has not been declared
+[3.398s]    76 |     move_profile_position_action_ = rclcpp_action::create_server<cpp_motor_thread::[01;31m[Kaction[m[K::MoveProfilePosition>(
+[3.398s]       |                                                                                    [01;31m[K^~~~~~[m[K
+[3.398s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:77:9:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[3.398s]    77 |         [01;35m[Kthis[m[K,
+[3.398s]       |         [01;35m[K^~~~[m[K
+[3.398s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:79:34:[m[K [01;31m[Kerror: [m[K‘[01m[Khandle_goal_move_profile_position[m[K’ is not a member of ‘[01m[Kcpp_motor_thread::Epos2Gateway[m[K’
+[3.399s]    79 |         std::bind(&Epos2Gateway::[01;31m[Khandle_goal_move_profile_position[m[K, this, _1, _2),
+[3.399s]       |                                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.399s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:80:34:[m[K [01;31m[Kerror: [m[K‘[01m[Khandle_cancel_move_profile_position[m[K’ is not a member of ‘[01m[Kcpp_motor_thread::Epos2Gateway[m[K’
+[3.399s]    80 |         std::bind(&Epos2Gateway::[01;31m[Khandle_cancel_move_profile_position[m[K, this, _1),
+[3.399s]       |                                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.402s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:[m[K At global scope:
+[3.402s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:106:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid cpp_motor_thread::Epos2Gateway::[01;32m[KhaltMovement[m[K(short unsigned int)[m[K’
+[3.402s]   106 | void [01;31m[KEpos2Gateway[m[K::haltMovement(unsigned short node){
+[3.402s]       |      [01;31m[K^~~~~~~~~~~~[m[K
+[3.402s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:106:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid cpp_motor_thread::Epos2Gateway::[01;32m[KhaltMovement[m[K(short unsigned int)[m[K’
+[3.402s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:12:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass cpp_motor_thread::Epos2Gateway[m[K’ defined here
+[3.402s]    12 | class [01;36m[KEpos2Gateway[m[K: public rclcpp::Node{
+[3.402s]       |       [01;36m[K^~~~~~~~~~~~[m[K
+[3.402s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:[m[K In member function ‘[01m[Kvoid cpp_motor_thread::Epos2Gateway::[01;32m[KprepareProfilePosition[m[K(std::shared_ptr<std_srvs::srv::Trigger_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Trigger_Response_<std::allocator<void> > >)[m[K’:
+[3.402s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:113:98:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krequest[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.402s]   113 | void Epos2Gateway::prepareProfilePosition([01;35m[Kconst std::shared_ptr<std_srvs::srv::Trigger::Request> request[m[K,
+[3.402s]       |                                           [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[3.409s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:[m[K At global scope:
+[3.409s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:143:27:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ was not declared in this scope
+[3.409s]   143 |     const std::shared_ptr<[01;31m[Krclcpp_action[m[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle){
+[3.409s]       |                           [01;31m[K^~~~~~~~~~~~~[m[K
+[3.409s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:143:104:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.409s]   143 |     const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition[01;31m[K>>[m[K goal_handle){
+[3.409s]       |                                                                                                        [01;31m[K^~[m[K
+[3.415s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:143:27:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ was not declared in this scope
+[3.415s]   143 |     const std::shared_ptr<[01;31m[Krclcpp_action[m[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle){
+[3.415s]       |                           [01;31m[K^~~~~~~~~~~~~[m[K
+[3.415s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:143:104:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.415s]   143 |     const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition[01;31m[K>>[m[K goal_handle){
+[3.415s]       |                                                                                                        [01;31m[K^~[m[K
+[3.421s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:143:27:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ was not declared in this scope
+[3.421s]   143 |     const std::shared_ptr<[01;31m[Krclcpp_action[m[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle){
+[3.421s]       |                           [01;31m[K^~~~~~~~~~~~~[m[K
+[3.421s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:143:104:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.421s]   143 |     const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition[01;31m[K>>[m[K goal_handle){
+[3.421s]       |                                                                                                        [01;31m[K^~[m[K
+[3.421s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:143:11:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+[3.421s]   143 |     const [01;31m[Kstd[m[K::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle){
+[3.421s]       |           [01;31m[K^~~[m[K
+[3.427s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:143:27:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ was not declared in this scope
+[3.427s]   143 |     const std::shared_ptr<[01;31m[Krclcpp_action[m[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle){
+[3.427s]       |                           [01;31m[K^~~~~~~~~~~~~[m[K
+[3.427s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:142:6:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[KmoveProfilePosition[m[K’ declared void
+[3.427s]   142 | void [01;31m[KEpos2Gateway[m[K::moveProfilePosition(
+[3.427s]       |      [01;31m[K^~~~~~~~~~~~[m[K
+[3.427s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:143:5:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kconst[m[K’
+[3.427s]   143 |     [01;31m[Kconst[m[K std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle){
+[3.427s]       |     [01;31m[K^~~~~[m[K
+[3.428s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:204:1:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ does not name a type
+[3.428s]   204 | [01;31m[Krclcpp_action[m[K::GoalResponse Epos2Gateway::handle_goal_move_profile_position(const rclcpp_action::GoalUUID & uuid,
+[3.428s]       | [01;31m[K^~~~~~~~~~~~~[m[K
+[3.429s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:211:1:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ does not name a type
+[3.429s]   211 | [01;31m[Krclcpp_action[m[K::CancelResponse Epos2Gateway::handle_cancel_move_profile_position(
+[3.430s]       | [01;31m[K^~~~~~~~~~~~~[m[K
+[3.435s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:219:27:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ was not declared in this scope
+[3.435s]   219 |     const std::shared_ptr<[01;31m[Krclcpp_action[m[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle){
+[3.435s]       |                           [01;31m[K^~~~~~~~~~~~~[m[K
+[3.436s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:219:104:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.436s]   219 |     const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition[01;31m[K>>[m[K goal_handle){
+[3.436s]       |                                                                                                        [01;31m[K^~[m[K
+[3.441s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:219:27:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ was not declared in this scope
+[3.441s]   219 |     const std::shared_ptr<[01;31m[Krclcpp_action[m[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle){
+[3.441s]       |                           [01;31m[K^~~~~~~~~~~~~[m[K
+[3.441s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:219:104:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.441s]   219 |     const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition[01;31m[K>>[m[K goal_handle){
+[3.442s]       |                                                                                                        [01;31m[K^~[m[K
+[3.447s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:219:27:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ was not declared in this scope
+[3.447s]   219 |     const std::shared_ptr<[01;31m[Krclcpp_action[m[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle){
+[3.447s]       |                           [01;31m[K^~~~~~~~~~~~~[m[K
+[3.447s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:219:104:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[3.447s]   219 |     const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition[01;31m[K>>[m[K goal_handle){
+[3.447s]       |                                                                                                        [01;31m[K^~[m[K
+[3.447s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:219:11:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+[3.448s]   219 |     const [01;31m[Kstd[m[K::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle){
+[3.448s]       |           [01;31m[K^~~[m[K
+[3.453s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:219:27:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_action[m[K’ was not declared in this scope
+[3.453s]   219 |     const std::shared_ptr<[01;31m[Krclcpp_action[m[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle){
+[3.453s]       |                           [01;31m[K^~~~~~~~~~~~~[m[K
+[3.453s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:218:6:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[Khandle_accepted_move_profile_position[m[K’ declared void
+[3.453s]   218 | void [01;31m[KEpos2Gateway[m[K::handle_accepted_move_profile_position(
+[3.453s]       |      [01;31m[K^~~~~~~~~~~~[m[K
+[3.453s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:219:5:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kconst[m[K’
+[3.453s]   219 |     [01;31m[Kconst[m[K std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle){
+[3.453s]       |     [01;31m[K^~~~~[m[K
+[3.743s] gmake[2]: *** [CMakeFiles/epos_motor_thread.dir/build.make:76: CMakeFiles/epos_motor_thread.dir/src/epos_motor_thread.cpp.o] Error 1
+[3.743s] gmake[2]: *** Waiting for unfinished jobs....
+[4.061s] gmake[2]: *** [CMakeFiles/epos_motor_thread.dir/build.make:90: CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o] Error 1
+[4.061s] gmake[1]: *** [CMakeFiles/Makefile2:644: CMakeFiles/epos_motor_thread.dir/all] Error 2
+[4.061s] gmake: *** [Makefile:146: all] Error 2
+[4.063s] Invoked command in '/home/ockta/ocktabot_ws/build/cpp_motor_thread' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ockta/ocktabot_ws/build/cpp_motor_thread -- -j12 -l12

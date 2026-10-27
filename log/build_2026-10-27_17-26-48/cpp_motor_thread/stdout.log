@@ -1,0 +1,25 @@
+[  2%] Built target cpp_motor_thread__rosidl_generator_type_description
+[  5%] Built target cpp_motor_thread__rs
+[  5%] Built target ament_cmake_python_copy_cpp_motor_thread
+[  7%] Built target cpp_motor_thread__cpp
+[ 21%] Built target cpp_motor_thread__rosidl_generator_c
+[ 57%] Built target cpp_motor_thread__rosidl_typesupport_fastrtps_cpp
+[ 57%] Built target cpp_motor_thread__rosidl_typesupport_fastrtps_c
+[ 57%] Built target cpp_motor_thread__rosidl_typesupport_introspection_c
+[ 57%] Built target cpp_motor_thread__rosidl_typesupport_cpp
+[ 60%] Built target cpp_motor_thread__rosidl_typesupport_introspection_cpp
+[ 68%] Built target cpp_motor_thread__rosidl_typesupport_c
+[ 68%] Built target cpp_motor_thread
+[ 71%] [32mBuilding CXX object CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o[0m
+[ 73%] Built target cpp_motor_thread__py
+[ 78%] Built target cpp_motor_thread__rosidl_generator_py
+[ 94%] Built target cpp_motor_thread_s__rosidl_typesupport_introspection_c
+[ 94%] Built target cpp_motor_thread_s__rosidl_typesupport_c
+[ 94%] Built target cpp_motor_thread_s__rosidl_typesupport_fastrtps_c
+running egg_info
+writing cpp_motor_thread.egg-info/PKG-INFO
+writing dependency_links to cpp_motor_thread.egg-info/dependency_links.txt
+writing top-level names to cpp_motor_thread.egg-info/top_level.txt
+reading manifest file 'cpp_motor_thread.egg-info/SOURCES.txt'
+writing manifest file 'cpp_motor_thread.egg-info/SOURCES.txt'
+[ 94%] Built target ament_cmake_python_build_cpp_motor_thread_egg

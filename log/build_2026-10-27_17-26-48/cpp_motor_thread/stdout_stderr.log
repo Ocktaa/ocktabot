@@ -1,0 +1,52 @@
+[  2%] Built target cpp_motor_thread__rosidl_generator_type_description
+[  5%] Built target cpp_motor_thread__rs
+[  5%] Built target ament_cmake_python_copy_cpp_motor_thread
+[  7%] Built target cpp_motor_thread__cpp
+[ 21%] Built target cpp_motor_thread__rosidl_generator_c
+[ 57%] Built target cpp_motor_thread__rosidl_typesupport_fastrtps_cpp
+[ 57%] Built target cpp_motor_thread__rosidl_typesupport_fastrtps_c
+[ 57%] Built target cpp_motor_thread__rosidl_typesupport_introspection_c
+[ 57%] Built target cpp_motor_thread__rosidl_typesupport_cpp
+[ 60%] Built target cpp_motor_thread__rosidl_typesupport_introspection_cpp
+[ 68%] Built target cpp_motor_thread__rosidl_typesupport_c
+[ 68%] Built target cpp_motor_thread
+[ 71%] [32mBuilding CXX object CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o[0m
+[ 73%] Built target cpp_motor_thread__py
+[ 78%] Built target cpp_motor_thread__rosidl_generator_py
+[ 94%] Built target cpp_motor_thread_s__rosidl_typesupport_introspection_c
+[ 94%] Built target cpp_motor_thread_s__rosidl_typesupport_c
+[ 94%] Built target cpp_motor_thread_s__rosidl_typesupport_fastrtps_c
+running egg_info
+writing cpp_motor_thread.egg-info/PKG-INFO
+writing dependency_links to cpp_motor_thread.egg-info/dependency_links.txt
+writing top-level names to cpp_motor_thread.egg-info/top_level.txt
+reading manifest file 'cpp_motor_thread.egg-info/SOURCES.txt'
+writing manifest file 'cpp_motor_thread.egg-info/SOURCES.txt'
+[ 94%] Built target ament_cmake_python_build_cpp_motor_thread_egg
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:[m[K In member function ‘[01m[Kvoid cpp_motor_thread::Epos2Gateway::[01;32m[KhaltMovement[m[K(short unsigned int)[m[K’:
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:110:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kvcs_mutex_[m[K’ was not declared in this scope
+  110 |     std::lock_guard<std::mutex> lock([01;31m[Kvcs_mutex_[m[K);
+      |                                      [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:[m[K In member function ‘[01m[Kvoid cpp_motor_thread::Epos2Gateway::[01;32m[KprepareProfilePosition[m[K(std::shared_ptr<std_srvs::srv::Trigger_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Trigger_Response_<std::allocator<void> > >)[m[K’:
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:115:98:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krequest[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  115 | osition([01;35m[Kconst std::shared_ptr<std_srvs::srv::Trigger::Request> request[m[K,
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:[m[K In member function ‘[01m[Kvoid cpp_motor_thread::Epos2Gateway::[01;32m[KmoveProfilePosition[m[K(std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition> >)[m[K’:
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:156:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kvcs_mutex_[m[K’ was not declared in this scope
+  156 |         std::lock_guard<std::mutex> lock([01;31m[Kvcs_mutex_[m[K);
+      |                                          [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:169:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std::__shared_ptr_access<cpp_motor_thread::action::MoveProfilePosition_Result_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::element_type = struct cpp_motor_thread::action::MoveProfilePosition_Result_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct cpp_motor_thread::action::MoveProfilePosition_Result_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kend_position[m[K’; did you mean ‘[01m[Kend_positoin[m[K’?
+  169 |                 result->[01;31m[Kend_position[m[K = getPosition(goal->node);
+      |                         [01;31m[K^~~~~~~~~~~~[m[K
+      |                         [32m[Kend_positoin[m[K
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:182:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kvcs_mutex_[m[K’ was not declared in this scope
+  182 |                 std::lock_guard<std::mutex> lock([01;31m[Kvcs_mutex_[m[K);
+      |                                                  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:196:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std::__shared_ptr_access<cpp_motor_thread::action::MoveProfilePosition_Result_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::element_type = struct cpp_motor_thread::action::MoveProfilePosition_Result_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct cpp_motor_thread::action::MoveProfilePosition_Result_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kend_position[m[K’; did you mean ‘[01m[Kend_positoin[m[K’?
+  196 |         result->[01;31m[Kend_position[m[K = getPosition(goal->node);
+      |                 [01;31m[K^~~~~~~~~~~~[m[K
+      |                 [32m[Kend_positoin[m[K
+gmake[2]: *** [CMakeFiles/epos_motor_thread.dir/build.make:90: CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:644: CMakeFiles/epos_motor_thread.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

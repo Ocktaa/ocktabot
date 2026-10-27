@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from cpp_motor_thread/action/MoveProfilePosition.action
+// generated code does not contain a copyright notice
+
+
+module cpp_motor_thread {
+  module action {
+    struct MoveProfilePosition_Goal {
+      uint16 node;
+
+      int32 goal_position;
+    };
+    struct MoveProfilePosition_Result {
+      int32 end_position;
+    };
+    struct MoveProfilePosition_Feedback {
+      int32 current_position;
+    };
+  };
+};

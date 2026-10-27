@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "cpp_motor_thread/action/MoveProfilePosition_Result",
+      "fields": [
+        {
+          "name": "end_position",
+          "type": {
+            "type_id": 6,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "cpp_motor_thread/action/MoveProfilePosition_Result",
+      "hash_string": "RIHS01_a7bee4555988ca99bc676855bc54a80da7c3bdb2133d94212bddfcfefb496c6c"
+    }
+  ]
+}

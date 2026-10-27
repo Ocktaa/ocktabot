@@ -1,0 +1,2 @@
+Invoking command in '/home/ockta/ocktabot_ws/build/cpp_motor_thread': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ockta/ocktabot_ws/build/cpp_motor_thread -- -j12 -l12
+Invoked command in '/home/ockta/ocktabot_ws/build/cpp_motor_thread' returned '2': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ockta/ocktabot_ws/build/cpp_motor_thread -- -j12 -l12

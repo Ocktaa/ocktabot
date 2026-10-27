@@ -1,0 +1,6 @@
+uint16 node
+int32 goal_position
+---
+int32 end_position
+---
+int32 current_position

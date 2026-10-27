@@ -1,0 +1,276 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-41b4c13aa59869b07467.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20
+					]
+				},
+				{
+					"build" : "cpp_motor_thread__py",
+					"jsonFile" : "directory-cpp_motor_thread__py-27192848de833ab73026.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/ockta/ocktabot_ws/build/cpp_motor_thread/cpp_motor_thread__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "cpp_motor_thread__rs",
+					"jsonFile" : "directory-cpp_motor_thread__rs-c5643a9987d2d48cb237.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/ockta/ocktabot_ws/build/cpp_motor_thread/cpp_motor_thread__rs",
+					"targetIndexes" : 
+					[
+						14
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "cpp_motor_thread",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_cpp_motor_thread_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_cpp_motor_thread_egg-3210761b10b10256d098.json",
+					"name" : "ament_cmake_python_build_cpp_motor_thread_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_cpp_motor_thread::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_cpp_motor_thread-a439f39173eb39fa2e4f.json",
+					"name" : "ament_cmake_python_copy_cpp_motor_thread",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_motor_thread::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_motor_thread-dbe429769c1a5f817908.json",
+					"name" : "cpp_motor_thread",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_motor_thread__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_motor_thread__cpp-a9b18e5c91af138d4643.json",
+					"name" : "cpp_motor_thread__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "cpp_motor_thread__py::@43d5ac73a34018be77e2",
+					"jsonFile" : "target-cpp_motor_thread__py-a9eb5e315cfdf176bebc.json",
+					"name" : "cpp_motor_thread__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_motor_thread__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_motor_thread__rosidl_generator_c-8b3ee0b557aa33e3f80f.json",
+					"name" : "cpp_motor_thread__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_motor_thread__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_motor_thread__rosidl_generator_py-1041b0fae0dc07ed5227.json",
+					"name" : "cpp_motor_thread__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_motor_thread__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_motor_thread__rosidl_generator_type_description-e107ddf5db47946a7f27.json",
+					"name" : "cpp_motor_thread__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_motor_thread__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_motor_thread__rosidl_typesupport_c-e14b43b5c59bae5c7275.json",
+					"name" : "cpp_motor_thread__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_motor_thread__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_motor_thread__rosidl_typesupport_cpp-287c4a83ecb3e40dbd72.json",
+					"name" : "cpp_motor_thread__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_motor_thread__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_motor_thread__rosidl_typesupport_fastrtps_c-46ca1e0b9a87e02c051f.json",
+					"name" : "cpp_motor_thread__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_motor_thread__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_motor_thread__rosidl_typesupport_fastrtps_cpp-0a9eb5f6f138109d7334.json",
+					"name" : "cpp_motor_thread__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_motor_thread__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_motor_thread__rosidl_typesupport_introspection_c-751b3604bed02ee01340.json",
+					"name" : "cpp_motor_thread__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_motor_thread__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_motor_thread__rosidl_typesupport_introspection_cpp-aead10aa7737666fd6b5.json",
+					"name" : "cpp_motor_thread__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "cpp_motor_thread__rs::@37194f43943982b47641",
+					"jsonFile" : "target-cpp_motor_thread__rs-ec802f5f0a4d2aa81967.json",
+					"name" : "cpp_motor_thread__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_motor_thread_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_motor_thread_s__rosidl_typesupport_c-b1ad7c386c07086e7dbc.json",
+					"name" : "cpp_motor_thread_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_motor_thread_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_motor_thread_s__rosidl_typesupport_fastrtps_c-ccab7df11612e2ac162c.json",
+					"name" : "cpp_motor_thread_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_motor_thread_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_motor_thread_s__rosidl_typesupport_introspection_c-18b016204a6a01e34123.json",
+					"name" : "cpp_motor_thread_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cpp_motor_thread_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cpp_motor_thread_uninstall-4234f26df9b03b451af1.json",
+					"name" : "cpp_motor_thread_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "epos_motor_thread::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-epos_motor_thread-386e5d57b8f051481d7e.json",
+					"name" : "epos_motor_thread",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-080a7fdeb93118452ce5.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ockta/ocktabot_ws/build/cpp_motor_thread",
+		"source" : "/home/ockta/ocktabot_ws/src/cpp_motor_thread"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

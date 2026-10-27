@@ -1,0 +1,218 @@
+[0.000000] (-) TimerEvent: {}
+[0.000134] (cpp_motor_thread) JobQueued: {'identifier': 'cpp_motor_thread', 'dependencies': OrderedDict()}
+[0.000375] (cpp_motor_thread) JobStarted: {'identifier': 'cpp_motor_thread'}
+[0.004201] (cpp_motor_thread) JobProgress: {'identifier': 'cpp_motor_thread', 'progress': 'cmake'}
+[0.004508] (cpp_motor_thread) JobProgress: {'identifier': 'cpp_motor_thread', 'progress': 'build'}
+[0.004921] (cpp_motor_thread) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ockta/ocktabot_ws/build/cpp_motor_thread', '--', '-j12', '-l12'], 'cwd': '/home/ockta/ocktabot_ws/build/cpp_motor_thread', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ockta', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ockta', 'OLDPWD': '/home/ockta/Downloads', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2431', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ockta', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ockta', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/home/ockta/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ockta-robot:@/tmp/.ICE-unix/2400,unix/ockta-robot:/tmp/.ICE-unix/2400', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/8c30a4c0_0a10_4641_afaf_9a732357afa1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.99', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ockta/ocktabot_ws/build/cpp_motor_thread', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/ockta/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.038712] (cpp_motor_thread) StdoutLine: {'line': b'[  2%] Built target cpp_motor_thread__rs\n'}
+[0.038916] (cpp_motor_thread) StdoutLine: {'line': b'[  5%] Built target cpp_motor_thread__rosidl_generator_type_description\n'}
+[0.044531] (cpp_motor_thread) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_cpp_motor_thread\n'}
+[0.052804] (cpp_motor_thread) StdoutLine: {'line': b'[  7%] Built target cpp_motor_thread__cpp\n'}
+[0.053993] (cpp_motor_thread) StdoutLine: {'line': b'[ 21%] Built target cpp_motor_thread__rosidl_generator_c\n'}
+[0.078294] (cpp_motor_thread) StdoutLine: {'line': b'[ 28%] Built target cpp_motor_thread__rosidl_typesupport_introspection_c\n'}
+[0.079720] (cpp_motor_thread) StdoutLine: {'line': b'[ 36%] Built target cpp_motor_thread__rosidl_typesupport_c\n'}
+[0.080469] (cpp_motor_thread) StdoutLine: {'line': b'[ 44%] Built target cpp_motor_thread__rosidl_typesupport_introspection_cpp\n'}
+[0.080752] (cpp_motor_thread) StdoutLine: {'line': b'[ 52%] Built target cpp_motor_thread__rosidl_typesupport_cpp\n'}
+[0.084229] (cpp_motor_thread) StdoutLine: {'line': b'[ 60%] Built target cpp_motor_thread__rosidl_typesupport_fastrtps_cpp\n'}
+[0.084452] (cpp_motor_thread) StdoutLine: {'line': b'[ 68%] Built target cpp_motor_thread__rosidl_typesupport_fastrtps_c\n'}
+[0.095395] (cpp_motor_thread) StdoutLine: {'line': b'[ 68%] Built target cpp_motor_thread\n'}
+[0.099835] (-) TimerEvent: {}
+[0.103443] (cpp_motor_thread) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o\x1b[0m\n'}
+[0.105877] (cpp_motor_thread) StdoutLine: {'line': b'[ 73%] Built target cpp_motor_thread__py\n'}
+[0.118866] (cpp_motor_thread) StdoutLine: {'line': b'[ 78%] Built target cpp_motor_thread__rosidl_generator_py\n'}
+[0.132711] (cpp_motor_thread) StdoutLine: {'line': b'[ 94%] Built target cpp_motor_thread_s__rosidl_typesupport_fastrtps_c\n'}
+[0.132880] (cpp_motor_thread) StdoutLine: {'line': b'[ 94%] Built target cpp_motor_thread_s__rosidl_typesupport_introspection_c\n'}
+[0.132953] (cpp_motor_thread) StdoutLine: {'line': b'[ 94%] Built target cpp_motor_thread_s__rosidl_typesupport_c\n'}
+[0.187477] (cpp_motor_thread) StdoutLine: {'line': b'running egg_info\n'}
+[0.197721] (cpp_motor_thread) StdoutLine: {'line': b'writing cpp_motor_thread.egg-info/PKG-INFO\n'}
+[0.197873] (cpp_motor_thread) StdoutLine: {'line': b'writing dependency_links to cpp_motor_thread.egg-info/dependency_links.txt\n'}
+[0.197980] (cpp_motor_thread) StdoutLine: {'line': b'writing top-level names to cpp_motor_thread.egg-info/top_level.txt\n'}
+[0.199885] (-) TimerEvent: {}
+[0.227130] (cpp_motor_thread) StdoutLine: {'line': b"reading manifest file 'cpp_motor_thread.egg-info/SOURCES.txt'\n"}
+[0.227484] (cpp_motor_thread) StdoutLine: {'line': b"writing manifest file 'cpp_motor_thread.egg-info/SOURCES.txt'\n"}
+[0.243712] (cpp_motor_thread) StdoutLine: {'line': b'[ 94%] Built target ament_cmake_python_build_cpp_motor_thread_egg\n'}
+[0.299980] (-) TimerEvent: {}
+[0.400188] (-) TimerEvent: {}
+[0.500389] (-) TimerEvent: {}
+[0.600589] (-) TimerEvent: {}
+[0.700793] (-) TimerEvent: {}
+[0.800995] (-) TimerEvent: {}
+[0.901197] (-) TimerEvent: {}
+[1.001401] (-) TimerEvent: {}
+[1.101603] (-) TimerEvent: {}
+[1.201841] (-) TimerEvent: {}
+[1.302066] (-) TimerEvent: {}
+[1.402276] (-) TimerEvent: {}
+[1.442757] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid cpp_motor_thread::Epos2Gateway::\x1b[01;32m\x1b[KprepareProfilePosition\x1b[m\x1b[K(std::shared_ptr<std_srvs::srv::Trigger_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Trigger_Response_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.442947] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:115:98:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Krequest\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.443027] (cpp_motor_thread) StderrLine: {'line': b'  115 | void Epos2Gateway::prepareProfilePosition(\x1b[01;35m\x1b[Kconst std::shared_ptr<std_srvs::srv::Trigger::Request> request\x1b[m\x1b[K,\n'}
+[1.443092] (cpp_motor_thread) StderrLine: {'line': b'      |                                           \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[1.502362] (-) TimerEvent: {}
+[1.602573] (-) TimerEvent: {}
+[1.702765] (-) TimerEvent: {}
+[1.802969] (-) TimerEvent: {}
+[1.903170] (-) TimerEvent: {}
+[2.003367] (-) TimerEvent: {}
+[2.103576] (-) TimerEvent: {}
+[2.203781] (-) TimerEvent: {}
+[2.303983] (-) TimerEvent: {}
+[2.404184] (-) TimerEvent: {}
+[2.504441] (-) TimerEvent: {}
+[2.604708] (-) TimerEvent: {}
+[2.704915] (-) TimerEvent: {}
+[2.805106] (-) TimerEvent: {}
+[2.905294] (-) TimerEvent: {}
+[3.005480] (-) TimerEvent: {}
+[3.105671] (-) TimerEvent: {}
+[3.205860] (-) TimerEvent: {}
+[3.306057] (-) TimerEvent: {}
+[3.406244] (-) TimerEvent: {}
+[3.506432] (-) TimerEvent: {}
+[3.606627] (-) TimerEvent: {}
+[3.627155] (cpp_motor_thread) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX executable epos_motor_thread\x1b[0m\n'}
+[3.706711] (-) TimerEvent: {}
+[3.806973] (-) TimerEvent: {}
+[3.848103] (cpp_motor_thread) StdoutLine: {'line': b'[100%] Built target epos_motor_thread\n'}
+[3.854143] (cpp_motor_thread) CommandEnded: {'returncode': 0}
+[3.854541] (cpp_motor_thread) JobProgress: {'identifier': 'cpp_motor_thread', 'progress': 'install'}
+[3.859119] (cpp_motor_thread) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ockta/ocktabot_ws/build/cpp_motor_thread'], 'cwd': '/home/ockta/ocktabot_ws/build/cpp_motor_thread', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ockta', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ockta', 'OLDPWD': '/home/ockta/Downloads', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2431', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ockta', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ockta', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/home/ockta/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ockta-robot:@/tmp/.ICE-unix/2400,unix/ockta-robot:/tmp/.ICE-unix/2400', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/8c30a4c0_0a10_4641_afaf_9a732357afa1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.99', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ockta/ocktabot_ws/build/cpp_motor_thread', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/ockta/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[3.863442] (cpp_motor_thread) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.863550] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/ament_index/resource_index/rosidl_interfaces/cpp_motor_thread\n'}
+[3.863659] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/action/MoveProfilePosition.json\n'}
+[3.863753] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread\n'}
+[3.863828] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action\n'}
+[3.863898] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail\n'}
+[3.863994] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/move_profile_position__description.c\n'}
+[3.864064] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/move_profile_position__functions.c\n'}
+[3.864131] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/move_profile_position__struct.h\n'}
+[3.864229] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/move_profile_position__type_support.h\n'}
+[3.864323] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/move_profile_position__type_support.c\n'}
+[3.864390] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/move_profile_position__functions.h\n'}
+[3.864451] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/move_profile_position.h\n'}
+[3.864541] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/msg\n'}
+[3.864610] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.864670] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/environment/library_path.sh\n'}
+[3.864739] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/environment/library_path.dsv\n'}
+[3.864821] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/libcpp_motor_thread__rosidl_generator_c.so\n'}
+[3.864892] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread\n'}
+[3.864954] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action\n'}
+[3.865027] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail\n'}
+[3.865106] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/move_profile_position__rosidl_typesupport_fastrtps_c.h\n'}
+[3.865179] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/msg\n'}
+[3.865249] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.865314] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/libcpp_motor_thread__rosidl_typesupport_fastrtps_c.so\n'}
+[3.865393] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread\n'}
+[3.865468] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action\n'}
+[3.865529] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail\n'}
+[3.865588] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/move_profile_position__builder.hpp\n'}
+[3.865649] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/move_profile_position__struct.hpp\n'}
+[3.865711] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/move_profile_position__type_support.hpp\n'}
+[3.865771] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/move_profile_position__traits.hpp\n'}
+[3.865833] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/move_profile_position.hpp\n'}
+[3.865897] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/msg\n'}
+[3.865960] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[3.866019] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread\n'}
+[3.866078] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action\n'}
+[3.866139] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail\n'}
+[3.866198] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/dds_fastrtps\n'}
+[3.866260] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/move_profile_position__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.866321] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/msg\n'}
+[3.866384] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.866446] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/libcpp_motor_thread__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.866509] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread\n'}
+[3.866573] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action\n'}
+[3.866636] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail\n'}
+[3.866694] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/move_profile_position__rosidl_typesupport_introspection_c.h\n'}
+[3.866756] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/move_profile_position__type_support.c\n'}
+[3.866817] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/msg\n'}
+[3.866880] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.866940] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/libcpp_motor_thread__rosidl_typesupport_introspection_c.so\n'}
+[3.867004] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/libcpp_motor_thread__rosidl_typesupport_c.so\n'}
+[3.867063] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread\n'}
+[3.867122] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action\n'}
+[3.867181] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail\n'}
+[3.867240] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/move_profile_position__type_support.cpp\n'}
+[3.867302] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/move_profile_position__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.867360] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/libcpp_motor_thread__rosidl_typesupport_introspection_cpp.so\n'}
+[3.867418] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/libcpp_motor_thread__rosidl_typesupport_cpp.so\n'}
+[3.867478] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/environment/pythonpath.sh\n'}
+[3.867536] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/environment/pythonpath.dsv\n'}
+[3.867597] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread-0.0.0-py3.12.egg-info\n'}
+[3.867654] (cpp_motor_thread) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[3.867717] (cpp_motor_thread) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[3.867777] (cpp_motor_thread) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[3.867836] (cpp_motor_thread) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[3.867898] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread\n'}
+[3.867958] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/action\n'}
+[3.868017] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/action/__init__.py\n'}
+[3.868079] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/action/_move_profile_position.py\n'}
+[3.868138] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/action/_move_profile_position_s.c\n'}
+[3.868196] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/_cpp_motor_thread_s.ep.rosidl_typesupport_c.c\n'}
+[3.868257] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/__init__.py\n'}
+[3.868317] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/_cpp_motor_thread_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[3.868376] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/_cpp_motor_thread_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[3.868438] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/cpp_motor_thread_s__rosidl_typesupport_fastrtps_c.so\n'}
+[3.868499] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/cpp_motor_thread_s__rosidl_typesupport_introspection_c.so\n'}
+[3.868558] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/cpp_motor_thread_s__rosidl_typesupport_c.so\n'}
+[3.887691] (cpp_motor_thread) StdoutLine: {'line': b"Listing '/home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread'...\n"}
+[3.887780] (cpp_motor_thread) StdoutLine: {'line': b"Listing '/home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/action'...\n"}
+[3.891068] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/cpp_motor_thread_s__rosidl_typesupport_fastrtps_c.so\n'}
+[3.891214] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/cpp_motor_thread_s__rosidl_typesupport_introspection_c.so\n'}
+[3.891333] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/cpp_motor_thread_s__rosidl_typesupport_c.so\n'}
+[3.891524] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/libcpp_motor_thread__rosidl_generator_py.so\n'}
+[3.891625] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/rust\n'}
+[3.891696] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/rust/src\n'}
+[3.891748] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/rust/src/action.rs\n'}
+[3.891794] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/rust/src/action\n'}
+[3.891861] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/rust/src/action/rmw.rs\n'}
+[3.891912] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/rust/src/lib.rs\n'}
+[3.891957] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/rust/Cargo.toml\n'}
+[3.891993] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/rust/build.rs\n'}
+[3.892039] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/action/MoveProfilePosition.idl\n'}
+[3.892075] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/action/MoveProfilePosition.action\n'}
+[3.892111] (cpp_motor_thread) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/cpp_motor_thread/epos_motor_thread\n'}
+[3.893823] (cpp_motor_thread) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/cpp_motor_thread/epos_motor_thread" to ""\n'}
+[3.893880] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/ament_index/resource_index/package_run_dependencies/cpp_motor_thread\n'}
+[3.893930] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/ament_index/resource_index/parent_prefix_path/cpp_motor_thread\n'}
+[3.893981] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/environment/ament_prefix_path.sh\n'}
+[3.894021] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/environment/ament_prefix_path.dsv\n'}
+[3.894069] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/environment/path.sh\n'}
+[3.894115] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/environment/path.dsv\n'}
+[3.894165] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/local_setup.bash\n'}
+[3.894201] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/local_setup.sh\n'}
+[3.894234] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/local_setup.zsh\n'}
+[3.894271] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/local_setup.dsv\n'}
+[3.894307] (cpp_motor_thread) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/package.dsv\n'}
+[3.894356] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/ament_index/resource_index/packages/cpp_motor_thread\n'}
+[3.894402] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/export_cpp_motor_thread__rosidl_generator_cExport.cmake\n'}
+[3.894440] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/export_cpp_motor_thread__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.894491] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/export_cpp_motor_thread__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[3.894529] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/export_cpp_motor_thread__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[3.894575] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/export_cpp_motor_thread__rosidl_generator_cppExport.cmake\n'}
+[3.894628] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/export_cpp_motor_thread__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[3.894665] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/export_cpp_motor_thread__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[3.894713] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/cpp_motor_thread__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.894755] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/cpp_motor_thread__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.894808] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/cpp_motor_thread__rosidl_typesupport_cExport.cmake\n'}
+[3.894844] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/cpp_motor_thread__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.894893] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/cpp_motor_thread__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.894929] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/cpp_motor_thread__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.894976] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/cpp_motor_thread__rosidl_typesupport_cppExport.cmake\n'}
+[3.895011] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/cpp_motor_thread__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.895054] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/export_cpp_motor_thread__rosidl_generator_pyExport.cmake\n'}
+[3.895104] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/export_cpp_motor_thread__rosidl_generator_pyExport-noconfig.cmake\n'}
+[3.895153] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/rosidl_cmake-extras.cmake\n'}
+[3.895192] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.895233] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.895281] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.895340] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.895386] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.895421] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.895456] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/rosidl_cmake_aggregate_target-extras.cmake\n'}
+[3.895492] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/cpp_motor_threadConfig.cmake\n'}
+[3.895527] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/cpp_motor_threadConfig-version.cmake\n'}
+[3.895562] (cpp_motor_thread) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/package.xml\n'}
+[3.896680] (cpp_motor_thread) CommandEnded: {'returncode': 0}
+[3.907124] (-) TimerEvent: {}
+[3.909064] (cpp_motor_thread) JobEnded: {'identifier': 'cpp_motor_thread', 'rc': 0}
+[3.909456] (-) EventReactorShutdown: {}

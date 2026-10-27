@@ -1,0 +1,35 @@
+[0.005s] Invoking command in '/home/ockta/ocktabot_ws/build/cpp_motor_thread': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ockta/ocktabot_ws/build/cpp_motor_thread -- -j12 -l12
+[0.035s] [  5%] Built target cpp_motor_thread__rs
+[0.035s] [  5%] Built target cpp_motor_thread__rosidl_generator_type_description
+[0.040s] [  5%] Built target ament_cmake_python_copy_cpp_motor_thread
+[0.046s] [  7%] Built target cpp_motor_thread__cpp
+[0.046s] [ 21%] Built target cpp_motor_thread__rosidl_generator_c
+[0.066s] [ 28%] Built target cpp_motor_thread__rosidl_typesupport_introspection_c
+[0.067s] [ 36%] Built target cpp_motor_thread__rosidl_typesupport_c
+[0.067s] [ 44%] Built target cpp_motor_thread__rosidl_typesupport_fastrtps_cpp
+[0.068s] [ 52%] Built target cpp_motor_thread__rosidl_typesupport_fastrtps_c
+[0.070s] [ 60%] Built target cpp_motor_thread__rosidl_typesupport_introspection_cpp
+[0.071s] [ 68%] Built target cpp_motor_thread__rosidl_typesupport_cpp
+[0.081s] [ 68%] Built target cpp_motor_thread
+[0.092s] [ 73%] Built target cpp_motor_thread__py
+[0.092s] [ 73%] [32mBuilding CXX object CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o[0m
+[0.103s] [ 78%] Built target cpp_motor_thread__rosidl_generator_py
+[0.116s] [ 94%] Built target cpp_motor_thread_s__rosidl_typesupport_fastrtps_c
+[0.116s] [ 94%] Built target cpp_motor_thread_s__rosidl_typesupport_c
+[0.116s] [ 94%] Built target cpp_motor_thread_s__rosidl_typesupport_introspection_c
+[0.178s] running egg_info
+[0.188s] writing cpp_motor_thread.egg-info/PKG-INFO
+[0.188s] writing dependency_links to cpp_motor_thread.egg-info/dependency_links.txt
+[0.189s] writing top-level names to cpp_motor_thread.egg-info/top_level.txt
+[0.217s] reading manifest file 'cpp_motor_thread.egg-info/SOURCES.txt'
+[0.218s] writing manifest file 'cpp_motor_thread.egg-info/SOURCES.txt'
+[0.229s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:5:10:[m[K [01;31m[Kfatal error: [m[Kalgorith: No such file or directory
+[0.229s]     5 | #include [01;31m[K<algorith>[m[K
+[0.229s]       |          [01;31m[K^~~~~~~~~~[m[K
+[0.229s] compilation terminated.
+[0.231s] gmake[2]: *** [CMakeFiles/epos_motor_thread.dir/build.make:90: CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o] Error 1
+[0.231s] gmake[1]: *** [CMakeFiles/Makefile2:644: CMakeFiles/epos_motor_thread.dir/all] Error 2
+[0.231s] gmake[1]: *** Waiting for unfinished jobs....
+[0.234s] [ 94%] Built target ament_cmake_python_build_cpp_motor_thread_egg
+[0.235s] gmake: *** [Makefile:146: all] Error 2
+[0.236s] Invoked command in '/home/ockta/ocktabot_ws/build/cpp_motor_thread' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ockta/ocktabot_ws/build/cpp_motor_thread -- -j12 -l12

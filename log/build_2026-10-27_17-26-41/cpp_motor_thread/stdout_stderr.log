@@ -1,0 +1,33 @@
+[  5%] Built target cpp_motor_thread__rs
+[  5%] Built target cpp_motor_thread__rosidl_generator_type_description
+[  5%] Built target ament_cmake_python_copy_cpp_motor_thread
+[  7%] Built target cpp_motor_thread__cpp
+[ 21%] Built target cpp_motor_thread__rosidl_generator_c
+[ 28%] Built target cpp_motor_thread__rosidl_typesupport_introspection_c
+[ 36%] Built target cpp_motor_thread__rosidl_typesupport_c
+[ 44%] Built target cpp_motor_thread__rosidl_typesupport_fastrtps_cpp
+[ 52%] Built target cpp_motor_thread__rosidl_typesupport_fastrtps_c
+[ 60%] Built target cpp_motor_thread__rosidl_typesupport_introspection_cpp
+[ 68%] Built target cpp_motor_thread__rosidl_typesupport_cpp
+[ 68%] Built target cpp_motor_thread
+[ 73%] Built target cpp_motor_thread__py
+[ 73%] [32mBuilding CXX object CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o[0m
+[ 78%] Built target cpp_motor_thread__rosidl_generator_py
+[ 94%] Built target cpp_motor_thread_s__rosidl_typesupport_fastrtps_c
+[ 94%] Built target cpp_motor_thread_s__rosidl_typesupport_c
+[ 94%] Built target cpp_motor_thread_s__rosidl_typesupport_introspection_c
+running egg_info
+writing cpp_motor_thread.egg-info/PKG-INFO
+writing dependency_links to cpp_motor_thread.egg-info/dependency_links.txt
+writing top-level names to cpp_motor_thread.egg-info/top_level.txt
+reading manifest file 'cpp_motor_thread.egg-info/SOURCES.txt'
+writing manifest file 'cpp_motor_thread.egg-info/SOURCES.txt'
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:5:10:[m[K [01;31m[Kfatal error: [m[Kalgorith: No such file or directory
+    5 | #include [01;31m[K<algorith>[m[K
+      |          [01;31m[K^~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/epos_motor_thread.dir/build.make:90: CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:644: CMakeFiles/epos_motor_thread.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 94%] Built target ament_cmake_python_build_cpp_motor_thread_egg
+gmake: *** [Makefile:146: all] Error 2

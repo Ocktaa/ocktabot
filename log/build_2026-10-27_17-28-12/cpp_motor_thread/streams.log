@@ -1,0 +1,252 @@
+[0.006s] Invoking command in '/home/ockta/ocktabot_ws/build/cpp_motor_thread': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ockta/ocktabot_ws/build/cpp_motor_thread -- -j12 -l12
+[0.021s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.090s] -- Found rclcpp: 28.1.22 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.107s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.113s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.120s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.129s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.170s] -- Found rmw_implementation_cmake: 7.3.4 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.171s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.211s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.258s] -- Found sensor_msgs: 5.3.8 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[0.295s] -- Found std_srvs: 5.3.8 (/opt/ros/jazzy/share/std_srvs/cmake)
+[0.305s] -- Found rclcpp_action: 28.1.22 (/opt/ros/jazzy/share/rclcpp_action/cmake)
+[0.332s] -- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.338s] -- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.502s] -- Found ament_cmake_ros: 0.12.2 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[0.608s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.649s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.649s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[0.825s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[0.853s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.855s] -- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.860s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.860s] -- Configured cppcheck include dirs: /home/ockta/ocktabot_ws/src/cpp_motor_thread/include
+[0.860s] -- Configured cppcheck exclude dirs and/or files: 
+[0.860s] -- Added test 'lint_cmake' to check CMake code style
+[0.861s] -- Added test 'uncrustify' to check C / C++ code style
+[0.861s] -- Configured uncrustify additional arguments: 
+[0.861s] -- Added test 'xmllint' to check XML markup files
+[0.862s] -- Configuring done (0.8s)
+[0.889s] -- Generating done (0.0s)
+[0.899s] -- Build files have been written to: /home/ockta/ocktabot_ws/build/cpp_motor_thread
+[0.921s] [  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[0.921s] [  5%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[0.926s] [  5%] Built target ament_cmake_python_copy_cpp_motor_thread
+[1.044s] [  5%] Built target cpp_motor_thread__rosidl_generator_type_description
+[1.049s] running egg_info
+[1.049s] [  7%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.061s] [ 10%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.068s] writing cpp_motor_thread.egg-info/PKG-INFO
+[1.072s] writing dependency_links to cpp_motor_thread.egg-info/dependency_links.txt
+[1.072s] writing top-level names to cpp_motor_thread.egg-info/top_level.txt
+[1.086s] [ 10%] Built target cpp_motor_thread__rs
+[1.110s] reading manifest file 'cpp_motor_thread.egg-info/SOURCES.txt'
+[1.110s] writing manifest file 'cpp_motor_thread.egg-info/SOURCES.txt'
+[1.127s] [ 10%] Built target ament_cmake_python_build_cpp_motor_thread_egg
+[1.308s] [ 10%] Built target cpp_motor_thread__cpp
+[1.328s] [ 18%] [32mBuilding C object CMakeFiles/cpp_motor_thread__rosidl_generator_c.dir/rosidl_generator_c/cpp_motor_thread/action/detail/move_profile_position__type_support.c.o[0m
+[1.328s] [ 18%] [32mBuilding C object CMakeFiles/cpp_motor_thread__rosidl_generator_c.dir/rosidl_generator_c/cpp_motor_thread/action/detail/move_profile_position__description.c.o[0m
+[1.328s] [ 18%] [32mBuilding C object CMakeFiles/cpp_motor_thread__rosidl_generator_c.dir/rosidl_generator_c/cpp_motor_thread/action/detail/move_profile_position__functions.c.o[0m
+[1.428s] [ 21%] [32m[1mLinking C shared library libcpp_motor_thread__rosidl_generator_c.so[0m
+[1.451s] [ 21%] Built target cpp_motor_thread__rosidl_generator_c
+[1.460s] [ 31%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.461s] [ 31%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.461s] [ 31%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.461s] [ 31%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.461s] [ 34%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.462s] [ 36%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.644s] [ 39%] [32mBuilding CXX object CMakeFiles/cpp_motor_thread__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cpp_motor_thread/action/move_profile_position__type_support.cpp.o[0m
+[1.644s] [ 42%] [32mBuilding CXX object CMakeFiles/cpp_motor_thread__rosidl_typesupport_c.dir/rosidl_typesupport_c/cpp_motor_thread/action/move_profile_position__type_support.cpp.o[0m
+[1.674s] [ 44%] [32mBuilding CXX object CMakeFiles/cpp_motor_thread__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cpp_motor_thread/action/detail/move_profile_position__type_support.cpp.o[0m
+[1.683s] [ 47%] [32mBuilding C object CMakeFiles/cpp_motor_thread__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cpp_motor_thread/action/detail/move_profile_position__type_support.c.o[0m
+[1.692s] [ 50%] [32m[1mLinking CXX shared library libcpp_motor_thread__rosidl_typesupport_c.so[0m
+[1.717s] [ 50%] Built target cpp_motor_thread__rosidl_typesupport_c
+[1.722s] [ 52%] [32m[1mLinking C shared library libcpp_motor_thread__rosidl_typesupport_introspection_c.so[0m
+[1.740s] [ 52%] Built target cpp_motor_thread__rosidl_typesupport_introspection_c
+[1.765s] [ 55%] [32mBuilding CXX object CMakeFiles/cpp_motor_thread__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cpp_motor_thread/action/detail/dds_fastrtps/move_profile_position__type_support.cpp.o[0m
+[1.809s] [ 57%] [32mBuilding CXX object CMakeFiles/cpp_motor_thread__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cpp_motor_thread/action/detail/move_profile_position__type_support_c.cpp.o[0m
+[2.029s] [ 60%] [32m[1mLinking CXX shared library libcpp_motor_thread__rosidl_typesupport_cpp.so[0m
+[2.075s] [ 60%] Built target cpp_motor_thread__rosidl_typesupport_cpp
+[2.094s] [ 63%] [32m[1mLinking CXX shared library libcpp_motor_thread__rosidl_typesupport_introspection_cpp.so[0m
+[2.095s] [ 65%] [32mBuilding CXX object CMakeFiles/epos_motor_thread.dir/src/epos_motor_thread.cpp.o[0m
+[2.095s] [ 68%] [32mBuilding CXX object CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o[0m
+[2.140s] [ 68%] Built target cpp_motor_thread__rosidl_typesupport_introspection_cpp
+[2.153s] [ 71%] [32m[1mLinking CXX shared library libcpp_motor_thread__rosidl_typesupport_fastrtps_c.so[0m
+[2.183s] [ 71%] Built target cpp_motor_thread__rosidl_typesupport_fastrtps_c
+[2.338s] [ 73%] [32m[1mLinking CXX shared library libcpp_motor_thread__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.384s] [ 73%] Built target cpp_motor_thread__rosidl_typesupport_fastrtps_cpp
+[2.395s] [ 73%] Built target cpp_motor_thread
+[2.406s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.779s] [ 76%] Built target cpp_motor_thread__py
+[2.792s] [ 78%] [32mBuilding C object CMakeFiles/cpp_motor_thread__rosidl_generator_py.dir/rosidl_generator_py/cpp_motor_thread/action/_move_profile_position_s.c.o[0m
+[2.910s] [ 81%] [32m[1mLinking C shared library libcpp_motor_thread__rosidl_generator_py.so[0m
+[2.937s] [ 81%] Built target cpp_motor_thread__rosidl_generator_py
+[2.950s] [ 86%] [32mBuilding C object CMakeFiles/cpp_motor_thread_s__rosidl_typesupport_c.dir/rosidl_generator_py/cpp_motor_thread/_cpp_motor_thread_s.ep.rosidl_typesupport_c.c.o[0m
+[2.950s] [ 86%] [32mBuilding C object CMakeFiles/cpp_motor_thread_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/cpp_motor_thread/_cpp_motor_thread_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.950s] [ 89%] [32mBuilding C object CMakeFiles/cpp_motor_thread_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/cpp_motor_thread/_cpp_motor_thread_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.028s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/cpp_motor_thread/cpp_motor_thread_s__rosidl_typesupport_introspection_c.so[0m
+[3.029s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/cpp_motor_thread/cpp_motor_thread_s__rosidl_typesupport_c.so[0m
+[3.029s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/cpp_motor_thread/cpp_motor_thread_s__rosidl_typesupport_fastrtps_c.so[0m
+[3.047s] [ 97%] Built target cpp_motor_thread_s__rosidl_typesupport_c
+[3.047s] [ 97%] Built target cpp_motor_thread_s__rosidl_typesupport_fastrtps_c
+[3.047s] [ 97%] Built target cpp_motor_thread_s__rosidl_typesupport_introspection_c
+[3.535s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:[m[K In member function ‘[01m[Kvoid cpp_motor_thread::Epos2Gateway::[01;32m[KprepareProfilePosition[m[K(std::shared_ptr<std_srvs::srv::Trigger_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Trigger_Response_<std::allocator<void> > >)[m[K’:
+[3.535s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:115:98:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krequest[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.535s]   115 | void Epos2Gateway::prepareProfilePosition([01;35m[Kconst std::shared_ptr<std_srvs::srv::Trigger::Request> request[m[K,
+[3.535s]       |                                           [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[5.668s] [100%] [32m[1mLinking CXX executable epos_motor_thread[0m
+[5.876s] [100%] Built target epos_motor_thread
+[5.882s] Invoked command in '/home/ockta/ocktabot_ws/build/cpp_motor_thread' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ockta/ocktabot_ws/build/cpp_motor_thread -- -j12 -l12
+[5.887s] Invoking command in '/home/ockta/ocktabot_ws/build/cpp_motor_thread': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ockta/ocktabot_ws/build/cpp_motor_thread
+[5.891s] -- Install configuration: ""
+[5.891s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/ament_index/resource_index/rosidl_interfaces/cpp_motor_thread
+[5.891s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/action/MoveProfilePosition.json
+[5.891s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread
+[5.891s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action
+[5.891s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail
+[5.891s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/move_profile_position__description.c
+[5.891s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/move_profile_position__functions.c
+[5.891s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/move_profile_position__struct.h
+[5.891s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/move_profile_position__type_support.h
+[5.891s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/move_profile_position__type_support.c
+[5.891s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/move_profile_position__functions.h
+[5.892s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/move_profile_position.h
+[5.892s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/msg
+[5.892s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/msg/rosidl_generator_c__visibility_control.h
+[5.892s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/environment/library_path.sh
+[5.892s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/environment/library_path.dsv
+[5.892s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/libcpp_motor_thread__rosidl_generator_c.so
+[5.892s] -- Set non-toolchain portion of runtime path of "/home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/libcpp_motor_thread__rosidl_generator_c.so" to ""
+[5.892s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread
+[5.892s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action
+[5.892s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail
+[5.892s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/move_profile_position__rosidl_typesupport_fastrtps_c.h
+[5.892s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/msg
+[5.892s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.892s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/libcpp_motor_thread__rosidl_typesupport_fastrtps_c.so
+[5.892s] -- Set non-toolchain portion of runtime path of "/home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/libcpp_motor_thread__rosidl_typesupport_fastrtps_c.so" to ""
+[5.892s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread
+[5.892s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action
+[5.892s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail
+[5.892s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/move_profile_position__builder.hpp
+[5.893s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/move_profile_position__struct.hpp
+[5.893s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/move_profile_position__type_support.hpp
+[5.893s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/move_profile_position__traits.hpp
+[5.893s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/move_profile_position.hpp
+[5.893s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/msg
+[5.893s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/msg/rosidl_generator_cpp__visibility_control.hpp
+[5.893s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread
+[5.893s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action
+[5.893s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail
+[5.893s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/dds_fastrtps
+[5.893s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/move_profile_position__rosidl_typesupport_fastrtps_cpp.hpp
+[5.893s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/msg
+[5.893s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.893s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/libcpp_motor_thread__rosidl_typesupport_fastrtps_cpp.so
+[5.893s] -- Set non-toolchain portion of runtime path of "/home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/libcpp_motor_thread__rosidl_typesupport_fastrtps_cpp.so" to ""
+[5.893s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread
+[5.893s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action
+[5.893s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail
+[5.893s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/move_profile_position__rosidl_typesupport_introspection_c.h
+[5.893s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/move_profile_position__type_support.c
+[5.893s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/msg
+[5.893s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[5.893s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/libcpp_motor_thread__rosidl_typesupport_introspection_c.so
+[5.894s] -- Set non-toolchain portion of runtime path of "/home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/libcpp_motor_thread__rosidl_typesupport_introspection_c.so" to ""
+[5.894s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/libcpp_motor_thread__rosidl_typesupport_c.so
+[5.894s] -- Set non-toolchain portion of runtime path of "/home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/libcpp_motor_thread__rosidl_typesupport_c.so" to ""
+[5.894s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread
+[5.894s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action
+[5.894s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail
+[5.894s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/move_profile_position__type_support.cpp
+[5.894s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/include/cpp_motor_thread/cpp_motor_thread/action/detail/move_profile_position__rosidl_typesupport_introspection_cpp.hpp
+[5.894s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/libcpp_motor_thread__rosidl_typesupport_introspection_cpp.so
+[5.894s] -- Set non-toolchain portion of runtime path of "/home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/libcpp_motor_thread__rosidl_typesupport_introspection_cpp.so" to ""
+[5.894s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/libcpp_motor_thread__rosidl_typesupport_cpp.so
+[5.895s] -- Set non-toolchain portion of runtime path of "/home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/libcpp_motor_thread__rosidl_typesupport_cpp.so" to ""
+[5.895s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/environment/pythonpath.sh
+[5.895s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/environment/pythonpath.dsv
+[5.895s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread-0.0.0-py3.12.egg-info
+[5.895s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread-0.0.0-py3.12.egg-info/SOURCES.txt
+[5.895s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread-0.0.0-py3.12.egg-info/top_level.txt
+[5.895s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread-0.0.0-py3.12.egg-info/PKG-INFO
+[5.895s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread-0.0.0-py3.12.egg-info/dependency_links.txt
+[5.895s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread
+[5.895s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/action
+[5.895s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/action/__init__.py
+[5.895s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/action/_move_profile_position.py
+[5.895s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/action/_move_profile_position_s.c
+[5.895s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/_cpp_motor_thread_s.ep.rosidl_typesupport_c.c
+[5.895s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/__init__.py
+[5.895s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/_cpp_motor_thread_s.ep.rosidl_typesupport_fastrtps_c.c
+[5.895s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/_cpp_motor_thread_s.ep.rosidl_typesupport_introspection_c.c
+[5.895s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/cpp_motor_thread_s__rosidl_typesupport_fastrtps_c.so
+[5.895s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/cpp_motor_thread_s__rosidl_typesupport_introspection_c.so
+[5.895s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/cpp_motor_thread_s__rosidl_typesupport_c.so
+[5.929s] Listing '/home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread'...
+[5.929s] Compiling '/home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/__init__.py'...
+[5.929s] Listing '/home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/action'...
+[5.929s] Compiling '/home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/action/__init__.py'...
+[5.929s] Compiling '/home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/action/_move_profile_position.py'...
+[5.933s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/cpp_motor_thread_s__rosidl_typesupport_fastrtps_c.so
+[5.933s] -- Set non-toolchain portion of runtime path of "/home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/cpp_motor_thread_s__rosidl_typesupport_fastrtps_c.so" to ""
+[5.933s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/cpp_motor_thread_s__rosidl_typesupport_introspection_c.so
+[5.933s] -- Set non-toolchain portion of runtime path of "/home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/cpp_motor_thread_s__rosidl_typesupport_introspection_c.so" to ""
+[5.933s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/cpp_motor_thread_s__rosidl_typesupport_c.so
+[5.933s] -- Set non-toolchain portion of runtime path of "/home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/python3.12/site-packages/cpp_motor_thread/cpp_motor_thread_s__rosidl_typesupport_c.so" to ""
+[5.933s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/libcpp_motor_thread__rosidl_generator_py.so
+[5.934s] -- Set non-toolchain portion of runtime path of "/home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/libcpp_motor_thread__rosidl_generator_py.so" to ""
+[5.934s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/rust
+[5.934s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/rust/src
+[5.934s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/rust/src/action.rs
+[5.934s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/rust/src/action
+[5.934s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/rust/src/action/rmw.rs
+[5.934s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/rust/src/lib.rs
+[5.934s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/rust/Cargo.toml
+[5.934s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/rust/build.rs
+[5.934s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/action/MoveProfilePosition.idl
+[5.934s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/action/MoveProfilePosition.action
+[5.934s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/cpp_motor_thread/epos_motor_thread
+[5.935s] -- Set non-toolchain portion of runtime path of "/home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/cpp_motor_thread/epos_motor_thread" to ""
+[5.935s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/ament_index/resource_index/package_run_dependencies/cpp_motor_thread
+[5.935s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/ament_index/resource_index/parent_prefix_path/cpp_motor_thread
+[5.935s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/environment/ament_prefix_path.sh
+[5.936s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/environment/ament_prefix_path.dsv
+[5.936s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/environment/path.sh
+[5.936s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/environment/path.dsv
+[5.936s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/local_setup.bash
+[5.936s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/local_setup.sh
+[5.936s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/local_setup.zsh
+[5.936s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/local_setup.dsv
+[5.936s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/package.dsv
+[5.936s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/ament_index/resource_index/packages/cpp_motor_thread
+[5.936s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/export_cpp_motor_thread__rosidl_generator_cExport.cmake
+[5.936s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/export_cpp_motor_thread__rosidl_generator_cExport-noconfig.cmake
+[5.936s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/export_cpp_motor_thread__rosidl_typesupport_fastrtps_cExport.cmake
+[5.936s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/export_cpp_motor_thread__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[5.936s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/export_cpp_motor_thread__rosidl_generator_cppExport.cmake
+[5.936s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/export_cpp_motor_thread__rosidl_typesupport_fastrtps_cppExport.cmake
+[5.936s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/export_cpp_motor_thread__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[5.936s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/cpp_motor_thread__rosidl_typesupport_introspection_cExport.cmake
+[5.936s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/cpp_motor_thread__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[5.936s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/cpp_motor_thread__rosidl_typesupport_cExport.cmake
+[5.936s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/cpp_motor_thread__rosidl_typesupport_cExport-noconfig.cmake
+[5.936s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/cpp_motor_thread__rosidl_typesupport_introspection_cppExport.cmake
+[5.936s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/cpp_motor_thread__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[5.936s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/cpp_motor_thread__rosidl_typesupport_cppExport.cmake
+[5.937s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/cpp_motor_thread__rosidl_typesupport_cppExport-noconfig.cmake
+[5.937s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/export_cpp_motor_thread__rosidl_generator_pyExport.cmake
+[5.937s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/export_cpp_motor_thread__rosidl_generator_pyExport-noconfig.cmake
+[5.937s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/rosidl_cmake-extras.cmake
+[5.937s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.937s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.937s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/ament_cmake_export_libraries-extras.cmake
+[5.937s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/ament_cmake_export_targets-extras.cmake
+[5.937s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[5.937s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.937s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[5.937s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/cpp_motor_threadConfig.cmake
+[5.937s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/cpp_motor_threadConfig-version.cmake
+[5.937s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/package.xml
+[5.938s] Invoked command in '/home/ockta/ocktabot_ws/build/cpp_motor_thread' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ockta/ocktabot_ws/build/cpp_motor_thread

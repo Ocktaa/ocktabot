@@ -1,0 +1,419 @@
+[0.000000] (-) TimerEvent: {}
+[0.000089] (cpp_motor_thread) JobQueued: {'identifier': 'cpp_motor_thread', 'dependencies': OrderedDict()}
+[0.000111] (cpp_motor_thread) JobStarted: {'identifier': 'cpp_motor_thread'}
+[0.003909] (cpp_motor_thread) JobProgress: {'identifier': 'cpp_motor_thread', 'progress': 'cmake'}
+[0.004226] (cpp_motor_thread) JobProgress: {'identifier': 'cpp_motor_thread', 'progress': 'build'}
+[0.004630] (cpp_motor_thread) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ockta/ocktabot_ws/build/cpp_motor_thread', '--', '-j12', '-l12'], 'cwd': '/home/ockta/ocktabot_ws/build/cpp_motor_thread', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ockta', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ockta', 'OLDPWD': '/home/ockta/Downloads', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2431', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ockta', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ockta', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/home/ockta/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ockta-robot:@/tmp/.ICE-unix/2400,unix/ockta-robot:/tmp/.ICE-unix/2400', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/8c30a4c0_0a10_4641_afaf_9a732357afa1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.99', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ockta/ocktabot_ws/build/cpp_motor_thread', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/ockta/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.020844] (cpp_motor_thread) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.087118] (cpp_motor_thread) StdoutLine: {'line': b'-- Found rclcpp: 28.1.22 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.099536] (-) TimerEvent: {}
+[0.103453] (cpp_motor_thread) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.108979] (cpp_motor_thread) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.116042] (cpp_motor_thread) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.124206] (cpp_motor_thread) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.162012] (cpp_motor_thread) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.4 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.162927] (cpp_motor_thread) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.199677] (-) TimerEvent: {}
+[0.200867] (cpp_motor_thread) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.244901] (cpp_motor_thread) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.8 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[0.279771] (cpp_motor_thread) StdoutLine: {'line': b'-- Found std_srvs: 5.3.8 (/opt/ros/jazzy/share/std_srvs/cmake)\n'}
+[0.292364] (cpp_motor_thread) StdoutLine: {'line': b'-- Found rclcpp_action: 28.1.22 (/opt/ros/jazzy/share/rclcpp_action/cmake)\n'}
+[0.299788] (-) TimerEvent: {}
+[0.322247] (cpp_motor_thread) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.328656] (cpp_motor_thread) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[0.399868] (-) TimerEvent: {}
+[0.481854] (cpp_motor_thread) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.2 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[0.499978] (-) TimerEvent: {}
+[0.593499] (cpp_motor_thread) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.600084] (-) TimerEvent: {}
+[0.637281] (cpp_motor_thread) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.638116] (cpp_motor_thread) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[0.700207] (-) TimerEvent: {}
+[0.800395] (-) TimerEvent: {}
+[0.804549] (cpp_motor_thread) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[0.833093] (cpp_motor_thread) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.834837] (cpp_motor_thread) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[0.839874] (cpp_motor_thread) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.840240] (cpp_motor_thread) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/ockta/ocktabot_ws/src/cpp_motor_thread/include\n'}
+[0.840282] (cpp_motor_thread) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.840597] (cpp_motor_thread) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.841076] (cpp_motor_thread) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.841146] (cpp_motor_thread) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.841295] (cpp_motor_thread) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.842353] (cpp_motor_thread) StdoutLine: {'line': b'-- Configuring done (0.8s)\n'}
+[0.869407] (cpp_motor_thread) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[0.878771] (cpp_motor_thread) StdoutLine: {'line': b'-- Build files have been written to: /home/ockta/ocktabot_ws/build/cpp_motor_thread\n'}
+[0.900479] (-) TimerEvent: {}
+[0.900790] (cpp_motor_thread) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[0.900938] (cpp_motor_thread) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[0.906360] (cpp_motor_thread) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_cpp_motor_thread\n'}
+[1.000553] (-) TimerEvent: {}
+[1.022842] (cpp_motor_thread) StdoutLine: {'line': b'[  5%] Built target cpp_motor_thread__rosidl_generator_type_description\n'}
+[1.028256] (cpp_motor_thread) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.029446] (cpp_motor_thread) StdoutLine: {'line': b'running egg_info\n'}
+[1.033975] (cpp_motor_thread) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.040697] (cpp_motor_thread) StdoutLine: {'line': b'writing cpp_motor_thread.egg-info/PKG-INFO\n'}
+[1.040876] (cpp_motor_thread) StdoutLine: {'line': b'writing dependency_links to cpp_motor_thread.egg-info/dependency_links.txt\n'}
+[1.040953] (cpp_motor_thread) StdoutLine: {'line': b'writing top-level names to cpp_motor_thread.egg-info/top_level.txt\n'}
+[1.049337] (cpp_motor_thread) StdoutLine: {'line': b'[ 10%] Built target cpp_motor_thread__rs\n'}
+[1.070096] (cpp_motor_thread) StdoutLine: {'line': b"reading manifest file 'cpp_motor_thread.egg-info/SOURCES.txt'\n"}
+[1.070473] (cpp_motor_thread) StdoutLine: {'line': b"writing manifest file 'cpp_motor_thread.egg-info/SOURCES.txt'\n"}
+[1.087263] (cpp_motor_thread) StdoutLine: {'line': b'[ 10%] Built target ament_cmake_python_build_cpp_motor_thread_egg\n'}
+[1.100621] (-) TimerEvent: {}
+[1.200816] (-) TimerEvent: {}
+[1.265023] (cpp_motor_thread) StdoutLine: {'line': b'[ 10%] Built target cpp_motor_thread__cpp\n'}
+[1.279731] (cpp_motor_thread) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/cpp_motor_thread__rosidl_generator_c.dir/rosidl_generator_c/cpp_motor_thread/action/detail/move_profile_position__description.c.o\x1b[0m\n'}
+[1.279875] (cpp_motor_thread) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/cpp_motor_thread__rosidl_generator_c.dir/rosidl_generator_c/cpp_motor_thread/action/detail/move_profile_position__functions.c.o\x1b[0m\n'}
+[1.279922] (cpp_motor_thread) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/cpp_motor_thread__rosidl_generator_c.dir/rosidl_generator_c/cpp_motor_thread/action/detail/move_profile_position__type_support.c.o\x1b[0m\n'}
+[1.300917] (-) TimerEvent: {}
+[1.379360] (cpp_motor_thread) StdoutLine: {'line': b'[ 21%] \x1b[32m\x1b[1mLinking C shared library libcpp_motor_thread__rosidl_generator_c.so\x1b[0m\n'}
+[1.401028] (-) TimerEvent: {}
+[1.401700] (cpp_motor_thread) StdoutLine: {'line': b'[ 21%] Built target cpp_motor_thread__rosidl_generator_c\n'}
+[1.412403] (cpp_motor_thread) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.412588] (cpp_motor_thread) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[1.412681] (cpp_motor_thread) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.412757] (cpp_motor_thread) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.412817] (cpp_motor_thread) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.412873] (cpp_motor_thread) StdoutLine: {'line': b'[ 36%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.501110] (-) TimerEvent: {}
+[1.600358] (cpp_motor_thread) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/cpp_motor_thread__rosidl_typesupport_c.dir/rosidl_typesupport_c/cpp_motor_thread/action/move_profile_position__type_support.cpp.o\x1b[0m\n'}
+[1.601181] (-) TimerEvent: {}
+[1.605026] (cpp_motor_thread) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/cpp_motor_thread__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cpp_motor_thread/action/move_profile_position__type_support.cpp.o\x1b[0m\n'}
+[1.632661] (cpp_motor_thread) StdoutLine: {'line': b'[ 44%] \x1b[32m\x1b[1mLinking CXX shared library libcpp_motor_thread__rosidl_typesupport_c.so\x1b[0m\n'}
+[1.633814] (cpp_motor_thread) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/cpp_motor_thread__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cpp_motor_thread/action/detail/move_profile_position__type_support.cpp.o\x1b[0m\n'}
+[1.644563] (cpp_motor_thread) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/cpp_motor_thread__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cpp_motor_thread/action/detail/move_profile_position__type_support.c.o\x1b[0m\n'}
+[1.656323] (cpp_motor_thread) StdoutLine: {'line': b'[ 50%] Built target cpp_motor_thread__rosidl_typesupport_c\n'}
+[1.681682] (cpp_motor_thread) StdoutLine: {'line': b'[ 52%] \x1b[32m\x1b[1mLinking C shared library libcpp_motor_thread__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[1.700138] (cpp_motor_thread) StdoutLine: {'line': b'[ 52%] Built target cpp_motor_thread__rosidl_typesupport_introspection_c\n'}
+[1.701261] (-) TimerEvent: {}
+[1.710078] (cpp_motor_thread) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/cpp_motor_thread__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cpp_motor_thread/action/detail/dds_fastrtps/move_profile_position__type_support.cpp.o\x1b[0m\n'}
+[1.729098] (cpp_motor_thread) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/cpp_motor_thread__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cpp_motor_thread/action/detail/move_profile_position__type_support_c.cpp.o\x1b[0m\n'}
+[1.801370] (-) TimerEvent: {}
+[1.901636] (-) TimerEvent: {}
+[1.985876] (cpp_motor_thread) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX shared library libcpp_motor_thread__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.001698] (-) TimerEvent: {}
+[2.031904] (cpp_motor_thread) StdoutLine: {'line': b'[ 60%] Built target cpp_motor_thread__rosidl_typesupport_cpp\n'}
+[2.050885] (cpp_motor_thread) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/epos_motor_thread.dir/src/epos_motor_thread.cpp.o\x1b[0m\n'}
+[2.051051] (cpp_motor_thread) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library libcpp_motor_thread__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.051128] (cpp_motor_thread) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o\x1b[0m\n'}
+[2.058756] (cpp_motor_thread) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libcpp_motor_thread__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[2.089245] (cpp_motor_thread) StdoutLine: {'line': b'[ 71%] Built target cpp_motor_thread__rosidl_typesupport_fastrtps_c\n'}
+[2.096977] (cpp_motor_thread) StdoutLine: {'line': b'[ 71%] Built target cpp_motor_thread__rosidl_typesupport_introspection_cpp\n'}
+[2.101757] (-) TimerEvent: {}
+[2.201924] (-) TimerEvent: {}
+[2.276346] (cpp_motor_thread) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX shared library libcpp_motor_thread__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.302018] (-) TimerEvent: {}
+[2.323095] (cpp_motor_thread) StdoutLine: {'line': b'[ 73%] Built target cpp_motor_thread__rosidl_typesupport_fastrtps_cpp\n'}
+[2.334339] (cpp_motor_thread) StdoutLine: {'line': b'[ 73%] Built target cpp_motor_thread\n'}
+[2.345898] (cpp_motor_thread) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[2.402095] (-) TimerEvent: {}
+[2.502317] (-) TimerEvent: {}
+[2.602528] (-) TimerEvent: {}
+[2.702696] (-) TimerEvent: {}
+[2.708628] (cpp_motor_thread) StdoutLine: {'line': b'[ 76%] Built target cpp_motor_thread__py\n'}
+[2.721900] (cpp_motor_thread) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding C object CMakeFiles/cpp_motor_thread__rosidl_generator_py.dir/rosidl_generator_py/cpp_motor_thread/action/_move_profile_position_s.c.o\x1b[0m\n'}
+[2.802786] (-) TimerEvent: {}
+[2.838897] (cpp_motor_thread) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking C shared library libcpp_motor_thread__rosidl_generator_py.so\x1b[0m\n'}
+[2.865321] (cpp_motor_thread) StdoutLine: {'line': b'[ 81%] Built target cpp_motor_thread__rosidl_generator_py\n'}
+[2.878678] (cpp_motor_thread) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/cpp_motor_thread_s__rosidl_typesupport_c.dir/rosidl_generator_py/cpp_motor_thread/_cpp_motor_thread_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[2.878840] (cpp_motor_thread) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/cpp_motor_thread_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/cpp_motor_thread/_cpp_motor_thread_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[2.878910] (cpp_motor_thread) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/cpp_motor_thread_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/cpp_motor_thread/_cpp_motor_thread_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[2.902884] (-) TimerEvent: {}
+[2.954890] (cpp_motor_thread) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/cpp_motor_thread/cpp_motor_thread_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.955060] (cpp_motor_thread) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/cpp_motor_thread/cpp_motor_thread_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.955905] (cpp_motor_thread) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/cpp_motor_thread/cpp_motor_thread_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[2.973385] (cpp_motor_thread) StdoutLine: {'line': b'[ 97%] Built target cpp_motor_thread_s__rosidl_typesupport_introspection_c\n'}
+[2.973561] (cpp_motor_thread) StdoutLine: {'line': b'[ 97%] Built target cpp_motor_thread_s__rosidl_typesupport_c\n'}
+[2.974579] (cpp_motor_thread) StdoutLine: {'line': b'[ 97%] Built target cpp_motor_thread_s__rosidl_typesupport_fastrtps_c\n'}
+[3.002955] (-) TimerEvent: {}
+[3.103187] (-) TimerEvent: {}
+[3.203449] (-) TimerEvent: {}
+[3.303692] (-) TimerEvent: {}
+[3.313156] (cpp_motor_thread) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp:6\x1b[m\x1b[K:\n'}
+[3.313308] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:33:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[3.313359] (cpp_motor_thread) StderrLine: {'line': b'   33 |     \x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::GoalResponse handle_goal_move_profile_position(const rclcpp_action::GoalUUID & uuid,\n'}
+[3.313395] (cpp_motor_thread) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.314702] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:36:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[3.314798] (cpp_motor_thread) StderrLine: {'line': b'   36 |     \x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::CancelResponse handle_cancel_move_profile_position(\n'}
+[3.314840] (cpp_motor_thread) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.320140] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.320243] (cpp_motor_thread) StderrLine: {'line': b'   40 |         const std::shared_ptr<\x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);\n'}
+[3.320290] (cpp_motor_thread) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.320338] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:108:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.320375] (cpp_motor_thread) StderrLine: {'line': b'   40 |         const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition\x1b[01;31m\x1b[K>>\x1b[m\x1b[K goal_handle);\n'}
+[3.320411] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                                            \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.325494] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.325589] (cpp_motor_thread) StderrLine: {'line': b'   40 |         const std::shared_ptr<\x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);\n'}
+[3.325632] (cpp_motor_thread) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.325678] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:108:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.325718] (cpp_motor_thread) StderrLine: {'line': b'   40 |         const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition\x1b[01;31m\x1b[K>>\x1b[m\x1b[K goal_handle);\n'}
+[3.325754] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                                            \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.330848] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.331123] (cpp_motor_thread) StderrLine: {'line': b'   40 |         const std::shared_ptr<\x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);\n'}
+[3.331175] (cpp_motor_thread) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.331350] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:108:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.331403] (cpp_motor_thread) StderrLine: {'line': b'   40 |         const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition\x1b[01;31m\x1b[K>>\x1b[m\x1b[K goal_handle);\n'}
+[3.331443] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                                            \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.331485] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid template-id\n'}
+[3.331524] (cpp_motor_thread) StderrLine: {'line': b'   40 |         const \x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);\n'}
+[3.331592] (cpp_motor_thread) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[3.331629] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[3.331673] (cpp_motor_thread) StderrLine: {'line': b'   40 |         const std::shared_ptr<\x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);\n'}
+[3.331714] (cpp_motor_thread) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.331753] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:81:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcpp_motor_thread::action\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[3.331789] (cpp_motor_thread) StderrLine: {'line': b'   40 |         const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::\x1b[01;31m\x1b[Kaction\x1b[m\x1b[K::MoveProfilePosition>> goal_handle);\n'}
+[3.331825] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                 \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.331861] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing template argument list after \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr\x1b[m\x1b[K\xe2\x80\x99; template placeholder not permitted in parameter\n'}
+[3.331897] (cpp_motor_thread) StderrLine: {'line': b'   40 |         \x1b[01;31m\x1b[Kconst\x1b[m\x1b[K std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);\n'}
+[3.331933] (cpp_motor_thread) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.331967] (cpp_motor_thread) StderrLine: {'line': b'      |              \x1b[32m\x1b[K<>\x1b[m\x1b[K\n'}
+[3.332003] (cpp_motor_thread) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:53\x1b[m\x1b[K,\n'}
+[3.332039] (cpp_motor_thread) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/memory:80\x1b[m\x1b[K,\n'}
+[3.332077] (cpp_motor_thread) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp:1\x1b[m\x1b[K:\n'}
+[3.332114] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr_base.h:395:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> class std::shared_ptr\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[3.332153] (cpp_motor_thread) StderrLine: {'line': b'  395 |     class \x1b[01;36m\x1b[Kshared_ptr\x1b[m\x1b[K;\n'}
+[3.332190] (cpp_motor_thread) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.332224] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:108:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[3.332261] (cpp_motor_thread) StderrLine: {'line': b'   40 |         const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition\x1b[01;31m\x1b[K>>\x1b[m\x1b[K goal_handle);\n'}
+[3.332295] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                                            \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.332329] (cpp_motor_thread) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:3\x1b[m\x1b[K:\n'}
+[3.332362] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:33:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[3.332397] (cpp_motor_thread) StderrLine: {'line': b'   33 |     \x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::GoalResponse handle_goal_move_profile_position(const rclcpp_action::GoalUUID & uuid,\n'}
+[3.332431] (cpp_motor_thread) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.333115] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:36:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[3.333200] (cpp_motor_thread) StderrLine: {'line': b'   36 |     \x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::CancelResponse handle_cancel_move_profile_position(\n'}
+[3.333244] (cpp_motor_thread) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.336593] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.336686] (cpp_motor_thread) StderrLine: {'line': b'   42 |     void moveProfilePosition(const std::shared_ptr<\x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);\n'}
+[3.336730] (cpp_motor_thread) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.336769] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:129:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.336808] (cpp_motor_thread) StderrLine: {'line': b'   42 |     void moveProfilePosition(const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition\x1b[01;31m\x1b[K>>\x1b[m\x1b[K goal_handle);\n'}
+[3.336845] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                                                                 \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.338785] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.338880] (cpp_motor_thread) StderrLine: {'line': b'   40 |         const std::shared_ptr<\x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);\n'}
+[3.338927] (cpp_motor_thread) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.338968] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:108:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.339007] (cpp_motor_thread) StderrLine: {'line': b'   40 |         const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition\x1b[01;31m\x1b[K>>\x1b[m\x1b[K goal_handle);\n'}
+[3.339046] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                                            \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.342078] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.342156] (cpp_motor_thread) StderrLine: {'line': b'   42 |     void moveProfilePosition(const std::shared_ptr<\x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);\n'}
+[3.342198] (cpp_motor_thread) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.342238] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:129:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.342276] (cpp_motor_thread) StderrLine: {'line': b'   42 |     void moveProfilePosition(const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition\x1b[01;31m\x1b[K>>\x1b[m\x1b[K goal_handle);\n'}
+[3.342312] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                                                                 \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.344346] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.344397] (cpp_motor_thread) StderrLine: {'line': b'   40 |         const std::shared_ptr<\x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);\n'}
+[3.344435] (cpp_motor_thread) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.344472] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:108:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.344508] (cpp_motor_thread) StderrLine: {'line': b'   40 |         const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition\x1b[01;31m\x1b[K>>\x1b[m\x1b[K goal_handle);\n'}
+[3.344549] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                                            \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.347517] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.347568] (cpp_motor_thread) StderrLine: {'line': b'   42 |     void moveProfilePosition(const std::shared_ptr<\x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);\n'}
+[3.347608] (cpp_motor_thread) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.347649] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:129:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.347688] (cpp_motor_thread) StderrLine: {'line': b'   42 |     void moveProfilePosition(const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition\x1b[01;31m\x1b[K>>\x1b[m\x1b[K goal_handle);\n'}
+[3.347728] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                                                                 \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.347780] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid template-id\n'}
+[3.347819] (cpp_motor_thread) StderrLine: {'line': b'   42 |     void moveProfilePosition(const \x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);\n'}
+[3.347856] (cpp_motor_thread) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[3.347922] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[3.347958] (cpp_motor_thread) StderrLine: {'line': b'   42 |     void moveProfilePosition(const std::shared_ptr<\x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);\n'}
+[3.347994] (cpp_motor_thread) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.348032] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:102:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcpp_motor_thread::action\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[3.348070] (cpp_motor_thread) StderrLine: {'line': b'   42 |     void moveProfilePosition(const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::\x1b[01;31m\x1b[Kaction\x1b[m\x1b[K::MoveProfilePosition>> goal_handle);\n'}
+[3.348105] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                                      \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.348141] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing template argument list after \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr\x1b[m\x1b[K\xe2\x80\x99; template placeholder not permitted in parameter\n'}
+[3.348176] (cpp_motor_thread) StderrLine: {'line': b'   42 |     void moveProfilePosition(\x1b[01;31m\x1b[Kconst\x1b[m\x1b[K std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);\n'}
+[3.348210] (cpp_motor_thread) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.348245] (cpp_motor_thread) StderrLine: {'line': b'      |                                   \x1b[32m\x1b[K<>\x1b[m\x1b[K\n'}
+[3.348281] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr_base.h:395:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> class std::shared_ptr\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[3.348315] (cpp_motor_thread) StderrLine: {'line': b'  395 |     class \x1b[01;36m\x1b[Kshared_ptr\x1b[m\x1b[K;\n'}
+[3.348349] (cpp_motor_thread) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.348385] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:129:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[3.348422] (cpp_motor_thread) StderrLine: {'line': b'   42 |     void moveProfilePosition(const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition\x1b[01;31m\x1b[K>>\x1b[m\x1b[K goal_handle);\n'}
+[3.348459] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                                                                 \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.349864] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.349941] (cpp_motor_thread) StderrLine: {'line': b'   40 |         const std::shared_ptr<\x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);\n'}
+[3.349980] (cpp_motor_thread) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.350021] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:108:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.350063] (cpp_motor_thread) StderrLine: {'line': b'   40 |         const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition\x1b[01;31m\x1b[K>>\x1b[m\x1b[K goal_handle);\n'}
+[3.350127] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                                            \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.350167] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid template-id\n'}
+[3.350206] (cpp_motor_thread) StderrLine: {'line': b'   40 |         const \x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);\n'}
+[3.350242] (cpp_motor_thread) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[3.350278] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[3.350314] (cpp_motor_thread) StderrLine: {'line': b'   40 |         const std::shared_ptr<\x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);\n'}
+[3.350351] (cpp_motor_thread) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.350392] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:81:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcpp_motor_thread::action\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[3.350426] (cpp_motor_thread) StderrLine: {'line': b'   40 |         const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::\x1b[01;31m\x1b[Kaction\x1b[m\x1b[K::MoveProfilePosition>> goal_handle);\n'}
+[3.350462] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                 \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.350498] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing template argument list after \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr\x1b[m\x1b[K\xe2\x80\x99; template placeholder not permitted in parameter\n'}
+[3.350535] (cpp_motor_thread) StderrLine: {'line': b'   40 |         \x1b[01;31m\x1b[Kconst\x1b[m\x1b[K std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);\n'}
+[3.350571] (cpp_motor_thread) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.350605] (cpp_motor_thread) StderrLine: {'line': b'      |              \x1b[32m\x1b[K<>\x1b[m\x1b[K\n'}
+[3.350642] (cpp_motor_thread) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr.h:53\x1b[m\x1b[K,\n'}
+[3.350678] (cpp_motor_thread) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/memory:80\x1b[m\x1b[K,\n'}
+[3.350713] (cpp_motor_thread) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:173\x1b[m\x1b[K,\n'}
+[3.350749] (cpp_motor_thread) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:4\x1b[m\x1b[K:\n'}
+[3.350783] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr_base.h:395:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> class std::shared_ptr\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[3.350818] (cpp_motor_thread) StderrLine: {'line': b'  395 |     class \x1b[01;36m\x1b[Kshared_ptr\x1b[m\x1b[K;\n'}
+[3.350853] (cpp_motor_thread) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.350889] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:40:108:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[3.350924] (cpp_motor_thread) StderrLine: {'line': b'   40 |         const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition\x1b[01;31m\x1b[K>>\x1b[m\x1b[K goal_handle);\n'}
+[3.350958] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                                            \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.355582] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.355651] (cpp_motor_thread) StderrLine: {'line': b'   42 |     void moveProfilePosition(const std::shared_ptr<\x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);\n'}
+[3.355692] (cpp_motor_thread) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.355733] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:129:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.355770] (cpp_motor_thread) StderrLine: {'line': b'   42 |     void moveProfilePosition(const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition\x1b[01;31m\x1b[K>>\x1b[m\x1b[K goal_handle);\n'}
+[3.355807] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                                                                 \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.357450] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:49:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[3.357501] (cpp_motor_thread) StderrLine: {'line': b'   49 |     \x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::Server<cpp_motor_thread::action::MoveProfilePosition>::SharedPtr move_profile_position_action_;\n'}
+[3.357539] (cpp_motor_thread) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.361119] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.361173] (cpp_motor_thread) StderrLine: {'line': b'   42 |     void moveProfilePosition(const std::shared_ptr<\x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);\n'}
+[3.361211] (cpp_motor_thread) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.361247] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:129:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.361286] (cpp_motor_thread) StderrLine: {'line': b'   42 |     void moveProfilePosition(const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition\x1b[01;31m\x1b[K>>\x1b[m\x1b[K goal_handle);\n'}
+[3.361322] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                                                                 \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.366637] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.366730] (cpp_motor_thread) StderrLine: {'line': b'   42 |     void moveProfilePosition(const std::shared_ptr<\x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);\n'}
+[3.366780] (cpp_motor_thread) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.366815] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:129:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.366854] (cpp_motor_thread) StderrLine: {'line': b'   42 |     void moveProfilePosition(const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition\x1b[01;31m\x1b[K>>\x1b[m\x1b[K goal_handle);\n'}
+[3.366893] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                                                                 \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.366932] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid template-id\n'}
+[3.366969] (cpp_motor_thread) StderrLine: {'line': b'   42 |     void moveProfilePosition(const \x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);\n'}
+[3.367006] (cpp_motor_thread) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[3.367044] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[3.367080] (cpp_motor_thread) StderrLine: {'line': b'   42 |     void moveProfilePosition(const std::shared_ptr<\x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);\n'}
+[3.367117] (cpp_motor_thread) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.367154] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:102:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcpp_motor_thread::action\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[3.367190] (cpp_motor_thread) StderrLine: {'line': b'   42 |     void moveProfilePosition(const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::\x1b[01;31m\x1b[Kaction\x1b[m\x1b[K::MoveProfilePosition>> goal_handle);\n'}
+[3.367225] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                                      \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.367263] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing template argument list after \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr\x1b[m\x1b[K\xe2\x80\x99; template placeholder not permitted in parameter\n'}
+[3.367298] (cpp_motor_thread) StderrLine: {'line': b'   42 |     void moveProfilePosition(\x1b[01;31m\x1b[Kconst\x1b[m\x1b[K std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle);\n'}
+[3.367334] (cpp_motor_thread) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.367368] (cpp_motor_thread) StderrLine: {'line': b'      |                                   \x1b[32m\x1b[K<>\x1b[m\x1b[K\n'}
+[3.367404] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/shared_ptr_base.h:395:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> class std::shared_ptr\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[3.367440] (cpp_motor_thread) StderrLine: {'line': b'  395 |     class \x1b[01;36m\x1b[Kshared_ptr\x1b[m\x1b[K;\n'}
+[3.367475] (cpp_motor_thread) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.367508] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:42:129:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[3.367544] (cpp_motor_thread) StderrLine: {'line': b'   42 |     void moveProfilePosition(const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition\x1b[01;31m\x1b[K>>\x1b[m\x1b[K goal_handle);\n'}
+[3.367581] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                                                                 \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.376706] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:49:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[3.376761] (cpp_motor_thread) StderrLine: {'line': b'   49 |     \x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::Server<cpp_motor_thread::action::MoveProfilePosition>::SharedPtr move_profile_position_action_;\n'}
+[3.376807] (cpp_motor_thread) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.398005] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Kcpp_motor_thread::Epos2Gateway::\x1b[01;32m\x1b[KEpos2Gateway\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.398070] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:76:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmove_profile_position_action_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.398161] (cpp_motor_thread) StderrLine: {'line': b'   76 |     \x1b[01;31m\x1b[Kmove_profile_position_action_\x1b[m\x1b[K = rclcpp_action::create_server<cpp_motor_thread::action::MoveProfilePosition>(\n'}
+[3.398214] (cpp_motor_thread) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.398262] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:76:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[3.398310] (cpp_motor_thread) StderrLine: {'line': b'   76 |     move_profile_position_action_ = \x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::create_server<cpp_motor_thread::action::MoveProfilePosition>(\n'}
+[3.398346] (cpp_motor_thread) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.398383] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:76:84:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcpp_motor_thread::action\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[3.398418] (cpp_motor_thread) StderrLine: {'line': b'   76 |     move_profile_position_action_ = rclcpp_action::create_server<cpp_motor_thread::\x1b[01;31m\x1b[Kaction\x1b[m\x1b[K::MoveProfilePosition>(\n'}
+[3.398453] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                    \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.398488] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:77:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kleft operand of comma operator has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.398527] (cpp_motor_thread) StderrLine: {'line': b'   77 |         \x1b[01;35m\x1b[Kthis\x1b[m\x1b[K,\n'}
+[3.398562] (cpp_motor_thread) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[3.398598] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:79:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Khandle_goal_move_profile_position\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kcpp_motor_thread::Epos2Gateway\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.398636] (cpp_motor_thread) StderrLine: {'line': b'   79 |         std::bind(&Epos2Gateway::\x1b[01;31m\x1b[Khandle_goal_move_profile_position\x1b[m\x1b[K, this, _1, _2),\n'}
+[3.398674] (cpp_motor_thread) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.398709] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:80:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Khandle_cancel_move_profile_position\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kcpp_motor_thread::Epos2Gateway\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.398745] (cpp_motor_thread) StderrLine: {'line': b'   80 |         std::bind(&Epos2Gateway::\x1b[01;31m\x1b[Khandle_cancel_move_profile_position\x1b[m\x1b[K, this, _1),\n'}
+[3.398780] (cpp_motor_thread) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.401656] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:\x1b[m\x1b[K At global scope:\n'}
+[3.401698] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:106:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kvoid cpp_motor_thread::Epos2Gateway::\x1b[01;32m\x1b[KhaltMovement\x1b[m\x1b[K(short unsigned int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.401736] (cpp_motor_thread) StderrLine: {'line': b'  106 | void \x1b[01;31m\x1b[KEpos2Gateway\x1b[m\x1b[K::haltMovement(unsigned short node){\n'}
+[3.401772] (cpp_motor_thread) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.401809] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:106:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kno functions named \xe2\x80\x98\x1b[01m\x1b[Kvoid cpp_motor_thread::Epos2Gateway::\x1b[01;32m\x1b[KhaltMovement\x1b[m\x1b[K(short unsigned int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.401846] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:12:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass cpp_motor_thread::Epos2Gateway\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[3.401882] (cpp_motor_thread) StderrLine: {'line': b'   12 | class \x1b[01;36m\x1b[KEpos2Gateway\x1b[m\x1b[K: public rclcpp::Node{\n'}
+[3.401949] (cpp_motor_thread) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.401987] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid cpp_motor_thread::Epos2Gateway::\x1b[01;32m\x1b[KprepareProfilePosition\x1b[m\x1b[K(std::shared_ptr<std_srvs::srv::Trigger_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Trigger_Response_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.402026] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:113:98:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Krequest\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.402064] (cpp_motor_thread) StderrLine: {'line': b'  113 | void Epos2Gateway::prepareProfilePosition(\x1b[01;35m\x1b[Kconst std::shared_ptr<std_srvs::srv::Trigger::Request> request\x1b[m\x1b[K,\n'}
+[3.402102] (cpp_motor_thread) StderrLine: {'line': b'      |                                           \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[3.403744] (-) TimerEvent: {}
+[3.409218] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:\x1b[m\x1b[K At global scope:\n'}
+[3.409282] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:143:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.409324] (cpp_motor_thread) StderrLine: {'line': b'  143 |     const std::shared_ptr<\x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle){\n'}
+[3.409362] (cpp_motor_thread) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.409400] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:143:104:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.409437] (cpp_motor_thread) StderrLine: {'line': b'  143 |     const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition\x1b[01;31m\x1b[K>>\x1b[m\x1b[K goal_handle){\n'}
+[3.409472] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                                        \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.415273] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:143:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.415315] (cpp_motor_thread) StderrLine: {'line': b'  143 |     const std::shared_ptr<\x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle){\n'}
+[3.415351] (cpp_motor_thread) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.415387] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:143:104:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.415422] (cpp_motor_thread) StderrLine: {'line': b'  143 |     const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition\x1b[01;31m\x1b[K>>\x1b[m\x1b[K goal_handle){\n'}
+[3.415457] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                                        \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.421213] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:143:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.421253] (cpp_motor_thread) StderrLine: {'line': b'  143 |     const std::shared_ptr<\x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle){\n'}
+[3.421289] (cpp_motor_thread) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.421323] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:143:104:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.421360] (cpp_motor_thread) StderrLine: {'line': b'  143 |     const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition\x1b[01;31m\x1b[K>>\x1b[m\x1b[K goal_handle){\n'}
+[3.421398] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                                        \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.421437] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:143:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid template-id\n'}
+[3.421472] (cpp_motor_thread) StderrLine: {'line': b'  143 |     const \x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle){\n'}
+[3.421507] (cpp_motor_thread) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[3.427138] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:143:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.427185] (cpp_motor_thread) StderrLine: {'line': b'  143 |     const std::shared_ptr<\x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle){\n'}
+[3.427221] (cpp_motor_thread) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.427256] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:142:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kvariable or field \xe2\x80\x98\x1b[01m\x1b[KmoveProfilePosition\x1b[m\x1b[K\xe2\x80\x99 declared void\n'}
+[3.427293] (cpp_motor_thread) StderrLine: {'line': b'  142 | void \x1b[01;31m\x1b[KEpos2Gateway\x1b[m\x1b[K::moveProfilePosition(\n'}
+[3.427333] (cpp_motor_thread) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.427370] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:143:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kconst\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.427407] (cpp_motor_thread) StderrLine: {'line': b'  143 |     \x1b[01;31m\x1b[Kconst\x1b[m\x1b[K std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle){\n'}
+[3.427442] (cpp_motor_thread) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.428361] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:204:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[3.428403] (cpp_motor_thread) StderrLine: {'line': b'  204 | \x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::GoalResponse Epos2Gateway::handle_goal_move_profile_position(const rclcpp_action::GoalUUID & uuid,\n'}
+[3.428441] (cpp_motor_thread) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.429562] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:211:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[3.429600] (cpp_motor_thread) StderrLine: {'line': b'  211 | \x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::CancelResponse Epos2Gateway::handle_cancel_move_profile_position(\n'}
+[3.429636] (cpp_motor_thread) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.435481] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:219:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.435526] (cpp_motor_thread) StderrLine: {'line': b'  219 |     const std::shared_ptr<\x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle){\n'}
+[3.435570] (cpp_motor_thread) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.435611] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:219:104:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.435657] (cpp_motor_thread) StderrLine: {'line': b'  219 |     const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition\x1b[01;31m\x1b[K>>\x1b[m\x1b[K goal_handle){\n'}
+[3.435698] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                                        \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.441451] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:219:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.441493] (cpp_motor_thread) StderrLine: {'line': b'  219 |     const std::shared_ptr<\x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle){\n'}
+[3.441532] (cpp_motor_thread) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.441566] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:219:104:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.441603] (cpp_motor_thread) StderrLine: {'line': b'  219 |     const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition\x1b[01;31m\x1b[K>>\x1b[m\x1b[K goal_handle){\n'}
+[3.441642] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                                        \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.447364] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:219:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.447406] (cpp_motor_thread) StderrLine: {'line': b'  219 |     const std::shared_ptr<\x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle){\n'}
+[3.447442] (cpp_motor_thread) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.447477] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:219:104:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.447513] (cpp_motor_thread) StderrLine: {'line': b'  219 |     const std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition\x1b[01;31m\x1b[K>>\x1b[m\x1b[K goal_handle){\n'}
+[3.447550] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                                        \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[3.447585] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:219:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid template-id\n'}
+[3.447619] (cpp_motor_thread) StderrLine: {'line': b'  219 |     const \x1b[01;31m\x1b[Kstd\x1b[m\x1b[K::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle){\n'}
+[3.447656] (cpp_motor_thread) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[3.453296] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:219:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp_action\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.453335] (cpp_motor_thread) StderrLine: {'line': b'  219 |     const std::shared_ptr<\x1b[01;31m\x1b[Krclcpp_action\x1b[m\x1b[K::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle){\n'}
+[3.453372] (cpp_motor_thread) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.453406] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:218:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kvariable or field \xe2\x80\x98\x1b[01m\x1b[Khandle_accepted_move_profile_position\x1b[m\x1b[K\xe2\x80\x99 declared void\n'}
+[3.453443] (cpp_motor_thread) StderrLine: {'line': b'  218 | void \x1b[01;31m\x1b[KEpos2Gateway\x1b[m\x1b[K::handle_accepted_move_profile_position(\n'}
+[3.453481] (cpp_motor_thread) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.453516] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:219:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kconst\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.453553] (cpp_motor_thread) StderrLine: {'line': b'  219 |     \x1b[01;31m\x1b[Kconst\x1b[m\x1b[K std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition>> goal_handle){\n'}
+[3.453589] (cpp_motor_thread) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.503890] (-) TimerEvent: {}
+[3.604143] (-) TimerEvent: {}
+[3.704388] (-) TimerEvent: {}
+[3.742591] (cpp_motor_thread) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/epos_motor_thread.dir/build.make:76: CMakeFiles/epos_motor_thread.dir/src/epos_motor_thread.cpp.o] Error 1\n'}
+[3.742753] (cpp_motor_thread) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[3.804510] (-) TimerEvent: {}
+[3.904729] (-) TimerEvent: {}
+[4.004977] (-) TimerEvent: {}
+[4.060758] (cpp_motor_thread) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/epos_motor_thread.dir/build.make:90: CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o] Error 1\n'}
+[4.060958] (cpp_motor_thread) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:644: CMakeFiles/epos_motor_thread.dir/all] Error 2\n'}
+[4.061139] (cpp_motor_thread) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[4.062610] (cpp_motor_thread) CommandEnded: {'returncode': 2}
+[4.070042] (cpp_motor_thread) JobEnded: {'identifier': 'cpp_motor_thread', 'rc': 2}
+[4.080370] (-) EventReactorShutdown: {}

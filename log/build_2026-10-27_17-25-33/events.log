@@ -1,0 +1,154 @@
+[0.000000] (-) TimerEvent: {}
+[0.000118] (cpp_motor_thread) JobQueued: {'identifier': 'cpp_motor_thread', 'dependencies': OrderedDict()}
+[0.000356] (cpp_motor_thread) JobStarted: {'identifier': 'cpp_motor_thread'}
+[0.004271] (cpp_motor_thread) JobProgress: {'identifier': 'cpp_motor_thread', 'progress': 'cmake'}
+[0.004589] (cpp_motor_thread) JobProgress: {'identifier': 'cpp_motor_thread', 'progress': 'build'}
+[0.004992] (cpp_motor_thread) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ockta/ocktabot_ws/build/cpp_motor_thread', '--', '-j12', '-l12'], 'cwd': '/home/ockta/ocktabot_ws/build/cpp_motor_thread', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ockta', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ockta', 'OLDPWD': '/home/ockta/Downloads', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2431', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ockta', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ockta', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/home/ockta/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ockta-robot:@/tmp/.ICE-unix/2400,unix/ockta-robot:/tmp/.ICE-unix/2400', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/8c30a4c0_0a10_4641_afaf_9a732357afa1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.99', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ockta/ocktabot_ws/build/cpp_motor_thread', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/ockta/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.021154] (cpp_motor_thread) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.091216] (cpp_motor_thread) StdoutLine: {'line': b'-- Found rclcpp: 28.1.22 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.099883] (-) TimerEvent: {}
+[0.108966] (cpp_motor_thread) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.114857] (cpp_motor_thread) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.122270] (cpp_motor_thread) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.131060] (cpp_motor_thread) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.173133] (cpp_motor_thread) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.4 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.174036] (cpp_motor_thread) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.199966] (-) TimerEvent: {}
+[0.216136] (cpp_motor_thread) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.263808] (cpp_motor_thread) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.8 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[0.300046] (-) TimerEvent: {}
+[0.302266] (cpp_motor_thread) StdoutLine: {'line': b'-- Found std_srvs: 5.3.8 (/opt/ros/jazzy/share/std_srvs/cmake)\n'}
+[0.313190] (cpp_motor_thread) StdoutLine: {'line': b'-- Found rclcpp_action: 28.1.22 (/opt/ros/jazzy/share/rclcpp_action/cmake)\n'}
+[0.339838] (cpp_motor_thread) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.346648] (cpp_motor_thread) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[0.400121] (-) TimerEvent: {}
+[0.500303] (-) TimerEvent: {}
+[0.521064] (cpp_motor_thread) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.2 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[0.600375] (-) TimerEvent: {}
+[0.643323] (cpp_motor_thread) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.684566] (cpp_motor_thread) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.685347] (cpp_motor_thread) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[0.700443] (-) TimerEvent: {}
+[0.800603] (-) TimerEvent: {}
+[0.861321] (cpp_motor_thread) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[0.890028] (cpp_motor_thread) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.891831] (cpp_motor_thread) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[0.896906] (cpp_motor_thread) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.897270] (cpp_motor_thread) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/ockta/ocktabot_ws/src/cpp_motor_thread/include\n'}
+[0.897312] (cpp_motor_thread) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.897628] (cpp_motor_thread) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.898098] (cpp_motor_thread) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.898153] (cpp_motor_thread) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.898323] (cpp_motor_thread) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.899413] (cpp_motor_thread) StdoutLine: {'line': b'-- Configuring done (0.9s)\n'}
+[0.900656] (-) TimerEvent: {}
+[0.926840] (cpp_motor_thread) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[0.936326] (cpp_motor_thread) StdoutLine: {'line': b'-- Build files have been written to: /home/ockta/ocktabot_ws/build/cpp_motor_thread\n'}
+[0.958475] (cpp_motor_thread) StdoutLine: {'line': b'[  5%] Built target cpp_motor_thread__rosidl_generator_type_description\n'}
+[0.958644] (cpp_motor_thread) StdoutLine: {'line': b'[  5%] Built target cpp_motor_thread__rs\n'}
+[0.962964] (cpp_motor_thread) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_cpp_motor_thread\n'}
+[0.970490] (cpp_motor_thread) StdoutLine: {'line': b'[  7%] Built target cpp_motor_thread__cpp\n'}
+[0.971988] (cpp_motor_thread) StdoutLine: {'line': b'[ 21%] Built target cpp_motor_thread__rosidl_generator_c\n'}
+[0.992147] (cpp_motor_thread) StdoutLine: {'line': b'[ 28%] Built target cpp_motor_thread__rosidl_typesupport_c\n'}
+[0.992381] (cpp_motor_thread) StdoutLine: {'line': b'[ 36%] Built target cpp_motor_thread__rosidl_typesupport_introspection_c\n'}
+[0.994789] (cpp_motor_thread) StdoutLine: {'line': b'[ 44%] Built target cpp_motor_thread__rosidl_typesupport_fastrtps_c\n'}
+[0.995539] (cpp_motor_thread) StdoutLine: {'line': b'[ 52%] Built target cpp_motor_thread__rosidl_typesupport_introspection_cpp\n'}
+[0.995719] (cpp_motor_thread) StdoutLine: {'line': b'[ 60%] Built target cpp_motor_thread__rosidl_typesupport_fastrtps_cpp\n'}
+[0.995949] (cpp_motor_thread) StdoutLine: {'line': b'[ 68%] Built target cpp_motor_thread__rosidl_typesupport_cpp\n'}
+[1.000730] (-) TimerEvent: {}
+[1.007866] (cpp_motor_thread) StdoutLine: {'line': b'[ 68%] Built target cpp_motor_thread\n'}
+[1.014963] (cpp_motor_thread) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/epos_motor_thread.dir/src/epos_motor_thread.cpp.o\x1b[0m\n'}
+[1.015109] (cpp_motor_thread) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o\x1b[0m\n'}
+[1.018992] (cpp_motor_thread) StdoutLine: {'line': b'[ 76%] Built target cpp_motor_thread__py\n'}
+[1.031971] (cpp_motor_thread) StdoutLine: {'line': b'[ 81%] Built target cpp_motor_thread__rosidl_generator_py\n'}
+[1.045525] (cpp_motor_thread) StdoutLine: {'line': b'[ 97%] Built target cpp_motor_thread_s__rosidl_typesupport_fastrtps_c\n'}
+[1.045686] (cpp_motor_thread) StdoutLine: {'line': b'[ 97%] Built target cpp_motor_thread_s__rosidl_typesupport_introspection_c\n'}
+[1.045757] (cpp_motor_thread) StdoutLine: {'line': b'[ 97%] Built target cpp_motor_thread_s__rosidl_typesupport_c\n'}
+[1.100814] (-) TimerEvent: {}
+[1.105129] (cpp_motor_thread) StdoutLine: {'line': b'running egg_info\n'}
+[1.115514] (cpp_motor_thread) StdoutLine: {'line': b'writing cpp_motor_thread.egg-info/PKG-INFO\n'}
+[1.115686] (cpp_motor_thread) StdoutLine: {'line': b'writing dependency_links to cpp_motor_thread.egg-info/dependency_links.txt\n'}
+[1.115802] (cpp_motor_thread) StdoutLine: {'line': b'writing top-level names to cpp_motor_thread.egg-info/top_level.txt\n'}
+[1.144785] (cpp_motor_thread) StdoutLine: {'line': b"reading manifest file 'cpp_motor_thread.egg-info/SOURCES.txt'\n"}
+[1.145144] (cpp_motor_thread) StdoutLine: {'line': b"writing manifest file 'cpp_motor_thread.egg-info/SOURCES.txt'\n"}
+[1.161818] (cpp_motor_thread) StdoutLine: {'line': b'[ 97%] Built target ament_cmake_python_build_cpp_motor_thread_egg\n'}
+[1.200904] (-) TimerEvent: {}
+[1.301121] (-) TimerEvent: {}
+[1.401410] (-) TimerEvent: {}
+[1.501615] (-) TimerEvent: {}
+[1.601812] (-) TimerEvent: {}
+[1.702010] (-) TimerEvent: {}
+[1.802207] (-) TimerEvent: {}
+[1.902380] (-) TimerEvent: {}
+[2.002574] (-) TimerEvent: {}
+[2.102772] (-) TimerEvent: {}
+[2.202967] (-) TimerEvent: {}
+[2.303166] (-) TimerEvent: {}
+[2.403371] (-) TimerEvent: {}
+[2.454541] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid cpp_motor_thread::Epos2Gateway::\x1b[01;32m\x1b[KhaltMovement\x1b[m\x1b[K(short unsigned int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.454726] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:108:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvcs_mutex_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.454775] (cpp_motor_thread) StderrLine: {'line': b'  108 |     std::lock_guard<std::mutex> lock(\x1b[01;31m\x1b[Kvcs_mutex_\x1b[m\x1b[K);\n'}
+[2.454816] (cpp_motor_thread) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.454971] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid cpp_motor_thread::Epos2Gateway::\x1b[01;32m\x1b[KprepareProfilePosition\x1b[m\x1b[K(std::shared_ptr<std_srvs::srv::Trigger_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Trigger_Response_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.455073] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:113:98:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Krequest\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.455127] (cpp_motor_thread) StderrLine: {'line': b'  113 | void Epos2Gateway::prepareProfilePosition(\x1b[01;35m\x1b[Kconst std::shared_ptr<std_srvs::srv::Trigger::Request> request\x1b[m\x1b[K,\n'}
+[2.455175] (cpp_motor_thread) StderrLine: {'line': b'      |                                           \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[2.463954] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid cpp_motor_thread::Epos2Gateway::\x1b[01;32m\x1b[KmoveProfilePosition\x1b[m\x1b[K(std::shared_ptr<rclcpp_action::ServerGoalHandle<cpp_motor_thread::action::MoveProfilePosition> >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.464089] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:154:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvcs_mutex_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.464140] (cpp_motor_thread) StderrLine: {'line': b'  154 |         std::lock_guard<std::mutex> lock(\x1b[01;31m\x1b[Kvcs_mutex_\x1b[m\x1b[K);\n'}
+[2.464181] (cpp_motor_thread) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.464466] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:167:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing std::__shared_ptr_access<cpp_motor_thread::action::MoveProfilePosition_Result_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::element_type = struct cpp_motor_thread::action::MoveProfilePosition_Result_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct cpp_motor_thread::action::MoveProfilePosition_Result_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kend_position\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kend_positoin\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.464519] (cpp_motor_thread) StderrLine: {'line': b'  167 |                 result->\x1b[01;31m\x1b[Kend_position\x1b[m\x1b[K = getPosition(goal->node);\n'}
+[2.464557] (cpp_motor_thread) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.464594] (cpp_motor_thread) StderrLine: {'line': b'      |                         \x1b[32m\x1b[Kend_positoin\x1b[m\x1b[K\n'}
+[2.471491] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:180:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvcs_mutex_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.471595] (cpp_motor_thread) StderrLine: {'line': b'  180 |                 std::lock_guard<std::mutex> lock(\x1b[01;31m\x1b[Kvcs_mutex_\x1b[m\x1b[K);\n'}
+[2.471637] (cpp_motor_thread) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.471732] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:194:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing std::__shared_ptr_access<cpp_motor_thread::action::MoveProfilePosition_Result_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::element_type = struct cpp_motor_thread::action::MoveProfilePosition_Result_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct cpp_motor_thread::action::MoveProfilePosition_Result_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kend_position\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kend_positoin\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.471785] (cpp_motor_thread) StderrLine: {'line': b'  194 |         result->\x1b[01;31m\x1b[Kend_position\x1b[m\x1b[K = getPosition(goal->node);\n'}
+[2.471823] (cpp_motor_thread) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.471860] (cpp_motor_thread) StderrLine: {'line': b'      |                 \x1b[32m\x1b[Kend_positoin\x1b[m\x1b[K\n'}
+[2.474246] (cpp_motor_thread) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[2.474474] (cpp_motor_thread) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27\x1b[m\x1b[K,\n'}
+[2.474515] (cpp_motor_thread) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:175\x1b[m\x1b[K,\n'}
+[2.474555] (cpp_motor_thread) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:4\x1b[m\x1b[K,\n'}
+[2.474591] (cpp_motor_thread) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:3\x1b[m\x1b[K:\n'}
+[2.474626] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Krclcpp_action::GoalResponse cpp_motor_thread::Epos2Gateway::\x1b[01;32m\x1b[Khandle_goal_move_profile_position\x1b[m\x1b[K(const rclcpp_action::GoalUUID&, std::shared_ptr<const cpp_motor_thread::action::MoveProfilePosition_Goal_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.474665] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:206:35:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%f\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.474706] (cpp_motor_thread) StderrLine: {'line': b'  206 |         RCLCPP_INFO(get_logger(), \x1b[01;35m\x1b[K"Received goal request, move node: %.4f, to position: %.4f"\x1b[m\x1b[K, \x1b[32m\x1b[Kgoal->node\x1b[m\x1b[K, goal->goal_position);\n'}
+[2.474743] (cpp_motor_thread) StderrLine: {'line': b'      |                                   \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K  \x1b[32m\x1b[K~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.474779] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                                      \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[2.474816] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                                      \x1b[32m\x1b[Kint\x1b[m\x1b[K\n'}
+[2.474853] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:206:73:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[2.474889] (cpp_motor_thread) StderrLine: {'line': b'  206 |         RCLCPP_INFO(get_logger(), "Received goal request, move node: \x1b[01;36m\x1b[K%.4f\x1b[m\x1b[K, to position: %.4f", goal->node, goal->goal_position);\n'}
+[2.474925] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                      \x1b[01;36m\x1b[K~~~^\x1b[m\x1b[K\n'}
+[2.474960] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                         \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[2.474996] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                         \x1b[01;36m\x1b[Kdouble\x1b[m\x1b[K\n'}
+[2.475032] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                      \x1b[32m\x1b[K%.4d\x1b[m\x1b[K\n'}
+[2.475069] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:206:35:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%f\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99, but argument 6 has type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.475107] (cpp_motor_thread) StderrLine: {'line': b'  206 |         RCLCPP_INFO(get_logger(), \x1b[01;35m\x1b[K"Received goal request, move node: %.4f, to position: %.4f"\x1b[m\x1b[K, goal->node, \x1b[32m\x1b[Kgoal->goal_position\x1b[m\x1b[K);\n'}
+[2.475142] (cpp_motor_thread) StderrLine: {'line': b'      |                                   \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K              \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.475180] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                                                  \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[2.475215] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                                                  \x1b[32m\x1b[Kint\x1b[m\x1b[K\n'}
+[2.475253] (cpp_motor_thread) StderrLine: {'line': b'\x1b[01m\x1b[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:206:92:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[2.475288] (cpp_motor_thread) StderrLine: {'line': b'  206 |         RCLCPP_INFO(get_logger(), "Received goal request, move node: %.4f, to position: \x1b[01;36m\x1b[K%.4f\x1b[m\x1b[K", goal->node, goal->goal_position);\n'}
+[2.475325] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                         \x1b[01;36m\x1b[K~~~^\x1b[m\x1b[K\n'}
+[2.475371] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                            \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[2.475407] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                            \x1b[01;36m\x1b[Kdouble\x1b[m\x1b[K\n'}
+[2.475444] (cpp_motor_thread) StderrLine: {'line': b'      |                                                                                         \x1b[32m\x1b[K%.4d\x1b[m\x1b[K\n'}
+[2.503456] (-) TimerEvent: {}
+[2.603657] (-) TimerEvent: {}
+[2.703857] (-) TimerEvent: {}
+[2.804056] (-) TimerEvent: {}
+[2.904254] (-) TimerEvent: {}
+[3.004452] (-) TimerEvent: {}
+[3.104647] (-) TimerEvent: {}
+[3.204839] (-) TimerEvent: {}
+[3.305040] (-) TimerEvent: {}
+[3.405238] (-) TimerEvent: {}
+[3.471745] (cpp_motor_thread) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/epos_motor_thread.dir/build.make:90: CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o] Error 1\n'}
+[3.471906] (cpp_motor_thread) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:644: CMakeFiles/epos_motor_thread.dir/all] Error 2\n'}
+[3.472038] (cpp_motor_thread) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[3.473406] (cpp_motor_thread) CommandEnded: {'returncode': 2}
+[3.481102] (cpp_motor_thread) JobEnded: {'identifier': 'cpp_motor_thread', 'rc': 2}
+[3.491603] (-) EventReactorShutdown: {}
