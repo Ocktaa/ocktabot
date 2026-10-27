@@ -1,0 +1,25 @@
+[0.005s] Invoking command in '/home/ockta/ocktabot_ws/build/cpp_motor_thread': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ockta/ocktabot_ws/build/cpp_motor_thread -- -j12 -l12
+[0.054s] [ 33%] [32mBuilding CXX object CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o[0m
+[2.550s] [ 66%] [32m[1mLinking CXX executable epos_motor_thread[0m
+[2.790s] [100%] Built target epos_motor_thread
+[2.796s] Invoked command in '/home/ockta/ocktabot_ws/build/cpp_motor_thread' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ockta/ocktabot_ws/build/cpp_motor_thread -- -j12 -l12
+[2.801s] Invoking command in '/home/ockta/ocktabot_ws/build/cpp_motor_thread': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ockta/ocktabot_ws/build/cpp_motor_thread
+[2.805s] -- Install configuration: ""
+[2.806s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/cpp_motor_thread/epos_motor_thread
+[2.807s] -- Set non-toolchain portion of runtime path of "/home/ockta/ocktabot_ws/install/cpp_motor_thread/lib/cpp_motor_thread/epos_motor_thread" to ""
+[2.807s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/ament_index/resource_index/package_run_dependencies/cpp_motor_thread
+[2.807s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/ament_index/resource_index/parent_prefix_path/cpp_motor_thread
+[2.807s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/environment/ament_prefix_path.sh
+[2.807s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/environment/ament_prefix_path.dsv
+[2.807s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/environment/path.sh
+[2.807s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/environment/path.dsv
+[2.807s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/local_setup.bash
+[2.807s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/local_setup.sh
+[2.807s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/local_setup.zsh
+[2.807s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/local_setup.dsv
+[2.807s] -- Installing: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/package.dsv
+[2.807s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/ament_index/resource_index/packages/cpp_motor_thread
+[2.807s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/cpp_motor_threadConfig.cmake
+[2.807s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/cmake/cpp_motor_threadConfig-version.cmake
+[2.807s] -- Up-to-date: /home/ockta/ocktabot_ws/install/cpp_motor_thread/share/cpp_motor_thread/package.xml
+[2.808s] Invoked command in '/home/ockta/ocktabot_ws/build/cpp_motor_thread' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ockta/ocktabot_ws/build/cpp_motor_thread

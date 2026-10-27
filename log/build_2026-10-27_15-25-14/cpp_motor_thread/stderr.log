@@ -1,0 +1,5 @@
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:[m[K In member function ‘[01m[Kvoid cpp_motor_thread::Epos2Gateway::[01;32m[KprepareProfilePosition[m[K(std::shared_ptr<std_srvs::srv::Trigger_Request_<std::allocator<void> > >, std::shared_ptr<std_srvs::srv::Trigger_Response_<std::allocator<void> > >)[m[K’:
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:94:98:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krequest[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   94 | osition([01;35m[Kconst std::shared_ptr<std_srvs::srv::Trigger::Request> request[m[K,
+      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+

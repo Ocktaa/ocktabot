@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp" "CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o" "gcc" "CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o.d"
   "/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp" "CMakeFiles/epos_motor_thread.dir/src/epos_motor_thread.cpp.o" "gcc" "CMakeFiles/epos_motor_thread.dir/src/epos_motor_thread.cpp.o.d"
   )
 

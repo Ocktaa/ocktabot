@@ -83,14 +83,30 @@ CMakeFiles/epos_motor_thread.dir/src/epos_motor_thread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/epos_motor_thread.dir/src/epos_motor_thread.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp -o CMakeFiles/epos_motor_thread.dir/src/epos_motor_thread.cpp.s
 
+CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o: CMakeFiles/epos_motor_thread.dir/flags.make
+CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o: /home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp
+CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o: CMakeFiles/epos_motor_thread.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ockta/ocktabot_ws/build/cpp_motor_thread/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o -MF CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o.d -o CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o -c /home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp
+
+CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp > CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.i
+
+CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp -o CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.s
+
 # Object files for target epos_motor_thread
 epos_motor_thread_OBJECTS = \
-"CMakeFiles/epos_motor_thread.dir/src/epos_motor_thread.cpp.o"
+"CMakeFiles/epos_motor_thread.dir/src/epos_motor_thread.cpp.o" \
+"CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o"
 
 # External object files for target epos_motor_thread
 epos_motor_thread_EXTERNAL_OBJECTS =
 
 epos_motor_thread: CMakeFiles/epos_motor_thread.dir/src/epos_motor_thread.cpp.o
+epos_motor_thread: CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o
 epos_motor_thread: CMakeFiles/epos_motor_thread.dir/build.make
 epos_motor_thread: /usr/lib/libEposCmd.so
 epos_motor_thread: /usr/lib/libftd2xx.so
@@ -100,6 +116,12 @@ epos_motor_thread: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_fastrtp
 epos_motor_thread: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_introspection_c.so
 epos_motor_thread: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_introspection_cpp.so
 epos_motor_thread: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_generator_py.so
+epos_motor_thread: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_fastrtps_c.so
+epos_motor_thread: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_introspection_c.so
+epos_motor_thread: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_fastrtps_cpp.so
+epos_motor_thread: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_introspection_cpp.so
+epos_motor_thread: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_cpp.so
+epos_motor_thread: /opt/ros/jazzy/lib/libstd_srvs__rosidl_generator_py.so
 epos_motor_thread: /opt/ros/jazzy/lib/liblibstatistics_collector.so
 epos_motor_thread: /opt/ros/jazzy/lib/librcl.so
 epos_motor_thread: /opt/ros/jazzy/lib/librmw_implementation.so
@@ -140,19 +162,28 @@ epos_motor_thread: /opt/ros/jazzy/lib/libtracetools.so
 epos_motor_thread: /opt/ros/jazzy/lib/librcl_logging_interface.so
 epos_motor_thread: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_c.so
 epos_motor_thread: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
-epos_motor_thread: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_c.so
 epos_motor_thread: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
-epos_motor_thread: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_cpp.so
 epos_motor_thread: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
-epos_motor_thread: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_introspection_c.so
 epos_motor_thread: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
-epos_motor_thread: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_introspection_cpp.so
 epos_motor_thread: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
 epos_motor_thread: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 epos_motor_thread: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
 epos_motor_thread: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_c.so
 epos_motor_thread: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
 epos_motor_thread: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_c.so
+epos_motor_thread: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_cpp.so
+epos_motor_thread: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_generator_c.so
+epos_motor_thread: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
+epos_motor_thread: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_generator_c.so
+epos_motor_thread: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_cpp.so
+epos_motor_thread: /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_c.so
+epos_motor_thread: /opt/ros/jazzy/lib/libstd_srvs__rosidl_typesupport_c.so
+epos_motor_thread: /opt/ros/jazzy/lib/libstd_srvs__rosidl_generator_c.so
+epos_motor_thread: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_c.so
+epos_motor_thread: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_fastrtps_cpp.so
+epos_motor_thread: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_introspection_c.so
+epos_motor_thread: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_introspection_cpp.so
+epos_motor_thread: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_cpp.so
 epos_motor_thread: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
 epos_motor_thread: /opt/ros/jazzy/lib/librosidl_typesupport_fastrtps_c.so
 epos_motor_thread: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
@@ -164,18 +195,11 @@ epos_motor_thread: /opt/ros/jazzy/lib/libfastcdr.so.2.2.8
 epos_motor_thread: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
 epos_motor_thread: /opt/ros/jazzy/lib/librosidl_typesupport_introspection_cpp.so
 epos_motor_thread: /opt/ros/jazzy/lib/librosidl_typesupport_introspection_c.so
+epos_motor_thread: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
+epos_motor_thread: /opt/ros/jazzy/lib/librosidl_typesupport_cpp.so
 epos_motor_thread: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_py.so
 epos_motor_thread: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_c.so
 epos_motor_thread: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
-epos_motor_thread: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_cpp.so
-epos_motor_thread: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_generator_c.so
-epos_motor_thread: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
-epos_motor_thread: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_generator_c.so
-epos_motor_thread: /opt/ros/jazzy/lib/libstd_msgs__rosidl_typesupport_cpp.so
-epos_motor_thread: /opt/ros/jazzy/lib/libstd_msgs__rosidl_generator_c.so
-epos_motor_thread: /opt/ros/jazzy/lib/libservice_msgs__rosidl_typesupport_cpp.so
-epos_motor_thread: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
-epos_motor_thread: /opt/ros/jazzy/lib/librosidl_typesupport_cpp.so
 epos_motor_thread: /opt/ros/jazzy/lib/libservice_msgs__rosidl_generator_c.so
 epos_motor_thread: /opt/ros/jazzy/lib/libbuiltin_interfaces__rosidl_generator_c.so
 epos_motor_thread: /opt/ros/jazzy/lib/librosidl_typesupport_c.so
@@ -183,7 +207,7 @@ epos_motor_thread: /opt/ros/jazzy/lib/librcpputils.so
 epos_motor_thread: /opt/ros/jazzy/lib/librosidl_runtime_c.so
 epos_motor_thread: /opt/ros/jazzy/lib/librcutils.so
 epos_motor_thread: CMakeFiles/epos_motor_thread.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ockta/ocktabot_ws/build/cpp_motor_thread/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable epos_motor_thread"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ockta/ocktabot_ws/build/cpp_motor_thread/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable epos_motor_thread"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/epos_motor_thread.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

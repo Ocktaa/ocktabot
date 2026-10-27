@@ -1,0 +1,69 @@
+In file included from [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:3[m[K:
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:11:18:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   11 |     Epos2Gateway([01;31m[K)[m[K
+      |                  [01;31m[K^[m[K
+      |                   [32m[K;[m[K
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:22:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoide[m[K’ does not name a type; did you mean ‘[01m[Kvoid[m[K’?
+   22 |     [01;31m[Kvoide[m[K prepareProfilePosition(unsigned short node);
+      |     [01;31m[K^~~~~[m[K
+      |     [32m[Kvoid[m[K
+In file included from [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp:6[m[K:
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:11:18:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   11 |     Epos2Gateway([01;31m[K)[m[K
+      |                  [01;31m[K^[m[K
+      |                   [32m[K;[m[K
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:22:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoide[m[K’ does not name a type; did you mean ‘[01m[Kvoid[m[K’?
+   22 |     [01;31m[Kvoide[m[K prepareProfilePosition(unsigned short node);
+      |     [01;31m[K^~~~~[m[K
+      |     [32m[Kvoid[m[K
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:[m[K In constructor ‘[01m[Kcpp_motor_thread::Epos2Gateway::[01;32m[KEpos2Gateway[m[K()[m[K’:
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:66:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor_position_publisher[m[K’ was not declared in this scope
+   66 |     [01;31m[Kmotor_position_publisher[m[K = create_publisher<sensor_msgs::msg::JointState>("motor_jointstate", 10);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:[m[K At global scope:
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:91:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid cpp_motor_thread::Epos2Gateway::[01;32m[KprepareProfilePosition[m[K(short unsigned int)[m[K’
+   91 | void [01;31m[KEpos2Gateway[m[K::prepareProfilePosition(unsigned short node){
+      |      [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:91:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid cpp_motor_thread::Epos2Gateway::[01;32m[KprepareProfilePosition[m[K(short unsigned int)[m[K’
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:9:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass cpp_motor_thread::Epos2Gateway[m[K’ defined here
+    9 | class [01;36m[KEpos2Gateway[m[K: public rclcpp::Node{
+      |       [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:[m[K In member function ‘[01m[Kvoid cpp_motor_thread::Epos2Gateway::[01;32m[KpublishJointStates[m[K()[m[K’:
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:106:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kposition[m[K’ was not declared in this scope; did you mean ‘[01m[KgetPosition[m[K’?
+  106 |         message.position.push_back([01;31m[Kposition[m[K(node));
+      |                                    [01;31m[K^~~~~~~~[m[K
+      |                                    [32m[KgetPosition[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:175[m[K,
+                 from [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:4[m[K:
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:108:46:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before string constant
+  108 |             get_logger(), *get_clock(), 1000 [01;31m[K"%s position %.4f rad"[m[K,
+      |                                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:108:46:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before string constant
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:107:9:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  107 |         [01;36m[KRCLCPP_INFO_THROTTLE[m[K(
+      |         [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:107:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+  107 |         [01;31m[KRCLCPP_INFO_THROTTLE[m[K(
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:107:9:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  107 |         [01;36m[KRCLCPP_INFO_THROTTLE[m[K(
+      |         [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:107:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+  107 |         [01;31m[KRCLCPP_INFO_THROTTLE[m[K(
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:107:9:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  107 |         [01;36m[KRCLCPP_INFO_THROTTLE[m[K(
+      |         [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:109:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessagfe[m[K’ was not declared in this scope; did you mean ‘[01m[Kmessage[m[K’?
+  109 |             [01;31m[Kmessagfe[m[K.name.back().c_str(), message.position.back()
+      |             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:112:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmotor_position_publisher[m[K’ was not declared in this scope
+  112 |     [01;31m[Kmotor_position_publisher[m[K->publish(message);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/epos_motor_thread.dir/build.make:76: CMakeFiles/epos_motor_thread.dir/src/epos_motor_thread.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/epos_motor_thread.dir/build.make:90: CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/epos_motor_thread.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

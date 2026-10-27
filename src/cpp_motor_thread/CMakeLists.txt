@@ -19,13 +19,20 @@ find_library(FTD2XX_LIB ftd2xx REQUIRED)
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(std_srvs REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
-add_executable(epos_motor_thread src/epos_motor_thread.cpp)
-target_include_directories(epos_motor_thread PRIVATE ${EPOS_INCLUDE_DIR})
+add_executable(epos_motor_thread
+  src/epos_motor_thread.cpp
+  src/epos2_gateway.cpp)
+
+target_include_directories(epos_motor_thread PRIVATE 
+  ${CMAKE_CURRENT_SOURCE_DIR}/include
+  ${EPOS_INCLUDE_DIR})
+
 target_link_libraries(epos_motor_thread ${EPOS_LIB} ${FTD2XX_LIB})
-ament_target_dependencies(epos_motor_thread rclcpp sensor_msgs)
+ament_target_dependencies(epos_motor_thread rclcpp sensor_msgs std_srvs)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

@@ -1,0 +1,28 @@
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:175[m[K,
+                 from [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:4[m[K,
+                 from [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:3[m[K:
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:[m[K In member function ‘[01m[Kvoid cpp_motor_thread::Epos2Gateway::[01;32m[KpublishJointStates[m[K()[m[K’:
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:108:46:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before string constant
+  108 |             get_logger(), *get_clock(), 1000 [01;31m[K"%s position %.4f rad"[m[K,
+      |                                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:108:46:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before string constant
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:107:9:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  107 |         [01;36m[KRCLCPP_INFO_THROTTLE[m[K(
+      |         [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:107:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+  107 |         [01;31m[KRCLCPP_INFO_THROTTLE[m[K(
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:107:9:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  107 |         [01;36m[KRCLCPP_INFO_THROTTLE[m[K(
+      |         [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:107:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+  107 |         [01;31m[KRCLCPP_INFO_THROTTLE[m[K(
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:107:9:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  107 |         [01;36m[KRCLCPP_INFO_THROTTLE[m[K(
+      |         [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/epos_motor_thread.dir/build.make:90: CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/epos_motor_thread.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

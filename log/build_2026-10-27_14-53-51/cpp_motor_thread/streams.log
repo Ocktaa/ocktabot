@@ -1,0 +1,19 @@
+[0.005s] Invoking command in '/home/ockta/ocktabot_ws/build/cpp_motor_thread': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ockta/ocktabot_ws/build/cpp_motor_thread -- -j12 -l12
+[0.052s] [ 33%] [32mBuilding CXX object CMakeFiles/epos_motor_thread.dir/src/epos_motor_thread.cpp.o[0m
+[0.053s] [ 66%] [32mBuilding CXX object CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o[0m
+[0.175s] In file included from [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp:6[m[K:
+[0.175s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Kstd_srvs/srv/trigger.hpp: No such file or directory
+[0.175s]     6 | #include [01;31m[K"std_srvs/srv/trigger.hpp"[m[K
+[0.175s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.175s] compilation terminated.
+[0.176s] gmake[2]: *** [CMakeFiles/epos_motor_thread.dir/build.make:76: CMakeFiles/epos_motor_thread.dir/src/epos_motor_thread.cpp.o] Error 1
+[0.176s] gmake[2]: *** Waiting for unfinished jobs....
+[0.178s] In file included from [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:3[m[K:
+[0.178s] [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Kstd_srvs/srv/trigger.hpp: No such file or directory
+[0.178s]     6 | #include [01;31m[K"std_srvs/srv/trigger.hpp"[m[K
+[0.178s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.178s] compilation terminated.
+[0.179s] gmake[2]: *** [CMakeFiles/epos_motor_thread.dir/build.make:90: CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o] Error 1
+[0.179s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/epos_motor_thread.dir/all] Error 2
+[0.180s] gmake: *** [Makefile:146: all] Error 2
+[0.181s] Invoked command in '/home/ockta/ocktabot_ws/build/cpp_motor_thread' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ockta/ocktabot_ws/build/cpp_motor_thread -- -j12 -l12

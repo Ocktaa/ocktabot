@@ -210,6 +210,30 @@ epos_motor_thread/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/epos_motor_thread.dir/build.make CMakeFiles/epos_motor_thread.dir/build
 .PHONY : epos_motor_thread/fast
 
+src/epos2_gateway.o: src/epos2_gateway.cpp.o
+.PHONY : src/epos2_gateway.o
+
+# target to build an object file
+src/epos2_gateway.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/epos_motor_thread.dir/build.make CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o
+.PHONY : src/epos2_gateway.cpp.o
+
+src/epos2_gateway.i: src/epos2_gateway.cpp.i
+.PHONY : src/epos2_gateway.i
+
+# target to preprocess a source file
+src/epos2_gateway.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/epos_motor_thread.dir/build.make CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.i
+.PHONY : src/epos2_gateway.cpp.i
+
+src/epos2_gateway.s: src/epos2_gateway.cpp.s
+.PHONY : src/epos2_gateway.s
+
+# target to generate assembly for a file
+src/epos2_gateway.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/epos_motor_thread.dir/build.make CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.s
+.PHONY : src/epos2_gateway.cpp.s
+
 src/epos_motor_thread.o: src/epos_motor_thread.cpp.o
 .PHONY : src/epos_motor_thread.o
 
@@ -250,6 +274,9 @@ help:
 	@echo "... cpp_motor_thread_uninstall"
 	@echo "... uninstall"
 	@echo "... epos_motor_thread"
+	@echo "... src/epos2_gateway.o"
+	@echo "... src/epos2_gateway.i"
+	@echo "... src/epos2_gateway.s"
 	@echo "... src/epos_motor_thread.o"
 	@echo "... src/epos_motor_thread.i"
 	@echo "... src/epos_motor_thread.s"

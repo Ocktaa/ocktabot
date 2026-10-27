@@ -1,0 +1,17 @@
+[ 33%] [32mBuilding CXX object CMakeFiles/epos_motor_thread.dir/src/epos_motor_thread.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o[0m
+In file included from [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos_motor_thread.cpp:6[m[K:
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Kstd_srvs/srv/trigger.hpp: No such file or directory
+    6 | #include [01;31m[K"std_srvs/srv/trigger.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/epos_motor_thread.dir/build.make:76: CMakeFiles/epos_motor_thread.dir/src/epos_motor_thread.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/src/epos2_gateway.cpp:3[m[K:
+[01m[K/home/ockta/ocktabot_ws/src/cpp_motor_thread/include/cpp_motor_thread/epos2_gateway.hpp:6:10:[m[K [01;31m[Kfatal error: [m[Kstd_srvs/srv/trigger.hpp: No such file or directory
+    6 | #include [01;31m[K"std_srvs/srv/trigger.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/epos_motor_thread.dir/build.make:90: CMakeFiles/epos_motor_thread.dir/src/epos2_gateway.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/epos_motor_thread.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
