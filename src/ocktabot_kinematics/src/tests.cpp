@@ -11,7 +11,7 @@
 #include <stdexcept>
 #include <string>
 
-#include "inverse_kinematics.hpp"
+#include "simulation.hpp"
 
 using namespace stewart;
 
@@ -186,6 +186,52 @@ int main() {
         const ChainResult c = fkChain(sys, phiIn, {Vec3(r.x[3], r.x[4], r.x[5]), Vec3(r.x[6], r.x[7], r.x[8])});
         const Vec3 reached = c.ok ? Vec3(c.S[1].Ow.rowwise().mean()) : Vec3::Constant(1e9);
         check("FK of the IK inputs reaches the target", (reached - target.head<3>()).norm(), 1e-9);
+    }
+
+    // ---------------------------------------------------------------- layer 6
+    std::printf("\n-- layer 6: simulation driven by the motor positions --\n");
+    {
+        Simulation sim(defaultGeometry());
+        const FKUpdate f0 = sim.update(Config{phi0});
+        check("first reading gives a pose", f0.valid && !f0.held ? 0.0 : 1.0, 0);
+        check("first reading: top2 centroid at z = 9.6", std::abs(f0.pose[2] - 9.6), 1e-12);
+
+        const FKUpdate f1 = sim.update(Config{phi0 + Vec3(5, -3, 2) * DEG});
+        check("small motor change is accepted", f1.valid && !f1.held ? 0.0 : 1.0, 0);
+        check("no jump between sub-steps (< 15 deg)", f1.jmp < 15.0 * DEG ? 0.0 : 1.0, 0);
+
+        const FKUpdate fNaN = sim.update(Config{Vec3::Constant(std::nan(""))});
+        check("NaN reading holds the previous pose",
+              fNaN.held && fNaN.valid ? (fNaN.pose - f1.pose).norm() : 1e9, 0);
+
+        // a stage that cannot be assembled: link R folded flat outward
+        const FKUpdate fBad = sim.update(Config{Vec3(180, 0, 0) * DEG});
+        check("unassemblable reading holds the previous pose",
+              fBad.held && fBad.valid ? (fBad.pose - f1.pose).norm() : 1e9, 0);
+
+        // IK from the current state, then drive the motors there
+        const PoseMask spec{true, true, true, false, false, false};
+        Vec6 target = f1.pose;
+        target[0] += 0.3;
+        target[2] -= 0.2;
+        const IKUpdate ik = sim.inverse(target, spec);
+        check("inverse converges", ik.ok ? 0.0 : 1.0, 0);
+        const FKUpdate f2 = sim.update(Config{ik.motorPos});
+        check("FK of the IK motor positions reaches the target",
+              f2.valid && !f2.held ? (f2.pose.head<3>() - target.head<3>()).norm() : 1e9, 1e-9);
+        check("IK reports the pose FK reaches",
+              f2.valid ? angWrapVec(f2.pose - ik.pose).norm() : 1e9, 1e-9);
+
+        Vec6 far = f2.pose;
+        far[0] += 100.0;
+        check("unreachable target is rejected", sim.inverse(far, spec).ok ? 1.0 : 0.0, 0);
+
+        // jump detection: with a tiny threshold every real move counts as a jump
+        Simulation strict(defaultGeometry(), 1e-6);
+        const FKUpdate s0 = strict.update(Config{phi0});
+        const FKUpdate s1 = strict.update(Config{phi0 + Vec3(5, 5, 5) * DEG});
+        check("jump to another configuration holds the previous pose",
+              s1.held && s1.valid ? (s1.pose - s0.pose).norm() : 1e9, 0);
     }
 
     std::printf("\n%s: %d failure(s)\n", gFailures == 0 ? "ALL PASSED" : "SOME FAILED", gFailures);

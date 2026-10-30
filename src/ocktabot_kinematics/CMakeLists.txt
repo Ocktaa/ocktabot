@@ -8,6 +8,38 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+find_package(Eigen3 REQUIRED NO_MODULE)
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "srv/GetJointPosIK.srv")
+
+# kinematics (no ROS): forward/inverse kinematics of the stacked stages
+add_library(stewart_kinematics STATIC
+  src/math_utils.cpp
+  src/stage.cpp
+  src/direct_kinematics.cpp
+  src/forward_chain.cpp
+  src/inverse_kinematics.cpp
+  src/simulation.cpp)
+target_include_directories(stewart_kinematics PUBLIC
+  ${CMAKE_CURRENT_SOURCE_DIR}/include
+  ${CMAKE_CURRENT_SOURCE_DIR}/include/ocktabot_kinematics)
+target_link_libraries(stewart_kinematics PUBLIC Eigen3::Eigen)
+target_compile_features(stewart_kinematics PUBLIC cxx_std_17)
+set_target_properties(stewart_kinematics PROPERTIES POSITION_INDEPENDENT_CODE ON)
+
+# ros2 node: motor_jointstate -> endeffector_pos, service get_jointpos_ik
+add_executable(ocktabot_kinematics_node
+  src/ocktabot_kinematics.cpp)
+ament_target_dependencies(ocktabot_kinematics_node rclcpp sensor_msgs geometry_msgs)
+rosidl_get_typesupport_target(cpp_typesupport_target ${PROJECT_NAME} "rosidl_typesupport_cpp")
+target_link_libraries(ocktabot_kinematics_node stewart_kinematics "${cpp_typesupport_target}")
+
+install(TARGETS ocktabot_kinematics_node
+  DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -19,6 +51,11 @@ if(BUILD_TESTING)
   # a copyright and license is added to all source files
   set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
+
+  # kinematics checks, run with: colcon test --packages-select ocktabot_kinematics
+  add_executable(stewart_tests src/tests.cpp)
+  target_link_libraries(stewart_tests stewart_kinematics)
+  add_test(NAME stewart_tests COMMAND stewart_tests)
 endif()
 
 ament_package()

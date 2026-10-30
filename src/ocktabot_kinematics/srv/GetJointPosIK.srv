@@ -1,0 +1,15 @@
+# Inverse kinematics of the end effector (the last top plate).
+#
+# target = (x, y, z, roll, pitch, yaw) of the end effector:
+#   x, y, z           centroid of its hinge corners, in model length units
+#   roll, pitch, yaw  [rad], rotation = Rz(yaw) * Ry(pitch) * Rx(roll)
+# The robot has 3 motors, so only the 3 components selected by the node's
+# `ik_spec` parameter (default x, y, z) are enforced. The other 3 follow from
+# the mechanism; the pose that will actually be reached is returned in `pose`.
+float64[6] target
+---
+bool success
+string message
+string[] name                   # motor names, same order as /motor_jointstate
+float64[3] motor_positions      # in the units of /motor_jointstate
+float64[6] pose                 # full end-effector pose reached at that solution
