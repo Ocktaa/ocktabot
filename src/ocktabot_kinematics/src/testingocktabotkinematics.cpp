@@ -2,7 +2,8 @@
 #include <iostream>
 #include <vector>
 #include <glm/gtx/string_cast.hpp>
-
+#define _USE_MATH_DEFINES
+#include <cmath>
 glm::vec2 calculateCentroid(const std::vector<glm::vec2>& vertices) {
     if (vertices.empty()) {
         return glm::vec2(0.0f);
@@ -16,21 +17,20 @@ glm::vec2 calculateCentroid(const std::vector<glm::vec2>& vertices) {
     return sum / static_cast<float>(vertices.size());
 }
 
+glm::vec3 wVec(double beta, double phi){
+    return {cos(beta)*cos(phi), sin(beta)*sin(phi), sin(phi)};
+}
+
+double angWrap(double a){
+    double TWO_PI = 2.0*M_PI;
+    return a - TWO_PI * std::floor((a + M_PI) / TWO_PI);
+}
 int main(){
-    std::vector<glm::vec2> tri_corners = {{-2,0}, {2,0}, {0,2}};
-    float area2;
-    std::vector<float> beta;
-    std::vector<double> u;
-    int mean;
-    //area2 = (glm::length(cross(tri_corners[1]-tri_corners[0],tri_corners[2]-tri_corners[1])));
-    glm::vec2 centroid = calculateCentroid(tri_corners);
-    //std::cout << glm::to_string(centroid) << std::endl;
-    glm::vec2 angle = glm::atan(tri_corners[2]);
-    for (glm::vec2 point : tri_corners){
-        //beta.push_back(glm::atan(centroid - point));
-        //std::cout << glm::to_string(glm::atan(centroid - point)) << std::endl; 
-    }
-    std::cout << glm::to_string(angle) << std::endl;
+    //glm::vec3 w = wVec(2,2);
+    double angle = 3.31613;
+    double radians = angWrap(angle);
+    
+    std::cout<<std::to_string(radians)<<std::endl;
 
     return 0;
 }
