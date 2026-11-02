@@ -1,78 +1,51 @@
 #ifndef OCKTABOT_KINEMATICS__OCKTABOT_KINEMATICS_HPP
 #define OCKTABOT_KINEMATICS__OCKTABOT_KINEMATICS_HPP
 
+#include <string>
+#include <vector>
+
 #include "rclcpp/rclcpp.hpp"
-#include <glm/glm.hpp>
-namespace ocktabot_kinematics {
+#include "sensor_msgs/msg/joint_state.hpp"
+#include "geometry_msgs/msg/pose_stamped.hpp"
 
-class OcktabotKinematics: public rclcpp::Node
+#include "ocktabot_kinematics/srv/get_joint_pos_ik.hpp"
+#include "ocktabot_kinematics/simulation.hpp"
+
+namespace ocktabot_kinematics{
+
+// Subscribes to motor_jointstate, publishes the end-effector pose on
+// endeffector_pos for every reading (forward kinematics), and serves
+// get_jointpos_ik (inverse kinematics).
+//
+// Motor reading -> base link angle phi_in [rad]:
+//   phi_in[j] = motor_scale[j] * position[j] + motor_offset[j]
+class OcktabotKinematics: public rclcpp::Node{
 public:
-
     OcktabotKinematics();
-    ~OcktabotKinematics();
-
-    void getEndEffectorPosition(); //Forward Kinematics
-    void getMotorJointPosition(); // Inverse Kinematics
-
-    //define the position of one stage
-    struct Stage { 
-        glm::vec3 O[2];          //hinge corners R,S,T
-        double m[2];        //link lengths
-        double beta[2];     //swing diretion of each link in the plate plane [rad]
-        glm::vec3 u[2];          // hinge axes (drawwing + checks only)
-    };
-
-    struct stageSolution{
-
-    };
-
-    struct System{
-
-    }:
-
-
 
 private:
-    //stacked Forward Kinematics
-    double[] stageFromPoints();
-    void solveStage():
-    void fkChain();
-    void legCheckStage();
+    void onMotorJointState(const sensor_msgs::msg::JointState::SharedPtr msg);
 
-    //stacked IK
-    void ikLayout();
-    void seedFromChain();
-    void seedFromframe();
-    void ikEqsN();
-    void solveIKN();
-    void trackIKN();
+    void getJointPosIK(const std::shared_ptr<ocktabot_kinematics::srv::GetJointPosIK::Request> request,
+        std::shared_ptr<ocktabot_kinematics::srv::GetJointPosIK::Response> response);
 
-    //Stage Geometry Definition
-    void stageGeometry();
-    void fitRigit();
+    // Base link angles from a JointState, matched by motor_names_.
+    // Returns false (and a reason) if a motor is missing.
+    bool readMotorAngles(const sensor_msgs::msg::JointState& msg, stewart::Vec3& phi, std::string& reason) const;
 
-    //pose Helpers
-    void poseVector();
-    void rotZYX();
-    void dwvec();
+    stewart::Simulation sim_;
 
-    void baseGeometry();
-    void legPairs();
-    void equivalentArms();
-    void wvec();
-    void jointPositions();
-    void pairCoeffs();
-    void HalfAngle();
-    void resultantPoly();
-    void resultandAt();
-    void stewardDK();
-    void polishPhi();
-    void phiEqs();
-    void trigEq();
-    void sortByHeight();
-    void angWrapper();
+    std::vector<std::string> motor_names_;
+    std::vector<double> motor_scale_;
+    std::vector<double> motor_offset_;
+    stewart::PoseMask ik_spec_{};
+    std::string frame_id_;
 
+    rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr motor_jointstate_subscriber_;
+    rclcpp::Publisher<geometry_msgs::msg::PoseStamped>::SharedPtr endeffector_pos_publisher_;
+    rclcpp::Service<ocktabot_kinematics::srv::GetJointPosIK>::SharedPtr get_jointpos_ik_service_;
+};
 
+} //namespace ocktabot_kinematics
 
-
-}
+#endif
