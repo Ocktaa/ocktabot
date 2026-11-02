@@ -16,7 +16,7 @@
 using namespace std::chrono_literals;
 
 namespace{
-    constexpr unsigned short kNodes[] = {1};
+    constexpr unsigned short kNodes[] = {1, 2};
     constexpr unsigned int kProfileVelocity = 1000;
     constexpr unsigned int kProfileAccel = 500;
     constexpr unsigned int kProfileDecel = 500;
@@ -42,17 +42,17 @@ std::string errorText(unsigned int code) {
   VCS_GetErrorInfo(code, info, static_cast<unsigned short> (sizeof(info)));
   char hex[16];
   std::snprintf(hex, sizeof(hex), "0x%08X", code);
-  return std::string(hex) + info;  
+  return std::string(hex) + " " + info;  
 }
 
 //wrapper for error checking of maxon motor function
 void check(int ok, unsigned int errorCode, const std::string& what){
-  if (!ok) throw std::runtime_error(what + "failed: " + errorText(errorCode));
+  if (!ok) throw std::runtime_error(what + " failed: " + errorText(errorCode));
 }
 
 //wrapper for node label
 std::string nodeLabel(const char* action, unsigned short node) {
-  return std::string(action) + "node" + std::to_string(node);
+  return std::string(action) + " node " + std::to_string(node);
 }
 
 } //namespace
@@ -123,14 +123,23 @@ void Epos2Gateway::haltMovement(unsigned short node){
 
 void Epos2Gateway::prepareProfilePosition(const std::shared_ptr<std_srvs::srv::Trigger::Request> request,
     std::shared_ptr<std_srvs::srv::Trigger::Response> response){
+    (void)request;
     unsigned int err = 0;
-    for (auto node : kNodes){
-        check(VCS_ClearFault(handle_, node, &err), err, nodeLabel("ClearFault", node));
-        check(VCS_SetEnableState(handle_, node, &err), err, nodeLabel("SetEnableState", node));
-        check(VCS_ActivateProfilePositionMode(handle_, node, &err), err, 
-                nodeLabel("ActivateProfilePositionMode", node));
-        check(VCS_SetPositionProfile(handle_, node, kProfileVelocity, kProfileAccel, kProfileDecel, &err), 
-                err, nodeLabel("SetProfilePosition", node));
+    try {
+        for (auto node : kNodes){
+            check(VCS_ClearFault(handle_, node, &err), err, nodeLabel("ClearFault", node));
+            check(VCS_SetEnableState(handle_, node, &err), err, nodeLabel("SetEnableState", node));
+            check(VCS_ActivateProfilePositionMode(handle_, node, &err), err, 
+                    nodeLabel("ActivateProfilePositionMode", node));
+            check(VCS_SetPositionProfile(handle_, node, kProfileVelocity, kProfileAccel, kProfileDecel, &err), 
+                    err, nodeLabel("SetProfilePosition", node));
+        }
+    } catch(const std::exception& e){
+        //report the failing node instead of letting the exception stop the node
+        RCLCPP_ERROR(get_logger(), "Profile position mode failed: %s", e.what());
+        response->success = 0;
+        response->message = e.what();
+        return;
     }
     response->success = 1;
     response->message = "Successfully entered profile position mode";
@@ -139,15 +148,23 @@ void Epos2Gateway::prepareProfilePosition(const std::shared_ptr<std_srvs::srv::T
 void Epos2Gateway::publishJointStates(){
     sensor_msgs::msg::JointState message;
     message.header.stamp = now();
+    std::string positions;
     for (auto node : kNodes){
-        message.name.push_back("motor" + std::to_string(node));
-        message.position.push_back(getPositionRad(node));
-        RCLCPP_INFO_THROTTLE(
-            get_logger(), *get_clock(), 1000, "%s position %.4f rad",
-            message.name.back().c_str(), message.position.back()
-        );
+        //a node that cannot be read is left out; the others are still published
+        try {
+            const double position = getPositionRad(node);
+            message.name.push_back("motor" + std::to_string(node));
+            message.position.push_back(position);
+            char text[64];
+            std::snprintf(text, sizeof(text), " %s %.4f rad", message.name.back().c_str(), position);
+            positions += text;
+        } catch(const std::exception& e){
+            RCLCPP_ERROR_THROTTLE(get_logger(), *get_clock(), 1000, "%s", e.what());
+        }
     }
-    motor_position_publisher_->publish(message);
+    //one throttled line for all nodes (a throttle inside the loop would only ever show the first node)
+    if (!positions.empty()) RCLCPP_INFO_THROTTLE(get_logger(), *get_clock(), 1000, "position%s", positions.c_str());
+    if (!message.name.empty()) motor_position_publisher_->publish(message);
 }
 
 void Epos2Gateway::moveProfilePosition(
