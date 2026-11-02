@@ -16,6 +16,9 @@ namespace{
     const std::vector<bool> kDefaultIkSpec = {true, true, true, false, false, false}; //x, y, z
     constexpr double kDefaultMaxJumpDeg = 15.0;
     constexpr int kWarnPeriodMs = 1000;
+    //epos2_gateway reports 0 rad with the links straight up (full extension),
+    //which is phi_in = 90 deg in the kinematics
+    constexpr double kLinksUp = stewart::PI / 2.0;
 
 //every per-motor parameter needs exactly one value per motor
 void checkSize(const std::string& name, std::size_t size){
@@ -32,7 +35,7 @@ OcktabotKinematics::OcktabotKinematics() : Node("ocktabot_kinematics"), sim_(ste
 
     motor_names_ = declare_parameter<std::vector<std::string>>("motor_names", kDefaultMotorNames);
     motor_scale_ = declare_parameter<std::vector<double>>("motor_scale", {1.0, 1.0, 1.0});
-    motor_offset_ = declare_parameter<std::vector<double>>("motor_offset", {0.0, 0.0, 0.0});
+    motor_offset_ = declare_parameter<std::vector<double>>("motor_offset", {kLinksUp, kLinksUp, kLinksUp});
     const auto ikSpec = declare_parameter<std::vector<bool>>("ik_spec", kDefaultIkSpec);
     const auto topAssembly = declare_parameter<int64_t>("top_assembly", 1);
     const auto maxJumpDeg = declare_parameter<double>("max_jump_deg", kDefaultMaxJumpDeg);
@@ -59,7 +62,7 @@ OcktabotKinematics::OcktabotKinematics() : Node("ocktabot_kinematics"), sim_(ste
 
     endeffector_pos_publisher_ = create_publisher<geometry_msgs::msg::PoseStamped>("endeffector_pos", 10);
 
-    get_jointpos_ik_service_ = create_service<ocktabot_kinematics::srv::GetJointPosIK>("get_jointpos_ik",
+    get_jointpos_ik_service_ = create_service<ocktabot_interfaces::srv::GetJointPosIK>("get_jointpos_ik",
         std::bind(&OcktabotKinematics::getJointPosIK, this, _1, _2));
 }
 
@@ -122,8 +125,8 @@ void OcktabotKinematics::onMotorJointState(const sensor_msgs::msg::JointState::S
         stewart::rad2deg(fk.pose[3]), stewart::rad2deg(fk.pose[4]), stewart::rad2deg(fk.pose[5]));
 }
 
-void OcktabotKinematics::getJointPosIK(const std::shared_ptr<ocktabot_kinematics::srv::GetJointPosIK::Request> request,
-    std::shared_ptr<ocktabot_kinematics::srv::GetJointPosIK::Response> response){
+void OcktabotKinematics::getJointPosIK(const std::shared_ptr<ocktabot_interfaces::srv::GetJointPosIK::Request> request,
+    std::shared_ptr<ocktabot_interfaces::srv::GetJointPosIK::Response> response){
     stewart::Vec6 target;
     for (int i = 0; i < 6; ++i) target[i] = request->target[i];
 
