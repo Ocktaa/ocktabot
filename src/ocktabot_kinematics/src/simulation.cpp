@@ -30,7 +30,7 @@ Geometry defaultGeometry() {
     geo.nStages = 2;
 
     // BASE = bottom of stage 1, in WORLD coordinates.
-    const double r3 = 80.0 * std::sqrt(3.0);   // 2*sqrt(3) = 3.4641
+    const double r3 = 80.0 * std::sqrt(3.0);   // 80*sqrt(3) = 138.56
     geo.base.R = Vec2(0.0, 160.0);
     geo.base.S = Vec2(-r3, -80.0);
     geo.base.T = Vec2(r3, -80.0);

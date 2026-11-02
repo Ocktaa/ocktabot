@@ -62,7 +62,7 @@ OcktabotKinematics::OcktabotKinematics() : Node("ocktabot_kinematics"), sim_(ste
 
     endeffector_pos_publisher_ = create_publisher<geometry_msgs::msg::PoseStamped>("endeffector_pos", 10);
 
-    get_jointpos_ik_service_ = create_service<ocktabot_kinematics::srv::GetJointPosIK>("get_jointpos_ik",
+    get_jointpos_ik_service_ = create_service<ocktabot_interfaces::srv::GetJointPosIK>("get_jointpos_ik",
         std::bind(&OcktabotKinematics::getJointPosIK, this, _1, _2));
 }
 
@@ -125,8 +125,8 @@ void OcktabotKinematics::onMotorJointState(const sensor_msgs::msg::JointState::S
         stewart::rad2deg(fk.pose[3]), stewart::rad2deg(fk.pose[4]), stewart::rad2deg(fk.pose[5]));
 }
 
-void OcktabotKinematics::getJointPosIK(const std::shared_ptr<ocktabot_kinematics::srv::GetJointPosIK::Request> request,
-    std::shared_ptr<ocktabot_kinematics::srv::GetJointPosIK::Response> response){
+void OcktabotKinematics::getJointPosIK(const std::shared_ptr<ocktabot_interfaces::srv::GetJointPosIK::Request> request,
+    std::shared_ptr<ocktabot_interfaces::srv::GetJointPosIK::Response> response){
     stewart::Vec6 target;
     for (int i = 0; i < 6; ++i) target[i] = request->target[i];
 

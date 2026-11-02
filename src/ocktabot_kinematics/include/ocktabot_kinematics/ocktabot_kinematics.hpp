@@ -8,7 +8,7 @@
 #include "sensor_msgs/msg/joint_state.hpp"
 #include "geometry_msgs/msg/pose_stamped.hpp"
 
-#include "ocktabot_kinematics/srv/get_joint_pos_ik.hpp"
+#include "ocktabot_interfaces/srv/get_joint_pos_ik.hpp"
 #include "ocktabot_kinematics/simulation.hpp"
 
 namespace ocktabot_kinematics{
@@ -29,8 +29,8 @@ public:
 private:
     void onMotorJointState(const sensor_msgs::msg::JointState::SharedPtr msg);
 
-    void getJointPosIK(const std::shared_ptr<ocktabot_kinematics::srv::GetJointPosIK::Request> request,
-        std::shared_ptr<ocktabot_kinematics::srv::GetJointPosIK::Response> response);
+    void getJointPosIK(const std::shared_ptr<ocktabot_interfaces::srv::GetJointPosIK::Request> request,
+        std::shared_ptr<ocktabot_interfaces::srv::GetJointPosIK::Response> response);
 
     // Base link angles from a JointState, matched by motor_names_.
     // Returns false (and a reason) if a motor is missing.
@@ -46,7 +46,7 @@ private:
 
     rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr motor_jointstate_subscriber_;
     rclcpp::Publisher<geometry_msgs::msg::PoseStamped>::SharedPtr endeffector_pos_publisher_;
-    rclcpp::Service<ocktabot_kinematics::srv::GetJointPosIK>::SharedPtr get_jointpos_ik_service_;
+    rclcpp::Service<ocktabot_interfaces::srv::GetJointPosIK>::SharedPtr get_jointpos_ik_service_;
 };
 
 } //namespace ocktabot_kinematics

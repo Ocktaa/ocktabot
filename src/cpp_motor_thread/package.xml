@@ -3,27 +3,23 @@
 <package format="3">
   <name>cpp_motor_thread</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>EPOS2 gateway: motor positions, profile position moves</description>
   <maintainer email="r0cktaprimadhi@gmail.com">ockta</maintainer>
   <license>Apache-2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
-  <buildtool_depend>rosidl_default_generators</buildtool_depend>
 
-  <member_of_group>rosidl_interface_packages</member_of_group>
+  <depend>rclcpp</depend>
+  <depend>rclcpp_action</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_srvs</depend>
+  <depend>ocktabot_interfaces</depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
 
-  <exec_depend>rosidl_default_runtime</exec_depend>
-  
   <export>
     <build_type>ament_cmake</build_type>
-    <depend>rclcpp</depend>
-    <depend>sensor_msgs</depend>
-    <depend>std_srvs</depend>
-    <depend>rclcpp_action</depend>
-    <depend>action_msgs</depend>
   </export>
 
 </package>

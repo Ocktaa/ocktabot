@@ -21,10 +21,7 @@ find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(std_srvs REQUIRED)
 find_package(rclcpp_action REQUIRED)
-find_package(rosidl_default_generators REQUIRED)
-
-rosidl_generate_interfaces(${PROJECT_NAME}
-  "action/MoveProfilePosition.action")
+find_package(ocktabot_interfaces REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
@@ -36,9 +33,8 @@ target_include_directories(epos_motor_thread PRIVATE
   ${CMAKE_CURRENT_SOURCE_DIR}/include
   ${EPOS_INCLUDE_DIR})
 
-ament_target_dependencies(epos_motor_thread rclcpp sensor_msgs std_srvs rclcpp_action)
-rosidl_get_typesupport_target(cpp_typesupport_target ${PROJECT_NAME} "rosidl_typesupport_cpp")
-target_link_libraries(epos_motor_thread ${EPOS_LIB} ${FTD2XX_LIB} "${cpp_typesupport_target}")
+ament_target_dependencies(epos_motor_thread rclcpp sensor_msgs std_srvs rclcpp_action ocktabot_interfaces)
+target_link_libraries(epos_motor_thread ${EPOS_LIB} ${FTD2XX_LIB})
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

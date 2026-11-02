@@ -29,6 +29,15 @@ static Stage defaultPlate() {
     return stageFromPoints(Vec2(0, 4), Vec2(-r3, -2), Vec2(r3, -2), Vec3(3, 3, 3), Vec3::Zero());
 }
 
+// Two stacked default plates, independent of the robot's defaultGeometry().
+static Geometry testGeometry() {
+    const double r3 = 2.0 * std::sqrt(3.0);
+    Geometry geo;
+    geo.nStages = 2;
+    geo.base = PlateInput{Vec2(0, 4), Vec2(-r3, -2), Vec2(r3, -2), Vec3(3, 3, 3), Vec3::Zero()};
+    return geo;
+}
+
 int main() {
     // ---------------------------------------------------------------- layer 1
     std::printf("\n-- layer 1: utilities --\n");
@@ -191,7 +200,7 @@ int main() {
     // ---------------------------------------------------------------- layer 6
     std::printf("\n-- layer 6: simulation driven by the motor positions --\n");
     {
-        Simulation sim(defaultGeometry());
+        Simulation sim(testGeometry());
         const FKUpdate f0 = sim.update(Config{phi0});
         check("first reading gives a pose", f0.valid && !f0.held ? 0.0 : 1.0, 0);
         check("first reading: top2 centroid at z = 9.6", std::abs(f0.pose[2] - 9.6), 1e-12);
@@ -227,11 +236,33 @@ int main() {
         check("unreachable target is rejected", sim.inverse(far, spec).ok ? 1.0 : 0.0, 0);
 
         // jump detection: with a tiny threshold every real move counts as a jump
-        Simulation strict(defaultGeometry(), 1e-6);
+        Simulation strict(testGeometry(), 1e-6);
         const FKUpdate s0 = strict.update(Config{phi0});
         const FKUpdate s1 = strict.update(Config{phi0 + Vec3(5, 5, 5) * DEG});
         check("jump to another configuration holds the previous pose",
               s1.held && s1.valid ? (s1.pose - s0.pose).norm() : 1e9, 0);
+    }
+
+    // ---------------------------------------------------------------- layer 7
+    std::printf("\n-- layer 7: the robot (defaultGeometry), motors limited to +-25 deg --\n");
+    {
+        // motor 0 rad = links straight up = phi_in 90 deg (full extension)
+        const PoseMask spec{true, true, true, false, false, false};
+        const double maxMotor = 25.0 * DEG;
+        Simulation sim(defaultGeometry());
+        const FKUpdate home = sim.update(Config{Vec3::Constant(90.0 * DEG)});
+        check("full extension can be assembled", home.valid ? 0.0 : 1.0, 0);
+        check("IK is singular at full extension (commander steps off first)",
+              sim.inverse(home.pose, spec).ok ? 1.0 : 0.0, 0);
+
+        const FKUpdate ready = sim.update(Config{Vec3::Constant(90.0 * DEG + 0.05)});
+        check("ready position (0.05 rad) is accepted", ready.valid && !ready.held ? 0.0 : 1.0, 0);
+        Vec6 target = ready.pose;
+        target[2] -= 10.0;
+        const IKUpdate ik = sim.inverse(target, spec);
+        const double motorMax = (ik.motorPos.array() - 90.0 * DEG).abs().maxCoeff();
+        check("IK 10 below the ready pose converges", ik.ok ? 0.0 : 1.0, 0);
+        check("... and stays within +-25 deg", ik.ok && motorMax <= maxMotor ? 0.0 : 1.0, 0);
     }
 
     std::printf("\n%s: %d failure(s)\n", gFailures == 0 ? "ALL PASSED" : "SOME FAILED", gFailures);

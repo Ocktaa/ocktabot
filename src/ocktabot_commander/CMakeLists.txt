@@ -7,9 +7,23 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-# uncomment the following section in order to fill in
-# further dependencies manually.
-# find_package(<dependency> REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(rclcpp_action REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(ocktabot_interfaces REQUIRED)
+
+# action server move_to_pose_act: IK (get_jointpos_ik) -> limits -> motors (move_motors_act)
+add_executable(ocktabot_commander_node
+  src/ocktabot_commander.cpp)
+target_include_directories(ocktabot_commander_node PRIVATE
+  ${CMAKE_CURRENT_SOURCE_DIR}/include)
+target_compile_features(ocktabot_commander_node PRIVATE cxx_std_17)
+ament_target_dependencies(ocktabot_commander_node
+  rclcpp rclcpp_action sensor_msgs geometry_msgs ocktabot_interfaces)
+
+install(TARGETS ocktabot_commander_node
+  DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

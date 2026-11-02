@@ -1,0 +1,12 @@
+# Move the end effector (the last top plate) to a pose.
+# target: same as GetJointPosIK.target = (x, y, z, roll, pitch, yaw)
+#   x, y, z in model length units, roll, pitch, yaw [rad]
+#   only the 3 components selected by ocktabot_kinematics' ik_spec are enforced
+float64[6] target
+---
+bool success
+string message
+float64[6] pose              # measured end-effector pose after the move
+---
+float64[3] motor_positions   # [rad] at the gearbox output
+float64[6] pose              # current end-effector pose

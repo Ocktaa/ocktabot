@@ -10,11 +10,8 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
-find_package(rosidl_default_generators REQUIRED)
+find_package(ocktabot_interfaces REQUIRED)
 find_package(Eigen3 REQUIRED NO_MODULE)
-
-rosidl_generate_interfaces(${PROJECT_NAME}
-  "srv/GetJointPosIK.srv")
 
 # kinematics (no ROS): forward/inverse kinematics of the stacked stages
 add_library(stewart_kinematics STATIC
@@ -34,9 +31,8 @@ set_target_properties(stewart_kinematics PROPERTIES POSITION_INDEPENDENT_CODE ON
 # ros2 node: motor_jointstate -> endeffector_pos, service get_jointpos_ik
 add_executable(ocktabot_kinematics_node
   src/ocktabot_kinematics.cpp)
-ament_target_dependencies(ocktabot_kinematics_node rclcpp sensor_msgs geometry_msgs)
-rosidl_get_typesupport_target(cpp_typesupport_target ${PROJECT_NAME} "rosidl_typesupport_cpp")
-target_link_libraries(ocktabot_kinematics_node stewart_kinematics "${cpp_typesupport_target}")
+ament_target_dependencies(ocktabot_kinematics_node rclcpp sensor_msgs geometry_msgs ocktabot_interfaces)
+target_link_libraries(ocktabot_kinematics_node stewart_kinematics)
 
 install(TARGETS ocktabot_kinematics_node
   DESTINATION lib/${PROJECT_NAME})

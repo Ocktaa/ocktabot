@@ -1,0 +1,10 @@
+# Move several motors together: every motor's profile is scaled by its travel,
+# so all of them start and arrive at the same time.
+uint16[] nodes             # EPOS node ids
+float64[] goal_positions   # [rad] absolute, at the gearbox output, 0 = links straight up
+---
+bool success
+string message
+float64[] end_positions    # [rad], same order as nodes
+---
+float64[] current_positions  # [rad], same order as nodes
