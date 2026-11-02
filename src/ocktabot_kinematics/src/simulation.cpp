@@ -30,11 +30,11 @@ Geometry defaultGeometry() {
     geo.nStages = 2;
 
     // BASE = bottom of stage 1, in WORLD coordinates.
-    const double r3 = 2.0 * std::sqrt(3.0);   // 2*sqrt(3) = 3.4641
-    geo.base.R = Vec2(0.0, 4.0);
-    geo.base.S = Vec2(-r3, -2.0);
-    geo.base.T = Vec2(r3, -2.0);
-    geo.base.m = Vec3(3.0, 3.0, 3.0);          // link lengths
+    const double r3 = 80.0 * std::sqrt(3.0);   // 2*sqrt(3) = 3.4641
+    geo.base.R = Vec2(0.0, 160.0);
+    geo.base.S = Vec2(-r3, -80.0);
+    geo.base.T = Vec2(r3, -80.0);
+    geo.base.m = Vec3(120.0, 120.0, 120.0);          // link lengths
     geo.base.deltaDeg = Vec3(0.0, 0.0, 0.0);   // 0 = links swing toward the centroid
 
     // Top plates in their OWN frames. An empty entry means "same as the base".
