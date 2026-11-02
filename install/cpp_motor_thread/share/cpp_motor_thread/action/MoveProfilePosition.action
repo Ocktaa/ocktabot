@@ -1,7 +1,0 @@
-uint16 node
-float64 goal_position     # [rad] at the gearbox output, 0 = encoder zero (links straight up)
-bool absolute             # true: goal_position is absolute, false: relative to the current position
----
-float64 end_position      # [rad]
----
-float64 current_position  # [rad]

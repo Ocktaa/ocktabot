@@ -1,2 +1,0 @@
-Invoking command in '/home/ockta/ocktabot_ws/build/ocktabot_kinematics': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ockta/ocktabot_ws/src/ocktabot_kinematics -DCMAKE_INSTALL_PREFIX=/home/ockta/ocktabot_ws/install/ocktabot_kinematics
-Invoked command in '/home/ockta/ocktabot_ws/build/ocktabot_kinematics' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ockta/ocktabot_ws/src/ocktabot_kinematics -DCMAKE_INSTALL_PREFIX=/home/ockta/ocktabot_ws/install/ocktabot_kinematics
