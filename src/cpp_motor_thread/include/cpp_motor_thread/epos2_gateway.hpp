@@ -51,6 +51,10 @@ private:
 
     bool targetReached(unsigned short node);
 
+    //a disabled drive accepts a move but never moves (and still reports "target reached")
+    bool isEnabled(unsigned short node);
+    void requireEnabled(unsigned short node);
+
     //every node is moved by at most one goal at a time
     bool claimNodes(const std::vector<unsigned short>& nodes);
     void releaseNodes(const std::vector<unsigned short>& nodes);

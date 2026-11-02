@@ -25,6 +25,7 @@ namespace{
     constexpr double kQcPerRev = kQcPerMotorRev * kGearRatio;  //7650 qc per revolution of the gearbox output
     constexpr double kMaxAngle = 25.0 * M_PI / 180.0;          //allowed motion: +-25 deg around 0 (links straight up)
     constexpr int kDriveLimitMarginQc = 10;                    //drive's own limit sits ~0.5 deg outside kMaxAngle
+    constexpr long kPositionToleranceQc = 5;                   //~0.24 deg: "target reached" also needs this close
     constexpr auto kMoveTimeout = std::chrono::milliseconds(15000);
     constexpr auto kPollPeriod = std::chrono::milliseconds(10);
     constexpr auto kPublishPeriod = 100ms;
@@ -163,6 +164,20 @@ bool Epos2Gateway::targetReached(unsigned short node){
     return reached != 0;
 }
 
+bool Epos2Gateway::isEnabled(unsigned short node){
+    int enabled = 0;
+    unsigned int err = 0;
+    std::lock_guard<std::mutex> lock(vcs_mutex_);
+    check(VCS_GetEnableState(handle_, node, &enabled, &err), err, nodeLabel("GetEnableState", node));
+    return enabled != 0;
+}
+
+void Epos2Gateway::requireEnabled(unsigned short node){
+    if (!isEnabled(node)) {
+        throw std::runtime_error(nodeLabel("Drive is not enabled (call profile_position_mode_srv) on", node));
+    }
+}
+
 bool Epos2Gateway::claimNodes(const std::vector<unsigned short>& nodes){
     std::lock_guard<std::mutex> lock(busy_mutex_);
     for (auto node : nodes){
@@ -187,14 +202,19 @@ void Epos2Gateway::prepareProfilePosition(const std::shared_ptr<std_srvs::srv::T
     int maxLimitQc = static_cast<int>(std::floor(kMaxAngle * kQcPerRev / (2.0 * M_PI))) + kDriveLimitMarginQc;
     int minLimitQc = -maxLimitQc;
     unsigned int written = 0;
+    std::string warnings;
     try {
         std::lock_guard<std::mutex> lock(vcs_mutex_);
         for (auto node : kNodes){
             check(VCS_ClearFault(handle_, node, &err), err, nodeLabel("ClearFault", node));
-            check(VCS_SetObject(handle_, node, 0x607D, 0x01, &minLimitQc, 4, &written, &err), err,
-                    nodeLabel("SetObject min position limit", node));
-            check(VCS_SetObject(handle_, node, 0x607D, 0x02, &maxLimitQc, 4, &written, &err), err,
-                    nodeLabel("SetObject max position limit", node));
+            //a failed limit write is reported but does not keep the drive disabled;
+            //the +-25 deg checks of the action servers still apply
+            if (!VCS_SetObject(handle_, node, 0x607D, 0x01, &minLimitQc, 4, &written, &err) ||
+                !VCS_SetObject(handle_, node, 0x607D, 0x02, &maxLimitQc, 4, &written, &err)) {
+                const std::string warning = nodeLabel("Drive position limits not set on", node) + ": " + errorText(err);
+                RCLCPP_WARN(get_logger(), "%s", warning.c_str());
+                warnings += "; " + warning;
+            }
             check(VCS_SetEnableState(handle_, node, &err), err, nodeLabel("SetEnableState", node));
             check(VCS_ActivateProfilePositionMode(handle_, node, &err), err, 
                     nodeLabel("ActivateProfilePositionMode", node));
@@ -209,7 +229,7 @@ void Epos2Gateway::prepareProfilePosition(const std::shared_ptr<std_srvs::srv::T
         return;
     }
     response->success = 1;
-    response->message = "Successfully entered profile position mode";
+    response->message = "Successfully entered profile position mode" + warnings;
 }
 
 void Epos2Gateway::publishJointStates(){
@@ -249,7 +269,9 @@ void Epos2Gateway::moveProfilePosition(
         if (!withinLimits(target)) {
             throw std::runtime_error(nodeLabel("Target outside the +-25 deg limit on", goal->node));
         }
-        moveToPosition(goal->node, radToQc(target), kProfileVelocity, kProfileAccel, kProfileDecel);
+        requireEnabled(goal->node);
+        const long targetQc = radToQc(target);
+        moveToPosition(goal->node, targetQc, kProfileVelocity, kProfileAccel, kProfileDecel);
         const auto deadline = std::chrono::steady_clock::now() + kMoveTimeout;
 
     
@@ -266,11 +288,12 @@ void Epos2Gateway::moveProfilePosition(
                 break;
             }
 
-            feedback->current_position = getPositionRad(goal->node);
+            const int positionQc = getPosition(goal->node);
+            feedback->current_position = qcToRad(positionQc);
             goal_handle->publish_feedback(feedback);
 
-            if (targetReached(goal->node)) {
-                result->end_position = getPositionRad(goal->node);
+            if (targetReached(goal->node) && std::labs(positionQc - targetQc) <= kPositionToleranceQc) {
+                result->end_position = qcToRad(positionQc);
                 goal_handle->succeed(result);
                 RCLCPP_INFO(get_logger(), "Goal Succeeded");
                 break;
@@ -278,7 +301,8 @@ void Epos2Gateway::moveProfilePosition(
 
             if (std::chrono::steady_clock::now() > deadline) {
                 haltMovement(goal->node);
-                throw std::runtime_error(nodeLabel("Move timed out on", goal->node));
+                throw std::runtime_error(nodeLabel("Move timed out on", goal->node) + " at " +
+                    std::to_string(positionQc) + " qc, target " + std::to_string(targetQc) + " qc");
             
             }
             std::this_thread::sleep_for(kPollPeriod);
@@ -343,6 +367,7 @@ void Epos2Gateway::moveMotors(const std::shared_ptr<rclcpp_action::ServerGoalHan
         std::vector<long> targetQc(n);
         std::vector<long> travelQc(n);
         long maxTravelQc = 0;
+        for (auto node : nodes) requireEnabled(node);
         for (std::size_t i = 0; i < n; ++i){
             targetQc[i] = radToQc(goal->goal_positions[i]);
             travelQc[i] = std::labs(targetQc[i] - getPosition(nodes[i]));
@@ -373,8 +398,16 @@ void Epos2Gateway::moveMotors(const std::shared_ptr<rclcpp_action::ServerGoalHan
             feedback->current_positions = readAll();
             goal_handle->publish_feedback(feedback);
 
+            //the drive's "target reached" alone is not trusted: the position must be there too
             bool reached = true;
-            for (auto node : nodes) reached = reached && targetReached(node);
+            std::string lagging;
+            for (std::size_t i = 0; i < n; ++i){
+                const long offQc = std::labs(radToQc(feedback->current_positions[i]) - targetQc[i]);
+                if (!targetReached(nodes[i]) || offQc > kPositionToleranceQc) {
+                    reached = false;
+                    lagging += " node " + std::to_string(nodes[i]) + " " + std::to_string(offQc) + " qc off";
+                }
+            }
             if (reached) {
                 result->success = true;
                 result->message = "target reached";
@@ -386,7 +419,7 @@ void Epos2Gateway::moveMotors(const std::shared_ptr<rclcpp_action::ServerGoalHan
 
             if (std::chrono::steady_clock::now() > deadline) {
                 haltAll();
-                throw std::runtime_error("move of " + std::to_string(n) + " motors timed out");
+                throw std::runtime_error("move of " + std::to_string(n) + " motors timed out:" + lagging);
             }
             std::this_thread::sleep_for(kPollPeriod);
         }

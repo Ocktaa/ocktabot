@@ -151,6 +151,9 @@ void OcktabotCommander::moveToPose(const std::shared_ptr<GoalHandleMoveToPose> g
                 return;
             }
             waitForPoseAfter(now().nanoseconds());
+            if (nearHome()) {
+                throw std::runtime_error("the move to ready_position did not move the motors off full extension");
+            }
             ik = callIK(goal->target);
         }
         if (!ik->success) throw std::runtime_error("IK failed: " + ik->message);
