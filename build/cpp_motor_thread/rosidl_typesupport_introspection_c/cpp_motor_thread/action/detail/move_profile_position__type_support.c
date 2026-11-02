@@ -31,7 +31,7 @@ void cpp_motor_thread__action__MoveProfilePosition_Goal__rosidl_typesupport_intr
   cpp_motor_thread__action__MoveProfilePosition_Goal__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember cpp_motor_thread__action__MoveProfilePosition_Goal__rosidl_typesupport_introspection_c__MoveProfilePosition_Goal_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember cpp_motor_thread__action__MoveProfilePosition_Goal__rosidl_typesupport_introspection_c__MoveProfilePosition_Goal_message_member_array[3] = {
   {
     "node",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_UINT16,  // type
@@ -52,7 +52,7 @@ static rosidl_typesupport_introspection_c__MessageMember cpp_motor_thread__actio
   },
   {
     "goal_position",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is key
@@ -67,13 +67,31 @@ static rosidl_typesupport_introspection_c__MessageMember cpp_motor_thread__actio
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "absolute",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(cpp_motor_thread__action__MoveProfilePosition_Goal, absolute),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers cpp_motor_thread__action__MoveProfilePosition_Goal__rosidl_typesupport_introspection_c__MoveProfilePosition_Goal_message_members = {
   "cpp_motor_thread__action",  // message namespace
   "MoveProfilePosition_Goal",  // message name
-  2,  // number of fields
+  3,  // number of fields
   sizeof(cpp_motor_thread__action__MoveProfilePosition_Goal),
   false,  // has_any_key_member_
   cpp_motor_thread__action__MoveProfilePosition_Goal__rosidl_typesupport_introspection_c__MoveProfilePosition_Goal_message_member_array,  // message members
@@ -145,7 +163,7 @@ void cpp_motor_thread__action__MoveProfilePosition_Result__rosidl_typesupport_in
 static rosidl_typesupport_introspection_c__MessageMember cpp_motor_thread__action__MoveProfilePosition_Result__rosidl_typesupport_introspection_c__MoveProfilePosition_Result_message_member_array[1] = {
   {
     "end_position",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is key
@@ -238,7 +256,7 @@ void cpp_motor_thread__action__MoveProfilePosition_Feedback__rosidl_typesupport_
 static rosidl_typesupport_introspection_c__MessageMember cpp_motor_thread__action__MoveProfilePosition_Feedback__rosidl_typesupport_introspection_c__MoveProfilePosition_Feedback_message_member_array[1] = {
   {
     "current_position",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is key

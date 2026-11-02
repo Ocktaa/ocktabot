@@ -8,13 +8,22 @@ module cpp_motor_thread {
     struct MoveProfilePosition_Goal {
       uint16 node;
 
-      int32 goal_position;
+      @verbatim (language="comment", text=
+        "at the gearbox output, 0 = encoder zero (links straight up)")
+      @unit (value="rad")
+      double goal_position;
+
+      @verbatim (language="comment", text=
+        "true: goal_position is absolute, false: relative to the current position")
+      boolean absolute;
     };
     struct MoveProfilePosition_Result {
-      int32 end_position;
+      @unit (value="rad")
+      double end_position;
     };
     struct MoveProfilePosition_Feedback {
-      int32 current_position;
+      @unit (value="rad")
+      double current_position;
     };
   };
 };

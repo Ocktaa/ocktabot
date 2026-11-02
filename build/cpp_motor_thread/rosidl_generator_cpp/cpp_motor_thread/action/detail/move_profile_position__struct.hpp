@@ -43,7 +43,8 @@ struct MoveProfilePosition_Goal_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->node = 0;
-      this->goal_position = 0l;
+      this->goal_position = 0.0;
+      this->absolute = false;
     }
   }
 
@@ -54,7 +55,8 @@ struct MoveProfilePosition_Goal_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->node = 0;
-      this->goal_position = 0l;
+      this->goal_position = 0.0;
+      this->absolute = false;
     }
   }
 
@@ -63,8 +65,11 @@ struct MoveProfilePosition_Goal_
     uint16_t;
   _node_type node;
   using _goal_position_type =
-    int32_t;
+    double;
   _goal_position_type goal_position;
+  using _absolute_type =
+    bool;
+  _absolute_type absolute;
 
   // setters for named parameter idiom
   Type & set__node(
@@ -74,9 +79,15 @@ struct MoveProfilePosition_Goal_
     return *this;
   }
   Type & set__goal_position(
-    const int32_t & _arg)
+    const double & _arg)
   {
     this->goal_position = _arg;
+    return *this;
+  }
+  Type & set__absolute(
+    const bool & _arg)
+  {
+    this->absolute = _arg;
     return *this;
   }
 
@@ -128,6 +139,9 @@ struct MoveProfilePosition_Goal_
     if (this->goal_position != other.goal_position) {
       return false;
     }
+    if (this->absolute != other.absolute) {
+      return false;
+    }
     return true;
   }
   bool operator!=(const MoveProfilePosition_Goal_ & other) const
@@ -170,7 +184,7 @@ struct MoveProfilePosition_Result_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->end_position = 0l;
+      this->end_position = 0.0;
     }
   }
 
@@ -180,18 +194,18 @@ struct MoveProfilePosition_Result_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->end_position = 0l;
+      this->end_position = 0.0;
     }
   }
 
   // field types and members
   using _end_position_type =
-    int32_t;
+    double;
   _end_position_type end_position;
 
   // setters for named parameter idiom
   Type & set__end_position(
-    const int32_t & _arg)
+    const double & _arg)
   {
     this->end_position = _arg;
     return *this;
@@ -284,7 +298,7 @@ struct MoveProfilePosition_Feedback_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->current_position = 0l;
+      this->current_position = 0.0;
     }
   }
 
@@ -294,18 +308,18 @@ struct MoveProfilePosition_Feedback_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->current_position = 0l;
+      this->current_position = 0.0;
     }
   }
 
   // field types and members
   using _current_position_type =
-    int32_t;
+    double;
   _current_position_type current_position;
 
   // setters for named parameter idiom
   Type & set__current_position(
-    const int32_t & _arg)
+    const double & _arg)
   {
     this->current_position = _arg;
     return *this;

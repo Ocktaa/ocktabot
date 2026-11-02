@@ -1,0 +1,8 @@
+setup.py
+ocktabot_kinematics/__init__.py
+ocktabot_kinematics.egg-info/PKG-INFO
+ocktabot_kinematics.egg-info/SOURCES.txt
+ocktabot_kinematics.egg-info/dependency_links.txt
+ocktabot_kinematics.egg-info/top_level.txt
+ocktabot_kinematics/srv/__init__.py
+ocktabot_kinematics/srv/_get_joint_pos_ik.py

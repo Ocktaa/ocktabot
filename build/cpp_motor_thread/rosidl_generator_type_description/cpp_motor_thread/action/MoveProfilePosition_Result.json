@@ -6,7 +6,7 @@
         {
           "name": "end_position",
           "type": {
-            "type_id": 6,
+            "type_id": 11,
             "capacity": 0,
             "string_capacity": 0,
             "nested_type_name": ""
@@ -20,7 +20,7 @@
   "type_hashes": [
     {
       "type_name": "cpp_motor_thread/action/MoveProfilePosition_Result",
-      "hash_string": "RIHS01_a7bee4555988ca99bc676855bc54a80da7c3bdb2133d94212bddfcfefb496c6c"
+      "hash_string": "RIHS01_9b54ee9b5fdc6d803444d45a948364a1c92cef21354923a09682437eb46d8256"
     }
   ]
 }

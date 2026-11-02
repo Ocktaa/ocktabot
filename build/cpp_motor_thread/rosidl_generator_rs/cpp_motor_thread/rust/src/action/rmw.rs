@@ -32,10 +32,11 @@ pub struct MoveProfilePosition_Goal {
     #[allow(missing_docs)]
     pub node: u16,
 
+    /// at the gearbox output, 0 = encoder zero (links straight up)
+    pub goal_position: f64,
 
-    // This member is not documented.
-    #[allow(missing_docs)]
-    pub goal_position: i32,
+    /// true: goal_position is absolute, false: relative to the current position
+    pub absolute: bool,
 
 }
 
@@ -110,7 +111,7 @@ pub struct MoveProfilePosition_Result {
 
     // This member is not documented.
     #[allow(missing_docs)]
-    pub end_position: i32,
+    pub end_position: f64,
 
 }
 
@@ -185,7 +186,7 @@ pub struct MoveProfilePosition_Feedback {
 
     // This member is not documented.
     #[allow(missing_docs)]
-    pub current_position: i32,
+    pub current_position: f64,
 
 }
 

@@ -77,7 +77,17 @@
           {
             "name": "goal_position",
             "type": {
-              "type_id": 6,
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "absolute",
+            "type": {
+              "type_id": 15,
               "capacity": 0,
               "string_capacity": 0,
               "nested_type_name": ""
@@ -201,7 +211,7 @@
   "type_hashes": [
     {
       "type_name": "cpp_motor_thread/action/MoveProfilePosition_SendGoal_Event",
-      "hash_string": "RIHS01_0c2971343297b315a1b8c7db23faa78f6385790cfa5cef02b29bf84ee93d2fa9"
+      "hash_string": "RIHS01_681c8094317d77844e1f9c61698189d802bb64429252a0d8bc1200df5d5b383f"
     },
     {
       "type_name": "builtin_interfaces/msg/Time",
@@ -209,11 +219,11 @@
     },
     {
       "type_name": "cpp_motor_thread/action/MoveProfilePosition_Goal",
-      "hash_string": "RIHS01_fde2ee1edefb4456477e3b69e9973d82848c2e803ff56a3300e63a08202d7d26"
+      "hash_string": "RIHS01_705d5cc21ed9291ba98940b463860e932c0d345a07e8774c11e44bb10192acd4"
     },
     {
       "type_name": "cpp_motor_thread/action/MoveProfilePosition_SendGoal_Request",
-      "hash_string": "RIHS01_9871431215e5e0ae243984dda650472ab222f06f71d2b25797b4cb97a3ce00da"
+      "hash_string": "RIHS01_415bddc4ecce55318326798cda0bc68140e30064dfe56202875a08338f662006"
     },
     {
       "type_name": "cpp_motor_thread/action/MoveProfilePosition_SendGoal_Response",

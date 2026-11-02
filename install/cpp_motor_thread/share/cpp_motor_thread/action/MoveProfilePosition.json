@@ -97,7 +97,7 @@
           {
             "name": "current_position",
             "type": {
-              "type_id": 6,
+              "type_id": 11,
               "capacity": 0,
               "string_capacity": 0,
               "nested_type_name": ""
@@ -257,7 +257,17 @@
           {
             "name": "goal_position",
             "type": {
-              "type_id": 6,
+              "type_id": 11,
+              "capacity": 0,
+              "string_capacity": 0,
+              "nested_type_name": ""
+            },
+            "default_value": ""
+          },
+          {
+            "name": "absolute",
+            "type": {
+              "type_id": 15,
               "capacity": 0,
               "string_capacity": 0,
               "nested_type_name": ""
@@ -272,7 +282,7 @@
           {
             "name": "end_position",
             "type": {
-              "type_id": 6,
+              "type_id": 11,
               "capacity": 0,
               "string_capacity": 0,
               "nested_type_name": ""
@@ -466,7 +476,7 @@
   "type_hashes": [
     {
       "type_name": "cpp_motor_thread/action/MoveProfilePosition",
-      "hash_string": "RIHS01_ef9b57dcb64bfef4349cd60f3e67fab7ccdd32cd372bb28063e81ac0a003ae92"
+      "hash_string": "RIHS01_b5a52cf6a8d29edfcd1ed9e7011da9d9709cf4c15f5bdddf64eaa9a515fc1bd9"
     },
     {
       "type_name": "builtin_interfaces/msg/Time",
@@ -474,19 +484,19 @@
     },
     {
       "type_name": "cpp_motor_thread/action/MoveProfilePosition_Feedback",
-      "hash_string": "RIHS01_7f371f5f44a2ebc490f62cc584dce3474a7744927bb33a8425a717fdd814ad21"
+      "hash_string": "RIHS01_a5e938df7244e189952a997449d20ed001445ac013a51d869ad532eee4915996"
     },
     {
       "type_name": "cpp_motor_thread/action/MoveProfilePosition_FeedbackMessage",
-      "hash_string": "RIHS01_aa4d8000c0ee7ed2a6d29964fb8165ee84f5e7f3bd9cc4340e7a6412f8cc1cf0"
+      "hash_string": "RIHS01_59a85db5d2dfce728da9aa1a27686441bcfc3f249a08066f46b9758b765cd195"
     },
     {
       "type_name": "cpp_motor_thread/action/MoveProfilePosition_GetResult",
-      "hash_string": "RIHS01_844f67c069f470b22b59a9c5750256b95c8ef6490b80b9ab99c8d0ec0a336505"
+      "hash_string": "RIHS01_5ec380c7bff98f16f3d061f59cf11b6ae4c95e415ff15d70c31a5daf837f63cc"
     },
     {
       "type_name": "cpp_motor_thread/action/MoveProfilePosition_GetResult_Event",
-      "hash_string": "RIHS01_179c77ef39d190bcf48a9b0ab797360d01a7a9f563a118259756cff92545a1da"
+      "hash_string": "RIHS01_39bdf479dfabed1f6f4fb481b5b81e6947ef9b9fca67741e0de798412cd49da6"
     },
     {
       "type_name": "cpp_motor_thread/action/MoveProfilePosition_GetResult_Request",
@@ -494,27 +504,27 @@
     },
     {
       "type_name": "cpp_motor_thread/action/MoveProfilePosition_GetResult_Response",
-      "hash_string": "RIHS01_f2ccac64c3bef985408c504dfe8794f309532bc1666dda353e1962ef0f508e9f"
+      "hash_string": "RIHS01_e171ddff319408b7186cc678e87dca3f0b00372e1dfeb88cb133fb4c9b0182c5"
     },
     {
       "type_name": "cpp_motor_thread/action/MoveProfilePosition_Goal",
-      "hash_string": "RIHS01_fde2ee1edefb4456477e3b69e9973d82848c2e803ff56a3300e63a08202d7d26"
+      "hash_string": "RIHS01_705d5cc21ed9291ba98940b463860e932c0d345a07e8774c11e44bb10192acd4"
     },
     {
       "type_name": "cpp_motor_thread/action/MoveProfilePosition_Result",
-      "hash_string": "RIHS01_a7bee4555988ca99bc676855bc54a80da7c3bdb2133d94212bddfcfefb496c6c"
+      "hash_string": "RIHS01_9b54ee9b5fdc6d803444d45a948364a1c92cef21354923a09682437eb46d8256"
     },
     {
       "type_name": "cpp_motor_thread/action/MoveProfilePosition_SendGoal",
-      "hash_string": "RIHS01_ee90cee6a91e548963cf8ffd71ab0819438cf4ce3f366bad1010790a228b526f"
+      "hash_string": "RIHS01_e511838da3b21da24963357e05116e5f56ce04c58c44069e7941da19123b50f6"
     },
     {
       "type_name": "cpp_motor_thread/action/MoveProfilePosition_SendGoal_Event",
-      "hash_string": "RIHS01_0c2971343297b315a1b8c7db23faa78f6385790cfa5cef02b29bf84ee93d2fa9"
+      "hash_string": "RIHS01_681c8094317d77844e1f9c61698189d802bb64429252a0d8bc1200df5d5b383f"
     },
     {
       "type_name": "cpp_motor_thread/action/MoveProfilePosition_SendGoal_Request",
-      "hash_string": "RIHS01_9871431215e5e0ae243984dda650472ab222f06f71d2b25797b4cb97a3ce00da"
+      "hash_string": "RIHS01_415bddc4ecce55318326798cda0bc68140e30064dfe56202875a08338f662006"
     },
     {
       "type_name": "cpp_motor_thread/action/MoveProfilePosition_SendGoal_Response",

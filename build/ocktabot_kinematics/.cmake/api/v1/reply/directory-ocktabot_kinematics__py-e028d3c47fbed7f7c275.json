@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "ocktabot_kinematics__py",
+		"source" : "/home/ockta/ocktabot_ws/build/ocktabot_kinematics/ocktabot_kinematics__py"
+	}
+}

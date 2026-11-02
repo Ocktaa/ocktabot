@@ -1,0 +1,169 @@
+[0.005s] Invoking command in '/home/ockta/ocktabot_ws/build/ocktabot_kinematics': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ockta/ocktabot_ws/build/ocktabot_kinematics -- -j12 -l12
+[0.054s] [  2%] Built target ocktabot_kinematics__rs
+[0.054s] [  4%] Built target ocktabot_kinematics__rosidl_generator_type_description
+[0.064s] [  4%] Built target ament_cmake_python_copy_ocktabot_kinematics
+[0.078s] [  6%] Built target ocktabot_kinematics__cpp
+[0.078s] [ 21%] Built target stewart_kinematics
+[0.079s] [ 32%] Built target ocktabot_kinematics__rosidl_generator_c
+[0.102s] [ 43%] Built target ocktabot_kinematics__rosidl_typesupport_c
+[0.102s] [ 45%] Built target ocktabot_kinematics__rosidl_typesupport_introspection_c
+[0.102s] [ 50%] Built target stewart_tests
+[0.102s] [ 56%] Built target ocktabot_kinematics__rosidl_typesupport_fastrtps_c
+[0.102s] [ 63%] Built target ocktabot_kinematics__rosidl_typesupport_cpp
+[0.103s] [ 69%] Built target ocktabot_kinematics__rosidl_typesupport_fastrtps_cpp
+[0.104s] [ 76%] Built target ocktabot_kinematics__rosidl_typesupport_introspection_cpp
+[0.114s] [ 76%] Built target ocktabot_kinematics
+[0.119s] [ 78%] [32mBuilding CXX object CMakeFiles/ocktabot_kinematics_node.dir/src/ocktabot_kinematics.cpp.o[0m
+[0.125s] [ 80%] Built target ocktabot_kinematics__py
+[0.137s] [ 84%] Built target ocktabot_kinematics__rosidl_generator_py
+[0.150s] [ 97%] Built target ocktabot_kinematics_s__rosidl_typesupport_introspection_c
+[0.150s] [ 97%] Built target ocktabot_kinematics_s__rosidl_typesupport_fastrtps_c
+[0.150s] [ 97%] Built target ocktabot_kinematics_s__rosidl_typesupport_c
+[0.209s] running egg_info
+[0.219s] writing ocktabot_kinematics.egg-info/PKG-INFO
+[0.220s] writing dependency_links to ocktabot_kinematics.egg-info/dependency_links.txt
+[0.220s] writing top-level names to ocktabot_kinematics.egg-info/top_level.txt
+[0.247s] reading manifest file 'ocktabot_kinematics.egg-info/SOURCES.txt'
+[0.247s] writing manifest file 'ocktabot_kinematics.egg-info/SOURCES.txt'
+[0.263s] [ 97%] Built target ament_cmake_python_build_ocktabot_kinematics_egg
+[5.370s] [100%] [32m[1mLinking CXX executable ocktabot_kinematics_node[0m
+[5.811s] [100%] Built target ocktabot_kinematics_node
+[5.817s] Invoked command in '/home/ockta/ocktabot_ws/build/ocktabot_kinematics' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ockta/ocktabot_ws/build/ocktabot_kinematics -- -j12 -l12
+[5.822s] Invoking command in '/home/ockta/ocktabot_ws/build/ocktabot_kinematics': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ockta/ocktabot_ws/build/ocktabot_kinematics
+[5.826s] -- Install configuration: ""
+[5.826s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ament_index/resource_index/rosidl_interfaces/ocktabot_kinematics
+[5.827s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/srv/GetJointPosIK.json
+[5.827s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics
+[5.827s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv
+[5.827s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail
+[5.827s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/get_joint_pos_ik__functions.h
+[5.827s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/get_joint_pos_ik__struct.h
+[5.827s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/get_joint_pos_ik__functions.c
+[5.827s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/get_joint_pos_ik__type_support.h
+[5.827s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/get_joint_pos_ik__type_support.c
+[5.827s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/get_joint_pos_ik__description.c
+[5.827s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/get_joint_pos_ik.h
+[5.827s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/msg
+[5.827s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/msg/rosidl_generator_c__visibility_control.h
+[5.827s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/environment/library_path.sh
+[5.827s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/environment/library_path.dsv
+[5.827s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/libocktabot_kinematics__rosidl_generator_c.so
+[5.827s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics
+[5.827s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv
+[5.827s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail
+[5.827s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/get_joint_pos_ik__rosidl_typesupport_fastrtps_c.h
+[5.827s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/msg
+[5.827s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.827s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/libocktabot_kinematics__rosidl_typesupport_fastrtps_c.so
+[5.827s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics
+[5.827s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv
+[5.828s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail
+[5.828s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/get_joint_pos_ik__type_support.hpp
+[5.828s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/get_joint_pos_ik__traits.hpp
+[5.828s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/get_joint_pos_ik__struct.hpp
+[5.828s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/get_joint_pos_ik__builder.hpp
+[5.828s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/get_joint_pos_ik.hpp
+[5.828s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/msg
+[5.828s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/msg/rosidl_generator_cpp__visibility_control.hpp
+[5.828s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics
+[5.828s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv
+[5.828s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail
+[5.828s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/dds_fastrtps
+[5.828s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/get_joint_pos_ik__rosidl_typesupport_fastrtps_cpp.hpp
+[5.828s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/msg
+[5.828s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.828s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/libocktabot_kinematics__rosidl_typesupport_fastrtps_cpp.so
+[5.828s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics
+[5.828s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv
+[5.828s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail
+[5.828s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/get_joint_pos_ik__rosidl_typesupport_introspection_c.h
+[5.828s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/get_joint_pos_ik__type_support.c
+[5.828s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/msg
+[5.828s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[5.828s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/libocktabot_kinematics__rosidl_typesupport_introspection_c.so
+[5.828s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/libocktabot_kinematics__rosidl_typesupport_c.so
+[5.828s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics
+[5.828s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv
+[5.829s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail
+[5.829s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/get_joint_pos_ik__type_support.cpp
+[5.829s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/get_joint_pos_ik__rosidl_typesupport_introspection_cpp.hpp
+[5.829s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/libocktabot_kinematics__rosidl_typesupport_introspection_cpp.so
+[5.829s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/libocktabot_kinematics__rosidl_typesupport_cpp.so
+[5.829s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/environment/pythonpath.sh
+[5.829s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/environment/pythonpath.dsv
+[5.829s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics-0.0.0-py3.12.egg-info
+[5.829s] -- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics-0.0.0-py3.12.egg-info/SOURCES.txt
+[5.829s] -- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics-0.0.0-py3.12.egg-info/top_level.txt
+[5.829s] -- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics-0.0.0-py3.12.egg-info/PKG-INFO
+[5.829s] -- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics-0.0.0-py3.12.egg-info/dependency_links.txt
+[5.829s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics
+[5.829s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/_ocktabot_kinematics_s.ep.rosidl_typesupport_c.c
+[5.829s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/__init__.py
+[5.829s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/srv
+[5.829s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/srv/__init__.py
+[5.829s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/srv/_get_joint_pos_ik.py
+[5.829s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/srv/_get_joint_pos_ik_s.c
+[5.829s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/ocktabot_kinematics_s__rosidl_typesupport_introspection_c.so
+[5.830s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/_ocktabot_kinematics_s.ep.rosidl_typesupport_introspection_c.c
+[5.830s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/ocktabot_kinematics_s__rosidl_typesupport_c.so
+[5.830s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/ocktabot_kinematics_s__rosidl_typesupport_fastrtps_c.so
+[5.830s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/_ocktabot_kinematics_s.ep.rosidl_typesupport_fastrtps_c.c
+[5.852s] Listing '/home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics'...
+[5.852s] Listing '/home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/srv'...
+[5.855s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/ocktabot_kinematics_s__rosidl_typesupport_fastrtps_c.so
+[5.855s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/ocktabot_kinematics_s__rosidl_typesupport_introspection_c.so
+[5.855s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/ocktabot_kinematics_s__rosidl_typesupport_c.so
+[5.856s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/libocktabot_kinematics__rosidl_generator_py.so
+[5.856s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/rust
+[5.856s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/rust/src
+[5.856s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/rust/src/srv.rs
+[5.856s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/rust/src/srv
+[5.856s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/rust/src/srv/rmw.rs
+[5.856s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/rust/src/lib.rs
+[5.856s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/rust/Cargo.toml
+[5.856s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/rust/build.rs
+[5.856s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/srv/GetJointPosIK.idl
+[5.856s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/srv/GetJointPosIK.srv
+[5.856s] -- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/ocktabot_kinematics/ocktabot_kinematics_node
+[5.867s] -- Set non-toolchain portion of runtime path of "/home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/ocktabot_kinematics/ocktabot_kinematics_node" to ""
+[5.867s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ament_index/resource_index/package_run_dependencies/ocktabot_kinematics
+[5.867s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ament_index/resource_index/parent_prefix_path/ocktabot_kinematics
+[5.868s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/environment/ament_prefix_path.sh
+[5.868s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/environment/ament_prefix_path.dsv
+[5.868s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/environment/path.sh
+[5.868s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/environment/path.dsv
+[5.868s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/local_setup.bash
+[5.868s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/local_setup.sh
+[5.868s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/local_setup.zsh
+[5.868s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/local_setup.dsv
+[5.868s] -- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/package.dsv
+[5.868s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ament_index/resource_index/packages/ocktabot_kinematics
+[5.868s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/export_ocktabot_kinematics__rosidl_generator_cExport.cmake
+[5.868s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/export_ocktabot_kinematics__rosidl_generator_cExport-noconfig.cmake
+[5.868s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/export_ocktabot_kinematics__rosidl_typesupport_fastrtps_cExport.cmake
+[5.868s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/export_ocktabot_kinematics__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[5.868s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/export_ocktabot_kinematics__rosidl_generator_cppExport.cmake
+[5.868s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/export_ocktabot_kinematics__rosidl_typesupport_fastrtps_cppExport.cmake
+[5.868s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/export_ocktabot_kinematics__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[5.868s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/ocktabot_kinematics__rosidl_typesupport_introspection_cExport.cmake
+[5.868s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/ocktabot_kinematics__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[5.868s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/ocktabot_kinematics__rosidl_typesupport_cExport.cmake
+[5.868s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/ocktabot_kinematics__rosidl_typesupport_cExport-noconfig.cmake
+[5.868s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/ocktabot_kinematics__rosidl_typesupport_introspection_cppExport.cmake
+[5.868s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/ocktabot_kinematics__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[5.868s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/ocktabot_kinematics__rosidl_typesupport_cppExport.cmake
+[5.868s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/ocktabot_kinematics__rosidl_typesupport_cppExport-noconfig.cmake
+[5.869s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/export_ocktabot_kinematics__rosidl_generator_pyExport.cmake
+[5.869s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/export_ocktabot_kinematics__rosidl_generator_pyExport-noconfig.cmake
+[5.869s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/rosidl_cmake-extras.cmake
+[5.869s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.869s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.869s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/ament_cmake_export_libraries-extras.cmake
+[5.869s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/ament_cmake_export_targets-extras.cmake
+[5.869s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[5.869s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.869s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[5.869s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/ocktabot_kinematicsConfig.cmake
+[5.869s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/ocktabot_kinematicsConfig-version.cmake
+[5.869s] -- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/package.xml
+[5.870s] Invoked command in '/home/ockta/ocktabot_ws/build/ocktabot_kinematics' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ockta/ocktabot_ws/build/ocktabot_kinematics

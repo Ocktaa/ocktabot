@@ -24,16 +24,32 @@ namespace action
 namespace builder
 {
 
+class Init_MoveProfilePosition_Goal_absolute
+{
+public:
+  explicit Init_MoveProfilePosition_Goal_absolute(::cpp_motor_thread::action::MoveProfilePosition_Goal & msg)
+  : msg_(msg)
+  {}
+  ::cpp_motor_thread::action::MoveProfilePosition_Goal absolute(::cpp_motor_thread::action::MoveProfilePosition_Goal::_absolute_type arg)
+  {
+    msg_.absolute = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::cpp_motor_thread::action::MoveProfilePosition_Goal msg_;
+};
+
 class Init_MoveProfilePosition_Goal_goal_position
 {
 public:
   explicit Init_MoveProfilePosition_Goal_goal_position(::cpp_motor_thread::action::MoveProfilePosition_Goal & msg)
   : msg_(msg)
   {}
-  ::cpp_motor_thread::action::MoveProfilePosition_Goal goal_position(::cpp_motor_thread::action::MoveProfilePosition_Goal::_goal_position_type arg)
+  Init_MoveProfilePosition_Goal_absolute goal_position(::cpp_motor_thread::action::MoveProfilePosition_Goal::_goal_position_type arg)
   {
     msg_.goal_position = std::move(arg);
-    return std::move(msg_);
+    return Init_MoveProfilePosition_Goal_absolute(msg_);
   }
 
 private:

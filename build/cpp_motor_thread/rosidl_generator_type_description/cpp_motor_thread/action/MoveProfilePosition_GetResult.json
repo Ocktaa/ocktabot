@@ -142,7 +142,7 @@
           {
             "name": "end_position",
             "type": {
-              "type_id": 6,
+              "type_id": 11,
               "capacity": 0,
               "string_capacity": 0,
               "nested_type_name": ""
@@ -216,7 +216,7 @@
   "type_hashes": [
     {
       "type_name": "cpp_motor_thread/action/MoveProfilePosition_GetResult",
-      "hash_string": "RIHS01_844f67c069f470b22b59a9c5750256b95c8ef6490b80b9ab99c8d0ec0a336505"
+      "hash_string": "RIHS01_5ec380c7bff98f16f3d061f59cf11b6ae4c95e415ff15d70c31a5daf837f63cc"
     },
     {
       "type_name": "builtin_interfaces/msg/Time",
@@ -224,7 +224,7 @@
     },
     {
       "type_name": "cpp_motor_thread/action/MoveProfilePosition_GetResult_Event",
-      "hash_string": "RIHS01_179c77ef39d190bcf48a9b0ab797360d01a7a9f563a118259756cff92545a1da"
+      "hash_string": "RIHS01_39bdf479dfabed1f6f4fb481b5b81e6947ef9b9fca67741e0de798412cd49da6"
     },
     {
       "type_name": "cpp_motor_thread/action/MoveProfilePosition_GetResult_Request",
@@ -232,11 +232,11 @@
     },
     {
       "type_name": "cpp_motor_thread/action/MoveProfilePosition_GetResult_Response",
-      "hash_string": "RIHS01_f2ccac64c3bef985408c504dfe8794f309532bc1666dda353e1962ef0f508e9f"
+      "hash_string": "RIHS01_e171ddff319408b7186cc678e87dca3f0b00372e1dfeb88cb133fb4c9b0182c5"
     },
     {
       "type_name": "cpp_motor_thread/action/MoveProfilePosition_Result",
-      "hash_string": "RIHS01_a7bee4555988ca99bc676855bc54a80da7c3bdb2133d94212bddfcfefb496c6c"
+      "hash_string": "RIHS01_9b54ee9b5fdc6d803444d45a948364a1c92cef21354923a09682437eb46d8256"
     },
     {
       "type_name": "service_msgs/msg/ServiceEventInfo",

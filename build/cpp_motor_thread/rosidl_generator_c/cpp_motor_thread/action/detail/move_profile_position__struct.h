@@ -24,7 +24,10 @@ extern "C"
 typedef struct cpp_motor_thread__action__MoveProfilePosition_Goal
 {
   uint16_t node;
-  int32_t goal_position;
+  /// at the gearbox output, 0 = encoder zero (links straight up)
+  double goal_position;
+  /// true: goal_position is absolute, false: relative to the current position
+  bool absolute;
 } cpp_motor_thread__action__MoveProfilePosition_Goal;
 
 // Struct for a sequence of cpp_motor_thread__action__MoveProfilePosition_Goal.
@@ -42,7 +45,7 @@ typedef struct cpp_motor_thread__action__MoveProfilePosition_Goal__Sequence
 /// Struct defined in action/MoveProfilePosition in the package cpp_motor_thread.
 typedef struct cpp_motor_thread__action__MoveProfilePosition_Result
 {
-  int32_t end_position;
+  double end_position;
 } cpp_motor_thread__action__MoveProfilePosition_Result;
 
 // Struct for a sequence of cpp_motor_thread__action__MoveProfilePosition_Result.
@@ -60,7 +63,7 @@ typedef struct cpp_motor_thread__action__MoveProfilePosition_Result__Sequence
 /// Struct defined in action/MoveProfilePosition in the package cpp_motor_thread.
 typedef struct cpp_motor_thread__action__MoveProfilePosition_Feedback
 {
-  int32_t current_position;
+  double current_position;
 } cpp_motor_thread__action__MoveProfilePosition_Feedback;
 
 // Struct for a sequence of cpp_motor_thread__action__MoveProfilePosition_Feedback.

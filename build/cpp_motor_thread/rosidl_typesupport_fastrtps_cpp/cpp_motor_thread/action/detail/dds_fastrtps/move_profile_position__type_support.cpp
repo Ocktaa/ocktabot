@@ -42,6 +42,9 @@ cdr_serialize(
   // Member: goal_position
   cdr << ros_message.goal_position;
 
+  // Member: absolute
+  cdr << (ros_message.absolute ? true : false);
+
   return true;
 }
 
@@ -56,6 +59,13 @@ cdr_deserialize(
 
   // Member: goal_position
   cdr >> ros_message.goal_position;
+
+  // Member: absolute
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message.absolute = tmp ? true : false;
+  }
 
   return true;
 }  // NOLINT(readability/fn_size)
@@ -84,6 +94,13 @@ get_serialized_size(
   // Member: goal_position
   {
     size_t item_size = sizeof(ros_message.goal_position);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: absolute
+  {
+    size_t item_size = sizeof(ros_message.absolute);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -121,9 +138,15 @@ max_serialized_size_MoveProfilePosition_Goal(
   // Member: goal_position
   {
     size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+  // Member: absolute
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
   }
 
   size_t ret_val = current_alignment - initial_alignment;
@@ -134,7 +157,7 @@ max_serialized_size_MoveProfilePosition_Goal(
     using DataType = cpp_motor_thread::action::MoveProfilePosition_Goal;
     is_plain =
       (
-      offsetof(DataType, goal_position) +
+      offsetof(DataType, absolute) +
       last_member_size
       ) == ret_val;
   }
@@ -153,6 +176,9 @@ cdr_serialize_key(
 
   // Member: goal_position
   cdr << ros_message.goal_position;
+
+  // Member: absolute
+  cdr << (ros_message.absolute ? true : false);
 
   return true;
 }
@@ -180,6 +206,13 @@ get_serialized_size_key(
   // Member: goal_position
   {
     size_t item_size = sizeof(ros_message.goal_position);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: absolute
+  {
+    size_t item_size = sizeof(ros_message.absolute);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -217,9 +250,16 @@ max_serialized_size_key_MoveProfilePosition_Goal(
   // Member: goal_position
   {
     size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  // Member: absolute
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
   }
 
   size_t ret_val = current_alignment - initial_alignment;
@@ -230,7 +270,7 @@ max_serialized_size_key_MoveProfilePosition_Goal(
     using DataType = cpp_motor_thread::action::MoveProfilePosition_Goal;
     is_plain =
       (
-      offsetof(DataType, goal_position) +
+      offsetof(DataType, absolute) +
       last_member_size
       ) == ret_val;
   }
@@ -440,9 +480,9 @@ max_serialized_size_MoveProfilePosition_Result(
   // Member: end_position
   {
     size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
   size_t ret_val = current_alignment - initial_alignment;
@@ -518,9 +558,9 @@ max_serialized_size_key_MoveProfilePosition_Result(
   // Member: end_position
   {
     size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
   size_t ret_val = current_alignment - initial_alignment;
@@ -741,9 +781,9 @@ max_serialized_size_MoveProfilePosition_Feedback(
   // Member: current_position
   {
     size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
   size_t ret_val = current_alignment - initial_alignment;
@@ -819,9 +859,9 @@ max_serialized_size_key_MoveProfilePosition_Feedback(
   // Member: current_position
   {
     size_t array_size = 1;
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
   size_t ret_val = current_alignment - initial_alignment;

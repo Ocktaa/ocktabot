@@ -1,0 +1,2 @@
+/usr/bin/ar qc libstewart_kinematics.a CMakeFiles/stewart_kinematics.dir/src/math_utils.cpp.o CMakeFiles/stewart_kinematics.dir/src/stage.cpp.o CMakeFiles/stewart_kinematics.dir/src/direct_kinematics.cpp.o CMakeFiles/stewart_kinematics.dir/src/forward_chain.cpp.o CMakeFiles/stewart_kinematics.dir/src/inverse_kinematics.cpp.o CMakeFiles/stewart_kinematics.dir/src/simulation.cpp.o
+/usr/bin/ranlib libstewart_kinematics.a

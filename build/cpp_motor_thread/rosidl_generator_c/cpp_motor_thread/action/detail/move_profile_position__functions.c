@@ -19,6 +19,7 @@ cpp_motor_thread__action__MoveProfilePosition_Goal__init(cpp_motor_thread__actio
   }
   // node
   // goal_position
+  // absolute
   return true;
 }
 
@@ -30,6 +31,7 @@ cpp_motor_thread__action__MoveProfilePosition_Goal__fini(cpp_motor_thread__actio
   }
   // node
   // goal_position
+  // absolute
 }
 
 bool
@@ -44,6 +46,10 @@ cpp_motor_thread__action__MoveProfilePosition_Goal__are_equal(const cpp_motor_th
   }
   // goal_position
   if (lhs->goal_position != rhs->goal_position) {
+    return false;
+  }
+  // absolute
+  if (lhs->absolute != rhs->absolute) {
     return false;
   }
   return true;
@@ -61,6 +67,8 @@ cpp_motor_thread__action__MoveProfilePosition_Goal__copy(
   output->node = input->node;
   // goal_position
   output->goal_position = input->goal_position;
+  // absolute
+  output->absolute = input->absolute;
   return true;
 }
 

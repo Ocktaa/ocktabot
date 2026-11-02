@@ -14,6 +14,8 @@ ros_python_check_fields = getenv('ROS_PYTHON_CHECK_FIELDS', default='')
 
 import builtins  # noqa: E402, I100
 
+import math  # noqa: E402, I100
+
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -64,19 +66,22 @@ class MoveProfilePosition_Goal(metaclass=Metaclass_MoveProfilePosition_Goal):
     __slots__ = [
         '_node',
         '_goal_position',
+        '_absolute',
         '_check_fields',
     ]
 
     _fields_and_field_types = {
         'node': 'uint16',
-        'goal_position': 'int32',
+        'goal_position': 'double',
+        'absolute': 'boolean',
     }
 
     # This attribute is used to store an rosidl_parser.definition variable
     # related to the data type of each of the components the message.
     SLOT_TYPES = (
         rosidl_parser.definition.BasicType('uint16'),  # noqa: E501
-        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
+        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -89,7 +94,8 @@ class MoveProfilePosition_Goal(metaclass=Metaclass_MoveProfilePosition_Goal):
                 'Invalid arguments passed to constructor: %s' % \
                 ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
         self.node = kwargs.get('node', int())
-        self.goal_position = kwargs.get('goal_position', int())
+        self.goal_position = kwargs.get('goal_position', float())
+        self.absolute = kwargs.get('absolute', bool())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -125,6 +131,8 @@ class MoveProfilePosition_Goal(metaclass=Metaclass_MoveProfilePosition_Goal):
             return False
         if self.goal_position != other.goal_position:
             return False
+        if self.absolute != other.absolute:
+            return False
         return True
 
     @classmethod
@@ -156,17 +164,33 @@ class MoveProfilePosition_Goal(metaclass=Metaclass_MoveProfilePosition_Goal):
     def goal_position(self, value):
         if self._check_fields:
             assert \
-                isinstance(value, int), \
-                "The 'goal_position' field must be of type 'int'"
-            assert value >= -2147483648 and value < 2147483648, \
-                "The 'goal_position' field must be an integer in [-2147483648, 2147483647]"
+                isinstance(value, float), \
+                "The 'goal_position' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'goal_position' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._goal_position = value
+
+    @builtins.property
+    def absolute(self):
+        """Message field 'absolute'."""
+        return self._absolute
+
+    @absolute.setter
+    def absolute(self, value):
+        if self._check_fields:
+            assert \
+                isinstance(value, bool), \
+                "The 'absolute' field must be of type 'bool'"
+        self._absolute = value
 
 
 # Import statements for member types
 
 # already imported above
 # import builtins
+
+# already imported above
+# import math
 
 # already imported above
 # import rosidl_parser.definition
@@ -222,13 +246,13 @@ class MoveProfilePosition_Result(metaclass=Metaclass_MoveProfilePosition_Result)
     ]
 
     _fields_and_field_types = {
-        'end_position': 'int32',
+        'end_position': 'double',
     }
 
     # This attribute is used to store an rosidl_parser.definition variable
     # related to the data type of each of the components the message.
     SLOT_TYPES = (
-        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -240,7 +264,7 @@ class MoveProfilePosition_Result(metaclass=Metaclass_MoveProfilePosition_Result)
             assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
                 'Invalid arguments passed to constructor: %s' % \
                 ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.end_position = kwargs.get('end_position', int())
+        self.end_position = kwargs.get('end_position', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -290,10 +314,10 @@ class MoveProfilePosition_Result(metaclass=Metaclass_MoveProfilePosition_Result)
     def end_position(self, value):
         if self._check_fields:
             assert \
-                isinstance(value, int), \
-                "The 'end_position' field must be of type 'int'"
-            assert value >= -2147483648 and value < 2147483648, \
-                "The 'end_position' field must be an integer in [-2147483648, 2147483647]"
+                isinstance(value, float), \
+                "The 'end_position' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'end_position' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._end_position = value
 
 
@@ -301,6 +325,9 @@ class MoveProfilePosition_Result(metaclass=Metaclass_MoveProfilePosition_Result)
 
 # already imported above
 # import builtins
+
+# already imported above
+# import math
 
 # already imported above
 # import rosidl_parser.definition
@@ -356,13 +383,13 @@ class MoveProfilePosition_Feedback(metaclass=Metaclass_MoveProfilePosition_Feedb
     ]
 
     _fields_and_field_types = {
-        'current_position': 'int32',
+        'current_position': 'double',
     }
 
     # This attribute is used to store an rosidl_parser.definition variable
     # related to the data type of each of the components the message.
     SLOT_TYPES = (
-        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -374,7 +401,7 @@ class MoveProfilePosition_Feedback(metaclass=Metaclass_MoveProfilePosition_Feedb
             assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
                 'Invalid arguments passed to constructor: %s' % \
                 ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.current_position = kwargs.get('current_position', int())
+        self.current_position = kwargs.get('current_position', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -424,10 +451,10 @@ class MoveProfilePosition_Feedback(metaclass=Metaclass_MoveProfilePosition_Feedb
     def current_position(self, value):
         if self._check_fields:
             assert \
-                isinstance(value, int), \
-                "The 'current_position' field must be of type 'int'"
-            assert value >= -2147483648 and value < 2147483648, \
-                "The 'current_position' field must be an integer in [-2147483648, 2147483647]"
+                isinstance(value, float), \
+                "The 'current_position' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'current_position' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
         self._current_position = value
 
 

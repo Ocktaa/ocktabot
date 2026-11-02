@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "ocktabot_kinematics/srv/GetJointPosIK_Request",
+      "fields": [
+        {
+          "name": "target",
+          "type": {
+            "type_id": 59,
+            "capacity": 6,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "ocktabot_kinematics/srv/GetJointPosIK_Request",
+      "hash_string": "RIHS01_69ca3a81f88c0e2789e73fba660f74636cd3c0ff7993b2fbcf64012a8542583b"
+    }
+  ]
+}

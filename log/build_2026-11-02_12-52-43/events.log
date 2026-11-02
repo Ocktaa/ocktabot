@@ -1,0 +1,424 @@
+[0.000000] (-) TimerEvent: {}
+[0.000120] (-) JobUnselected: {'identifier': 'cpp_motor_thread'}
+[0.000185] (ocktabot_kinematics) JobQueued: {'identifier': 'ocktabot_kinematics', 'dependencies': OrderedDict()}
+[0.000203] (ocktabot_kinematics) JobStarted: {'identifier': 'ocktabot_kinematics'}
+[0.004157] (ocktabot_kinematics) JobProgress: {'identifier': 'ocktabot_kinematics', 'progress': 'cmake'}
+[0.004491] (ocktabot_kinematics) Command: {'cmd': ['/usr/bin/cmake', '/home/ockta/ocktabot_ws/src/ocktabot_kinematics', '-DCMAKE_INSTALL_PREFIX=/home/ockta/ocktabot_ws/install/ocktabot_kinematics'], 'cwd': '/home/ockta/ocktabot_ws/build/ocktabot_kinematics', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ockta', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ockta', 'OLDPWD': '/home/ockta', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2412', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ockta', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ockta', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/home/ockta/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ockta-robot:@/tmp/.ICE-unix/2369,unix/ockta-robot:/tmp/.ICE-unix/2369', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/0c29abff_1eba_4586_9b0e_a7a55bbd5261', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.102', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ockta/ocktabot_ws/build/ocktabot_kinematics', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/ockta/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.017314] (ocktabot_kinematics) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.099544] (-) TimerEvent: {}
+[0.107981] (ocktabot_kinematics) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.184401] (ocktabot_kinematics) StdoutLine: {'line': b'-- Found rclcpp: 28.1.22 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.199612] (-) TimerEvent: {}
+[0.218164] (ocktabot_kinematics) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.227690] (ocktabot_kinematics) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.241803] (ocktabot_kinematics) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.256454] (ocktabot_kinematics) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.299724] (-) TimerEvent: {}
+[0.318766] (ocktabot_kinematics) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.4 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.321356] (ocktabot_kinematics) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.372918] (ocktabot_kinematics) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[0.385897] (ocktabot_kinematics) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[0.399783] (-) TimerEvent: {}
+[0.400051] (ocktabot_kinematics) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.465132] (ocktabot_kinematics) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.8 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[0.499864] (-) TimerEvent: {}
+[0.517236] (ocktabot_kinematics) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.531430] (ocktabot_kinematics) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[0.599939] (-) TimerEvent: {}
+[0.700105] (-) TimerEvent: {}
+[0.800258] (-) TimerEvent: {}
+[0.900469] (-) TimerEvent: {}
+[0.904233] (ocktabot_kinematics) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.2 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[1.000583] (-) TimerEvent: {}
+[1.100754] (-) TimerEvent: {}
+[1.200924] (-) TimerEvent: {}
+[1.301094] (-) TimerEvent: {}
+[1.339072] (ocktabot_kinematics) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.401211] (-) TimerEvent: {}
+[1.501450] (-) TimerEvent: {}
+[1.503784] (ocktabot_kinematics) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.506015] (ocktabot_kinematics) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[1.591039] (ocktabot_kinematics) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[1.601561] (-) TimerEvent: {}
+[1.701719] (-) TimerEvent: {}
+[1.801885] (-) TimerEvent: {}
+[1.902057] (-) TimerEvent: {}
+[1.937239] (ocktabot_kinematics) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[1.984029] (ocktabot_kinematics) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.987030] (ocktabot_kinematics) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[2.002119] (-) TimerEvent: {}
+[2.005755] (ocktabot_kinematics) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.006121] (ocktabot_kinematics) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/ockta/ocktabot_ws/src/ocktabot_kinematics/include;/home/ockta/ocktabot_ws/src/ocktabot_kinematics/include/ocktabot_kinematics\n'}
+[2.006169] (ocktabot_kinematics) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.006915] (ocktabot_kinematics) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.007879] (ocktabot_kinematics) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.007924] (ocktabot_kinematics) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.008361] (ocktabot_kinematics) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.010231] (ocktabot_kinematics) StdoutLine: {'line': b'-- Configuring done (2.0s)\n'}
+[2.041241] (ocktabot_kinematics) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[2.051498] (ocktabot_kinematics) StdoutLine: {'line': b'-- Build files have been written to: /home/ockta/ocktabot_ws/build/ocktabot_kinematics\n'}
+[2.058005] (ocktabot_kinematics) CommandEnded: {'returncode': 0}
+[2.058348] (ocktabot_kinematics) JobProgress: {'identifier': 'ocktabot_kinematics', 'progress': 'build'}
+[2.058728] (ocktabot_kinematics) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ockta/ocktabot_ws/build/ocktabot_kinematics', '--', '-j12', '-l12'], 'cwd': '/home/ockta/ocktabot_ws/build/ocktabot_kinematics', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ockta', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ockta', 'OLDPWD': '/home/ockta', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2412', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ockta', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ockta', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/home/ockta/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ockta-robot:@/tmp/.ICE-unix/2369,unix/ockta-robot:/tmp/.ICE-unix/2369', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/0c29abff_1eba_4586_9b0e_a7a55bbd5261', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.102', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ockta/ocktabot_ws/build/ocktabot_kinematics', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/ockta/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[2.102262] (-) TimerEvent: {}
+[2.107806] (ocktabot_kinematics) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[2.109424] (ocktabot_kinematics) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/stewart_kinematics.dir/src/math_utils.cpp.o\x1b[0m\n'}
+[2.109761] (ocktabot_kinematics) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/stewart_kinematics.dir/src/stage.cpp.o\x1b[0m\n'}
+[2.110134] (ocktabot_kinematics) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/stewart_kinematics.dir/src/direct_kinematics.cpp.o\x1b[0m\n'}
+[2.110500] (ocktabot_kinematics) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/stewart_kinematics.dir/src/inverse_kinematics.cpp.o\x1b[0m\n'}
+[2.112165] (ocktabot_kinematics) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/stewart_kinematics.dir/src/forward_chain.cpp.o\x1b[0m\n'}
+[2.112464] (ocktabot_kinematics) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[2.112616] (ocktabot_kinematics) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/stewart_kinematics.dir/src/simulation.cpp.o\x1b[0m\n'}
+[2.120477] (ocktabot_kinematics) StdoutLine: {'line': b'[ 17%] Built target ament_cmake_python_copy_ocktabot_kinematics\n'}
+[2.202319] (-) TimerEvent: {}
+[2.302584] (-) TimerEvent: {}
+[2.306074] (ocktabot_kinematics) StdoutLine: {'line': b'running egg_info\n'}
+[2.307069] (ocktabot_kinematics) StdoutLine: {'line': b'creating ocktabot_kinematics.egg-info\n'}
+[2.320925] (ocktabot_kinematics) StdoutLine: {'line': b'writing ocktabot_kinematics.egg-info/PKG-INFO\n'}
+[2.321124] (ocktabot_kinematics) StdoutLine: {'line': b'writing dependency_links to ocktabot_kinematics.egg-info/dependency_links.txt\n'}
+[2.321256] (ocktabot_kinematics) StdoutLine: {'line': b'writing top-level names to ocktabot_kinematics.egg-info/top_level.txt\n'}
+[2.321358] (ocktabot_kinematics) StdoutLine: {'line': b"writing manifest file 'ocktabot_kinematics.egg-info/SOURCES.txt'\n"}
+[2.358221] (ocktabot_kinematics) StdoutLine: {'line': b"reading manifest file 'ocktabot_kinematics.egg-info/SOURCES.txt'\n"}
+[2.358687] (ocktabot_kinematics) StdoutLine: {'line': b"writing manifest file 'ocktabot_kinematics.egg-info/SOURCES.txt'\n"}
+[2.362698] (ocktabot_kinematics) StdoutLine: {'line': b'[ 17%] Built target ocktabot_kinematics__rosidl_generator_type_description\n'}
+[2.372774] (ocktabot_kinematics) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.380101] (ocktabot_kinematics) StdoutLine: {'line': b'[ 19%] Built target ament_cmake_python_build_ocktabot_kinematics_egg\n'}
+[2.381995] (ocktabot_kinematics) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.402675] (-) TimerEvent: {}
+[2.421725] (ocktabot_kinematics) StdoutLine: {'line': b'[ 21%] Built target ocktabot_kinematics__rs\n'}
+[2.502774] (-) TimerEvent: {}
+[2.603042] (-) TimerEvent: {}
+[2.607038] (ocktabot_kinematics) StdoutLine: {'line': b'[ 21%] Built target ocktabot_kinematics__cpp\n'}
+[2.703134] (-) TimerEvent: {}
+[2.781509] (ocktabot_kinematics) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/ocktabot_kinematics__rosidl_generator_c.dir/rosidl_generator_c/ocktabot_kinematics/srv/detail/get_joint_pos_ik__description.c.o\x1b[0m\n'}
+[2.782702] (ocktabot_kinematics) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding C object CMakeFiles/ocktabot_kinematics__rosidl_generator_c.dir/rosidl_generator_c/ocktabot_kinematics/srv/detail/get_joint_pos_ik__functions.c.o\x1b[0m\n'}
+[2.783690] (ocktabot_kinematics) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding C object CMakeFiles/ocktabot_kinematics__rosidl_generator_c.dir/rosidl_generator_c/ocktabot_kinematics/srv/detail/get_joint_pos_ik__type_support.c.o\x1b[0m\n'}
+[2.803240] (-) TimerEvent: {}
+[2.858578] (ocktabot_kinematics) StdoutLine: {'line': b'[ 30%] \x1b[32m\x1b[1mLinking C shared library libocktabot_kinematics__rosidl_generator_c.so\x1b[0m\n'}
+[2.885511] (ocktabot_kinematics) StdoutLine: {'line': b'[ 30%] Built target ocktabot_kinematics__rosidl_generator_c\n'}
+[2.895037] (ocktabot_kinematics) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.895542] (ocktabot_kinematics) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.895827] (ocktabot_kinematics) StdoutLine: {'line': b'[ 39%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.896054] (ocktabot_kinematics) StdoutLine: {'line': b'[ 39%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.902851] (ocktabot_kinematics) StdoutLine: {'line': b'[ 41%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.903306] (-) TimerEvent: {}
+[2.905420] (ocktabot_kinematics) StdoutLine: {'line': b'[ 43%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.004405] (-) TimerEvent: {}
+[3.104649] (-) TimerEvent: {}
+[3.204912] (-) TimerEvent: {}
+[3.305250] (-) TimerEvent: {}
+[3.332383] (ocktabot_kinematics) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/ocktabot_kinematics__rosidl_typesupport_c.dir/rosidl_typesupport_c/ocktabot_kinematics/srv/get_joint_pos_ik__type_support.cpp.o\x1b[0m\n'}
+[3.383590] (ocktabot_kinematics) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/ocktabot_kinematics__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ocktabot_kinematics/srv/detail/get_joint_pos_ik__type_support.cpp.o\x1b[0m\n'}
+[3.383822] (ocktabot_kinematics) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library libocktabot_kinematics__rosidl_typesupport_c.so\x1b[0m\n'}
+[3.396558] (ocktabot_kinematics) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/ocktabot_kinematics__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ocktabot_kinematics/srv/detail/dds_fastrtps/get_joint_pos_ik__type_support.cpp.o\x1b[0m\n'}
+[3.405353] (-) TimerEvent: {}
+[3.406110] (ocktabot_kinematics) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/ocktabot_kinematics__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ocktabot_kinematics/srv/get_joint_pos_ik__type_support.cpp.o\x1b[0m\n'}
+[3.412835] (ocktabot_kinematics) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/ocktabot_kinematics__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ocktabot_kinematics/srv/detail/get_joint_pos_ik__type_support_c.cpp.o\x1b[0m\n'}
+[3.426045] (ocktabot_kinematics) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/ocktabot_kinematics__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ocktabot_kinematics/srv/detail/get_joint_pos_ik__type_support.c.o\x1b[0m\n'}
+[3.445333] (ocktabot_kinematics) StdoutLine: {'line': b'[ 58%] Built target ocktabot_kinematics__rosidl_typesupport_c\n'}
+[3.487763] (ocktabot_kinematics) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking C shared library libocktabot_kinematics__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.505432] (-) TimerEvent: {}
+[3.535442] (ocktabot_kinematics) StdoutLine: {'line': b'[ 60%] Built target ocktabot_kinematics__rosidl_typesupport_introspection_c\n'}
+[3.605528] (-) TimerEvent: {}
+[3.706261] (-) TimerEvent: {}
+[3.807568] (-) TimerEvent: {}
+[3.843480] (ocktabot_kinematics) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX shared library libocktabot_kinematics__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.907667] (-) TimerEvent: {}
+[3.918299] (ocktabot_kinematics) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libocktabot_kinematics__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.919590] (ocktabot_kinematics) StdoutLine: {'line': b'[ 65%] Built target ocktabot_kinematics__rosidl_typesupport_cpp\n'}
+[3.943692] (ocktabot_kinematics) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libocktabot_kinematics__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.968895] (ocktabot_kinematics) StdoutLine: {'line': b'[ 67%] Built target ocktabot_kinematics__rosidl_typesupport_introspection_cpp\n'}
+[3.984108] (ocktabot_kinematics) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libocktabot_kinematics__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.994121] (ocktabot_kinematics) StdoutLine: {'line': b'[ 69%] Built target ocktabot_kinematics__rosidl_typesupport_fastrtps_c\n'}
+[4.007772] (-) TimerEvent: {}
+[4.032547] (ocktabot_kinematics) StdoutLine: {'line': b'[ 69%] Built target ocktabot_kinematics__rosidl_typesupport_fastrtps_cpp\n'}
+[4.044258] (ocktabot_kinematics) StdoutLine: {'line': b'[ 69%] Built target ocktabot_kinematics\n'}
+[4.055870] (ocktabot_kinematics) StdoutLine: {'line': b'[ 71%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[4.107858] (-) TimerEvent: {}
+[4.208081] (-) TimerEvent: {}
+[4.308303] (-) TimerEvent: {}
+[4.353068] (ocktabot_kinematics) StdoutLine: {'line': b'[ 71%] Built target ocktabot_kinematics__py\n'}
+[4.364593] (ocktabot_kinematics) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding C object CMakeFiles/ocktabot_kinematics__rosidl_generator_py.dir/rosidl_generator_py/ocktabot_kinematics/srv/_get_joint_pos_ik_s.c.o\x1b[0m\n'}
+[4.408400] (-) TimerEvent: {}
+[4.488225] (ocktabot_kinematics) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking C shared library libocktabot_kinematics__rosidl_generator_py.so\x1b[0m\n'}
+[4.508495] (-) TimerEvent: {}
+[4.515083] (ocktabot_kinematics) StdoutLine: {'line': b'[ 76%] Built target ocktabot_kinematics__rosidl_generator_py\n'}
+[4.526409] (ocktabot_kinematics) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/ocktabot_kinematics_s__rosidl_typesupport_c.dir/rosidl_generator_py/ocktabot_kinematics/_ocktabot_kinematics_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[4.526599] (ocktabot_kinematics) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/ocktabot_kinematics_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/ocktabot_kinematics/_ocktabot_kinematics_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[4.526691] (ocktabot_kinematics) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/ocktabot_kinematics_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/ocktabot_kinematics/_ocktabot_kinematics_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[4.589863] (ocktabot_kinematics) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/ocktabot_kinematics/ocktabot_kinematics_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[4.590155] (ocktabot_kinematics) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/ocktabot_kinematics/ocktabot_kinematics_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.590284] (ocktabot_kinematics) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/ocktabot_kinematics/ocktabot_kinematics_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[4.607798] (ocktabot_kinematics) StdoutLine: {'line': b'[ 89%] Built target ocktabot_kinematics_s__rosidl_typesupport_c\n'}
+[4.607977] (ocktabot_kinematics) StdoutLine: {'line': b'[ 89%] Built target ocktabot_kinematics_s__rosidl_typesupport_fastrtps_c\n'}
+[4.608062] (ocktabot_kinematics) StdoutLine: {'line': b'[ 89%] Built target ocktabot_kinematics_s__rosidl_typesupport_introspection_c\n'}
+[4.608559] (-) TimerEvent: {}
+[4.708766] (-) TimerEvent: {}
+[4.808996] (-) TimerEvent: {}
+[4.909244] (-) TimerEvent: {}
+[5.009483] (-) TimerEvent: {}
+[5.109716] (-) TimerEvent: {}
+[5.209944] (-) TimerEvent: {}
+[5.310191] (-) TimerEvent: {}
+[5.410426] (-) TimerEvent: {}
+[5.510649] (-) TimerEvent: {}
+[5.610884] (-) TimerEvent: {}
+[5.711122] (-) TimerEvent: {}
+[5.811355] (-) TimerEvent: {}
+[5.911587] (-) TimerEvent: {}
+[6.011817] (-) TimerEvent: {}
+[6.112042] (-) TimerEvent: {}
+[6.212276] (-) TimerEvent: {}
+[6.312521] (-) TimerEvent: {}
+[6.412753] (-) TimerEvent: {}
+[6.513001] (-) TimerEvent: {}
+[6.613226] (-) TimerEvent: {}
+[6.713452] (-) TimerEvent: {}
+[6.813679] (-) TimerEvent: {}
+[6.913907] (-) TimerEvent: {}
+[7.014134] (-) TimerEvent: {}
+[7.114361] (-) TimerEvent: {}
+[7.214596] (-) TimerEvent: {}
+[7.314808] (-) TimerEvent: {}
+[7.415027] (-) TimerEvent: {}
+[7.515254] (-) TimerEvent: {}
+[7.615495] (-) TimerEvent: {}
+[7.715710] (-) TimerEvent: {}
+[7.815938] (-) TimerEvent: {}
+[7.916161] (-) TimerEvent: {}
+[8.016401] (-) TimerEvent: {}
+[8.116642] (-) TimerEvent: {}
+[8.216859] (-) TimerEvent: {}
+[8.317081] (-) TimerEvent: {}
+[8.417282] (-) TimerEvent: {}
+[8.517494] (-) TimerEvent: {}
+[8.561652] (ocktabot_kinematics) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking CXX static library libstewart_kinematics.a\x1b[0m\n'}
+[8.617644] (-) TimerEvent: {}
+[8.718133] (-) TimerEvent: {}
+[8.818696] (-) TimerEvent: {}
+[8.919125] (-) TimerEvent: {}
+[9.013492] (ocktabot_kinematics) StdoutLine: {'line': b'[ 91%] Built target stewart_kinematics\n'}
+[9.019210] (-) TimerEvent: {}
+[9.023959] (ocktabot_kinematics) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object CMakeFiles/stewart_tests.dir/src/tests.cpp.o\x1b[0m\n'}
+[9.024091] (ocktabot_kinematics) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object CMakeFiles/ocktabot_kinematics_node.dir/src/ocktabot_kinematics.cpp.o\x1b[0m\n'}
+[9.119295] (-) TimerEvent: {}
+[9.219495] (-) TimerEvent: {}
+[9.319720] (-) TimerEvent: {}
+[9.419920] (-) TimerEvent: {}
+[9.520120] (-) TimerEvent: {}
+[9.620314] (-) TimerEvent: {}
+[9.720561] (-) TimerEvent: {}
+[9.820765] (-) TimerEvent: {}
+[9.920964] (-) TimerEvent: {}
+[10.021209] (-) TimerEvent: {}
+[10.121404] (-) TimerEvent: {}
+[10.221606] (-) TimerEvent: {}
+[10.321812] (-) TimerEvent: {}
+[10.422014] (-) TimerEvent: {}
+[10.522202] (-) TimerEvent: {}
+[10.622442] (-) TimerEvent: {}
+[10.722676] (-) TimerEvent: {}
+[10.822914] (-) TimerEvent: {}
+[10.923153] (-) TimerEvent: {}
+[10.987870] (ocktabot_kinematics) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX executable stewart_tests\x1b[0m\n'}
+[11.023243] (-) TimerEvent: {}
+[11.123441] (-) TimerEvent: {}
+[11.197662] (ocktabot_kinematics) StdoutLine: {'line': b'[ 97%] Built target stewart_tests\n'}
+[11.223520] (-) TimerEvent: {}
+[11.323719] (-) TimerEvent: {}
+[11.423922] (-) TimerEvent: {}
+[11.524126] (-) TimerEvent: {}
+[11.624340] (-) TimerEvent: {}
+[11.724540] (-) TimerEvent: {}
+[11.824793] (-) TimerEvent: {}
+[11.925046] (-) TimerEvent: {}
+[12.025284] (-) TimerEvent: {}
+[12.125496] (-) TimerEvent: {}
+[12.225688] (-) TimerEvent: {}
+[12.325964] (-) TimerEvent: {}
+[12.426226] (-) TimerEvent: {}
+[12.526443] (-) TimerEvent: {}
+[12.626644] (-) TimerEvent: {}
+[12.726837] (-) TimerEvent: {}
+[12.827033] (-) TimerEvent: {}
+[12.927217] (-) TimerEvent: {}
+[13.027425] (-) TimerEvent: {}
+[13.127626] (-) TimerEvent: {}
+[13.227814] (-) TimerEvent: {}
+[13.327998] (-) TimerEvent: {}
+[13.428212] (-) TimerEvent: {}
+[13.528407] (-) TimerEvent: {}
+[13.628609] (-) TimerEvent: {}
+[13.728837] (-) TimerEvent: {}
+[13.829089] (-) TimerEvent: {}
+[13.929284] (-) TimerEvent: {}
+[14.029484] (-) TimerEvent: {}
+[14.129688] (-) TimerEvent: {}
+[14.229882] (-) TimerEvent: {}
+[14.330131] (-) TimerEvent: {}
+[14.430333] (-) TimerEvent: {}
+[14.530553] (-) TimerEvent: {}
+[14.630761] (-) TimerEvent: {}
+[14.644397] (ocktabot_kinematics) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable ocktabot_kinematics_node\x1b[0m\n'}
+[14.730843] (-) TimerEvent: {}
+[14.831053] (-) TimerEvent: {}
+[14.931311] (-) TimerEvent: {}
+[15.031594] (-) TimerEvent: {}
+[15.131806] (-) TimerEvent: {}
+[15.145943] (ocktabot_kinematics) StdoutLine: {'line': b'[100%] Built target ocktabot_kinematics_node\n'}
+[15.151885] (ocktabot_kinematics) CommandEnded: {'returncode': 0}
+[15.152273] (ocktabot_kinematics) JobProgress: {'identifier': 'ocktabot_kinematics', 'progress': 'install'}
+[15.156730] (ocktabot_kinematics) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ockta/ocktabot_ws/build/ocktabot_kinematics'], 'cwd': '/home/ockta/ocktabot_ws/build/ocktabot_kinematics', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ockta', 'XDG_SESSION_TYPE': 'x11', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ockta', 'OLDPWD': '/home/ockta', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2412', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ockta', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ockta', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/home/ockta/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ockta-robot:@/tmp/.ICE-unix/2369,unix/ockta-robot:/tmp/.ICE-unix/2369', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/0c29abff_1eba_4586_9b0e_a7a55bbd5261', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.102', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ockta/ocktabot_ws/build/ocktabot_kinematics', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/ockta/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[15.161114] (ocktabot_kinematics) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.161206] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ament_index/resource_index/rosidl_interfaces/ocktabot_kinematics\n'}
+[15.161304] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/srv/GetJointPosIK.json\n'}
+[15.161356] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics\n'}
+[15.161437] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv\n'}
+[15.161494] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail\n'}
+[15.161533] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/get_joint_pos_ik__functions.h\n'}
+[15.161583] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/get_joint_pos_ik__struct.h\n'}
+[15.161632] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/get_joint_pos_ik__functions.c\n'}
+[15.161681] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/get_joint_pos_ik__type_support.h\n'}
+[15.161734] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/get_joint_pos_ik__type_support.c\n'}
+[15.161789] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/get_joint_pos_ik__description.c\n'}
+[15.161837] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/get_joint_pos_ik.h\n'}
+[15.161877] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/msg\n'}
+[15.161911] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/msg/rosidl_generator_c__visibility_control.h\n'}
+[15.161953] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/environment/library_path.sh\n'}
+[15.161994] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/environment/library_path.dsv\n'}
+[15.162030] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/libocktabot_kinematics__rosidl_generator_c.so\n'}
+[15.162168] (ocktabot_kinematics) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/libocktabot_kinematics__rosidl_generator_c.so" to ""\n'}
+[15.162219] (ocktabot_kinematics) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics\n'}
+[15.162273] (ocktabot_kinematics) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv\n'}
+[15.162312] (ocktabot_kinematics) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail\n'}
+[15.162368] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/get_joint_pos_ik__rosidl_typesupport_fastrtps_c.h\n'}
+[15.162404] (ocktabot_kinematics) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/msg\n'}
+[15.162441] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[15.162475] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/libocktabot_kinematics__rosidl_typesupport_fastrtps_c.so\n'}
+[15.162520] (ocktabot_kinematics) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/libocktabot_kinematics__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[15.162573] (ocktabot_kinematics) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics\n'}
+[15.162612] (ocktabot_kinematics) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv\n'}
+[15.162659] (ocktabot_kinematics) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail\n'}
+[15.162704] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/get_joint_pos_ik__type_support.hpp\n'}
+[15.162741] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/get_joint_pos_ik__traits.hpp\n'}
+[15.162778] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/get_joint_pos_ik__struct.hpp\n'}
+[15.162832] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/get_joint_pos_ik__builder.hpp\n'}
+[15.162885] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/get_joint_pos_ik.hpp\n'}
+[15.162924] (ocktabot_kinematics) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/msg\n'}
+[15.162971] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[15.163007] (ocktabot_kinematics) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics\n'}
+[15.163044] (ocktabot_kinematics) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv\n'}
+[15.163082] (ocktabot_kinematics) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail\n'}
+[15.163117] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/dds_fastrtps\n'}
+[15.163154] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/get_joint_pos_ik__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[15.163198] (ocktabot_kinematics) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/msg\n'}
+[15.163234] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[15.163289] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/libocktabot_kinematics__rosidl_typesupport_fastrtps_cpp.so\n'}
+[15.163331] (ocktabot_kinematics) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/libocktabot_kinematics__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[15.163372] (ocktabot_kinematics) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics\n'}
+[15.163410] (ocktabot_kinematics) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv\n'}
+[15.163448] (ocktabot_kinematics) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail\n'}
+[15.163483] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/get_joint_pos_ik__rosidl_typesupport_introspection_c.h\n'}
+[15.163531] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/get_joint_pos_ik__type_support.c\n'}
+[15.163567] (ocktabot_kinematics) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/msg\n'}
+[15.163603] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[15.163639] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/libocktabot_kinematics__rosidl_typesupport_introspection_c.so\n'}
+[15.163685] (ocktabot_kinematics) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/libocktabot_kinematics__rosidl_typesupport_introspection_c.so" to ""\n'}
+[15.163724] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/libocktabot_kinematics__rosidl_typesupport_c.so\n'}
+[15.163771] (ocktabot_kinematics) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/libocktabot_kinematics__rosidl_typesupport_c.so" to ""\n'}
+[15.163810] (ocktabot_kinematics) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics\n'}
+[15.163851] (ocktabot_kinematics) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv\n'}
+[15.163886] (ocktabot_kinematics) StdoutLine: {'line': b'-- Up-to-date: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail\n'}
+[15.163922] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/get_joint_pos_ik__type_support.cpp\n'}
+[15.163957] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/include/ocktabot_kinematics/ocktabot_kinematics/srv/detail/get_joint_pos_ik__rosidl_typesupport_introspection_cpp.hpp\n'}
+[15.164002] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/libocktabot_kinematics__rosidl_typesupport_introspection_cpp.so\n'}
+[15.164070] (ocktabot_kinematics) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/libocktabot_kinematics__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[15.164141] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/libocktabot_kinematics__rosidl_typesupport_cpp.so\n'}
+[15.164268] (ocktabot_kinematics) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/libocktabot_kinematics__rosidl_typesupport_cpp.so" to ""\n'}
+[15.164313] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/environment/pythonpath.sh\n'}
+[15.164357] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/environment/pythonpath.dsv\n'}
+[15.164406] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics-0.0.0-py3.12.egg-info\n'}
+[15.164448] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[15.164494] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[15.164545] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[15.164581] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[15.164626] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics\n'}
+[15.164675] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/_ocktabot_kinematics_s.ep.rosidl_typesupport_c.c\n'}
+[15.164721] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/__init__.py\n'}
+[15.164773] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/srv\n'}
+[15.164808] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/srv/__init__.py\n'}
+[15.164853] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/srv/_get_joint_pos_ik.py\n'}
+[15.164897] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/srv/_get_joint_pos_ik_s.c\n'}
+[15.164934] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/ocktabot_kinematics_s__rosidl_typesupport_introspection_c.so\n'}
+[15.164983] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/_ocktabot_kinematics_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[15.165025] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/ocktabot_kinematics_s__rosidl_typesupport_c.so\n'}
+[15.165066] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/ocktabot_kinematics_s__rosidl_typesupport_fastrtps_c.so\n'}
+[15.165102] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/_ocktabot_kinematics_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[15.192416] (ocktabot_kinematics) StdoutLine: {'line': b"Listing '/home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics'...\n"}
+[15.192490] (ocktabot_kinematics) StdoutLine: {'line': b"Compiling '/home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/__init__.py'...\n"}
+[15.192527] (ocktabot_kinematics) StdoutLine: {'line': b"Listing '/home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/srv'...\n"}
+[15.192562] (ocktabot_kinematics) StdoutLine: {'line': b"Compiling '/home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/srv/__init__.py'...\n"}
+[15.192596] (ocktabot_kinematics) StdoutLine: {'line': b"Compiling '/home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/srv/_get_joint_pos_ik.py'...\n"}
+[15.196014] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/ocktabot_kinematics_s__rosidl_typesupport_fastrtps_c.so\n'}
+[15.196172] (ocktabot_kinematics) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/ocktabot_kinematics_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[15.196273] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/ocktabot_kinematics_s__rosidl_typesupport_introspection_c.so\n'}
+[15.196414] (ocktabot_kinematics) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/ocktabot_kinematics_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[15.196502] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/ocktabot_kinematics_s__rosidl_typesupport_c.so\n'}
+[15.196633] (ocktabot_kinematics) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/python3.12/site-packages/ocktabot_kinematics/ocktabot_kinematics_s__rosidl_typesupport_c.so" to ""\n'}
+[15.196681] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/libocktabot_kinematics__rosidl_generator_py.so\n'}
+[15.196822] (ocktabot_kinematics) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/libocktabot_kinematics__rosidl_generator_py.so" to ""\n'}
+[15.196865] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/rust\n'}
+[15.196916] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/rust/src\n'}
+[15.196954] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/rust/src/srv.rs\n'}
+[15.197001] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/rust/src/srv\n'}
+[15.197038] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/rust/src/srv/rmw.rs\n'}
+[15.197084] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/rust/src/lib.rs\n'}
+[15.197124] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/rust/Cargo.toml\n'}
+[15.197162] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/rust/build.rs\n'}
+[15.197208] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/srv/GetJointPosIK.idl\n'}
+[15.197244] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/srv/GetJointPosIK.srv\n'}
+[15.197286] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/ocktabot_kinematics/ocktabot_kinematics_node\n'}
+[15.204614] (ocktabot_kinematics) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/ockta/ocktabot_ws/install/ocktabot_kinematics/lib/ocktabot_kinematics/ocktabot_kinematics_node" to ""\n'}
+[15.204688] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ament_index/resource_index/package_run_dependencies/ocktabot_kinematics\n'}
+[15.204740] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ament_index/resource_index/parent_prefix_path/ocktabot_kinematics\n'}
+[15.204789] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/environment/ament_prefix_path.sh\n'}
+[15.204837] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/environment/ament_prefix_path.dsv\n'}
+[15.204884] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/environment/path.sh\n'}
+[15.204930] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/environment/path.dsv\n'}
+[15.204974] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/local_setup.bash\n'}
+[15.205020] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/local_setup.sh\n'}
+[15.205065] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/local_setup.zsh\n'}
+[15.205107] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/local_setup.dsv\n'}
+[15.205149] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/package.dsv\n'}
+[15.205199] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ament_index/resource_index/packages/ocktabot_kinematics\n'}
+[15.205265] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/export_ocktabot_kinematics__rosidl_generator_cExport.cmake\n'}
+[15.205321] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/export_ocktabot_kinematics__rosidl_generator_cExport-noconfig.cmake\n'}
+[15.205382] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/export_ocktabot_kinematics__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[15.205431] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/export_ocktabot_kinematics__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[15.205484] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/export_ocktabot_kinematics__rosidl_generator_cppExport.cmake\n'}
+[15.205539] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/export_ocktabot_kinematics__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[15.205589] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/export_ocktabot_kinematics__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[15.205642] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/ocktabot_kinematics__rosidl_typesupport_introspection_cExport.cmake\n'}
+[15.205692] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/ocktabot_kinematics__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[15.205746] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/ocktabot_kinematics__rosidl_typesupport_cExport.cmake\n'}
+[15.205791] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/ocktabot_kinematics__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[15.205842] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/ocktabot_kinematics__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[15.205890] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/ocktabot_kinematics__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[15.205943] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/ocktabot_kinematics__rosidl_typesupport_cppExport.cmake\n'}
+[15.205989] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/ocktabot_kinematics__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[15.206040] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/export_ocktabot_kinematics__rosidl_generator_pyExport.cmake\n'}
+[15.206086] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/export_ocktabot_kinematics__rosidl_generator_pyExport-noconfig.cmake\n'}
+[15.206133] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/rosidl_cmake-extras.cmake\n'}
+[15.206177] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[15.206224] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[15.206276] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[15.206328] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[15.206377] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[15.206424] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[15.206470] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/rosidl_cmake_aggregate_target-extras.cmake\n'}
+[15.206514] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/ocktabot_kinematicsConfig.cmake\n'}
+[15.206556] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/cmake/ocktabot_kinematicsConfig-version.cmake\n'}
+[15.206599] (ocktabot_kinematics) StdoutLine: {'line': b'-- Installing: /home/ockta/ocktabot_ws/install/ocktabot_kinematics/share/ocktabot_kinematics/package.xml\n'}
+[15.207913] (ocktabot_kinematics) CommandEnded: {'returncode': 0}
+[15.223383] (ocktabot_kinematics) JobEnded: {'identifier': 'ocktabot_kinematics', 'rc': 0}
+[15.223831] (-) EventReactorShutdown: {}

@@ -64,8 +64,17 @@ bool cpp_motor_thread__action__move_profile_position__goal__convert_from_py(PyOb
     if (!field) {
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->goal_position = (int32_t)PyLong_AsLong(field);
+    assert(PyFloat_Check(field));
+    ros_message->goal_position = PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // absolute
+    PyObject * field = PyObject_GetAttrString(_pymsg, "absolute");
+    if (!field) {
+      return false;
+    }
+    assert(PyBool_Check(field));
+    ros_message->absolute = (Py_True == field);
     Py_DECREF(field);
   }
 
@@ -103,9 +112,20 @@ PyObject * cpp_motor_thread__action__move_profile_position__goal__convert_to_py(
   }
   {  // goal_position
     PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->goal_position);
+    field = PyFloat_FromDouble(ros_message->goal_position);
     {
       int rc = PyObject_SetAttrString(_pymessage, "goal_position", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // absolute
+    PyObject * field = NULL;
+    field = PyBool_FromLong(ros_message->absolute ? 1 : 0);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "absolute", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
@@ -170,8 +190,8 @@ bool cpp_motor_thread__action__move_profile_position__result__convert_from_py(Py
     if (!field) {
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->end_position = (int32_t)PyLong_AsLong(field);
+    assert(PyFloat_Check(field));
+    ros_message->end_position = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
 
@@ -198,7 +218,7 @@ PyObject * cpp_motor_thread__action__move_profile_position__result__convert_to_p
   cpp_motor_thread__action__MoveProfilePosition_Result * ros_message = (cpp_motor_thread__action__MoveProfilePosition_Result *)raw_ros_message;
   {  // end_position
     PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->end_position);
+    field = PyFloat_FromDouble(ros_message->end_position);
     {
       int rc = PyObject_SetAttrString(_pymessage, "end_position", field);
       Py_DECREF(field);
@@ -265,8 +285,8 @@ bool cpp_motor_thread__action__move_profile_position__feedback__convert_from_py(
     if (!field) {
       return false;
     }
-    assert(PyLong_Check(field));
-    ros_message->current_position = (int32_t)PyLong_AsLong(field);
+    assert(PyFloat_Check(field));
+    ros_message->current_position = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
 
@@ -293,7 +313,7 @@ PyObject * cpp_motor_thread__action__move_profile_position__feedback__convert_to
   cpp_motor_thread__action__MoveProfilePosition_Feedback * ros_message = (cpp_motor_thread__action__MoveProfilePosition_Feedback *)raw_ros_message;
   {  // current_position
     PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->current_position);
+    field = PyFloat_FromDouble(ros_message->current_position);
     {
       int rc = PyObject_SetAttrString(_pymessage, "current_position", field);
       Py_DECREF(field);

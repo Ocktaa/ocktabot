@@ -4,10 +4,10 @@
 
 #include <string.h>
 
+#include "cpp_motor_thread/action/detail/move_profile_position__struct.h"
+#include "rosidl_typesupport_interface/macros.h"
 #include "cpp_motor_thread/action/detail/move_profile_position__type_support.h"
 #include "cpp_motor_thread/action/detail/move_profile_position__functions.h"
-#include "rosidl_typesupport_interface/macros.h"
-#include "cpp_motor_thread/action/detail/move_profile_position__struct.h"
 
 #ifdef __cplusplus
 extern "C"

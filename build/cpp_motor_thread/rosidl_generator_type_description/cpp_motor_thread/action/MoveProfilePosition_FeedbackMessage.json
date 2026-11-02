@@ -32,7 +32,7 @@
           {
             "name": "current_position",
             "type": {
-              "type_id": 6,
+              "type_id": 11,
               "capacity": 0,
               "string_capacity": 0,
               "nested_type_name": ""
@@ -61,11 +61,11 @@
   "type_hashes": [
     {
       "type_name": "cpp_motor_thread/action/MoveProfilePosition_FeedbackMessage",
-      "hash_string": "RIHS01_aa4d8000c0ee7ed2a6d29964fb8165ee84f5e7f3bd9cc4340e7a6412f8cc1cf0"
+      "hash_string": "RIHS01_59a85db5d2dfce728da9aa1a27686441bcfc3f249a08066f46b9758b765cd195"
     },
     {
       "type_name": "cpp_motor_thread/action/MoveProfilePosition_Feedback",
-      "hash_string": "RIHS01_7f371f5f44a2ebc490f62cc584dce3474a7744927bb33a8425a717fdd814ad21"
+      "hash_string": "RIHS01_a5e938df7244e189952a997449d20ed001445ac013a51d869ad532eee4915996"
     },
     {
       "type_name": "unique_identifier_msgs/msg/UUID",

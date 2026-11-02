@@ -1,0 +1,6 @@
+{
+  "package_name": "ocktabot_kinematics",
+  "non_idl_tuples": [
+    "/home/ockta/ocktabot_ws/src/ocktabot_kinematics:srv/GetJointPosIK.srv"
+  ]
+}

@@ -32,7 +32,7 @@
           {
             "name": "end_position",
             "type": {
-              "type_id": 6,
+              "type_id": 11,
               "capacity": 0,
               "string_capacity": 0,
               "nested_type_name": ""
@@ -46,11 +46,11 @@
   "type_hashes": [
     {
       "type_name": "cpp_motor_thread/action/MoveProfilePosition_GetResult_Response",
-      "hash_string": "RIHS01_f2ccac64c3bef985408c504dfe8794f309532bc1666dda353e1962ef0f508e9f"
+      "hash_string": "RIHS01_e171ddff319408b7186cc678e87dca3f0b00372e1dfeb88cb133fb4c9b0182c5"
     },
     {
       "type_name": "cpp_motor_thread/action/MoveProfilePosition_Result",
-      "hash_string": "RIHS01_a7bee4555988ca99bc676855bc54a80da7c3bdb2133d94212bddfcfefb496c6c"
+      "hash_string": "RIHS01_9b54ee9b5fdc6d803444d45a948364a1c92cef21354923a09682437eb46d8256"
     }
   ]
 }

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/stewart_tests.dir/src/tests.cpp.o -o stewart_tests  libstewart_kinematics.a 

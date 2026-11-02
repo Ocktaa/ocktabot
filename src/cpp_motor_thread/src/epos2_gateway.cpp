@@ -16,7 +16,7 @@
 using namespace std::chrono_literals;
 
 namespace{
-    constexpr unsigned short kNodes[] = {1, 2};
+    constexpr unsigned short kNodes[] = {1, 2, 3};
     constexpr unsigned int kProfileVelocity = 1000;
     constexpr unsigned int kProfileAccel = 500;
     constexpr unsigned int kProfileDecel = 500;
