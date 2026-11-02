@@ -17,8 +17,11 @@ namespace ocktabot_kinematics{
 // endeffector_pos for every reading (forward kinematics), and serves
 // get_jointpos_ik (inverse kinematics).
 //
-// Motor reading -> base link angle phi_in [rad]:
+// Motor reading (gearbox output [rad], 0 = links straight up) -> base link
+// angle phi_in [rad], measured up from the plate toward the centroid:
 //   phi_in[j] = motor_scale[j] * position[j] + motor_offset[j]
+// motor_offset = pi/2 (straight up), motor_scale = +1 if a positive motor
+// angle tilts the link outward (away from the centroid), -1 if inward.
 class OcktabotKinematics: public rclcpp::Node{
 public:
     OcktabotKinematics();

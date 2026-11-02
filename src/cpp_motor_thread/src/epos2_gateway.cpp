@@ -20,16 +20,21 @@ namespace{
     constexpr unsigned int kProfileVelocity = 1000;
     constexpr unsigned int kProfileAccel = 500;
     constexpr unsigned int kProfileDecel = 500;
-    constexpr double kEncoderCpt = 500.0;
-    constexpr double kGearRatio = 1.0;
+    constexpr double kQcPerMotorRev = 50.0;                    //encoder quadcounts per motor revolution
+    constexpr double kGearRatio = 153.0;                       //gearbox 153:1
+    constexpr double kQcPerRev = kQcPerMotorRev * kGearRatio;  //7650 qc per revolution of the gearbox output
     constexpr auto kMoveTimeout = std::chrono::milliseconds(15000);
     constexpr auto kPollPeriod = std::chrono::milliseconds(10);
     constexpr auto kPublishPeriod = 100ms;
-/*
+
+//encoder quadcounts <-> gearbox output angle [rad], 0 qc = 0 rad
 double qcToRad(int qc){
-    return qc * 2.0 * M_PI / (4.0 * kEncoderCpt * kGearRatio);
+    return qc * 2.0 * M_PI / kQcPerRev;
 }
-*/
+
+long radToQc(double rad){
+    return std::lround(rad * kQcPerRev / (2.0 * M_PI));
+}
 
 //wrapper for errortext
 std::string errorText(unsigned int code) {
@@ -98,6 +103,10 @@ int Epos2Gateway::getPosition(unsigned short node){
     return pos;
 }
 
+double Epos2Gateway::getPositionRad(unsigned short node){
+    return qcToRad(getPosition(node));
+}
+
 bool Epos2Gateway::inFault(unsigned short node){
     int fault = 0;
     unsigned int err = 0;
@@ -132,7 +141,7 @@ void Epos2Gateway::publishJointStates(){
     message.header.stamp = now();
     for (auto node : kNodes){
         message.name.push_back("motor" + std::to_string(node));
-        message.position.push_back(getPosition(node));
+        message.position.push_back(getPositionRad(node));
         RCLCPP_INFO_THROTTLE(
             get_logger(), *get_clock(), 1000, "%s position %.4f rad",
             message.name.back().c_str(), message.position.back()
@@ -154,7 +163,7 @@ void Epos2Gateway::moveProfilePosition(
     try {
         {
         std::lock_guard<std::mutex> lock(vcs_mutex_);
-        check(VCS_MoveToPosition(handle_, goal->node, goal->goal_position, 0, 1, &err), err, nodeLabel("MoveToPosition", goal->node));
+        check(VCS_MoveToPosition(handle_, goal->node, radToQc(goal->goal_position), goal->absolute ? 1 : 0, 1, &err), err, nodeLabel("MoveToPosition", goal->node));
         }
         const auto deadline = std::chrono::steady_clock::now() + kMoveTimeout;
 
@@ -166,13 +175,13 @@ void Epos2Gateway::moveProfilePosition(
             }
             if (goal_handle->is_canceling()){
                 haltMovement(goal->node);
-                result->end_position = getPosition(goal->node);
+                result->end_position = getPositionRad(goal->node);
                 goal_handle->canceled(result);
                 RCLCPP_INFO(get_logger(), "Goal Canceled");
                 return;
             }
 
-            feedback->current_position = getPosition(goal->node);
+            feedback->current_position = getPositionRad(goal->node);
             goal_handle->publish_feedback(feedback);
 
             RCLCPP_INFO(get_logger(), "Pubslish feedback");
@@ -193,7 +202,7 @@ void Epos2Gateway::moveProfilePosition(
             std::this_thread::sleep_for(kPollPeriod);
         }
 
-        result->end_position = getPosition(goal->node);
+        result->end_position = getPositionRad(goal->node);
         goal_handle->succeed(result);
         RCLCPP_INFO(get_logger(), "Goal Succeeded");
     } catch(const std::exception& e){
@@ -205,8 +214,13 @@ void Epos2Gateway::moveProfilePosition(
 
 rclcpp_action::GoalResponse Epos2Gateway::handle_goal_move_profile_position(const rclcpp_action::GoalUUID & uuid,    
     std::shared_ptr<const cpp_motor_thread::action::MoveProfilePosition::Goal> goal){
-        RCLCPP_INFO(get_logger(), "Received goal request, move node: %i, to position: %i", goal->node, goal->goal_position);
+        RCLCPP_INFO(get_logger(), "Received goal request, move node: %i, to %s position: %.4f rad",
+            goal->node, goal->absolute ? "absolute" : "relative", goal->goal_position);
         (void)uuid;
+        if (!std::isfinite(goal->goal_position)) {
+            RCLCPP_WARN(get_logger(), "Rejected goal: goal_position is not finite");
+            return rclcpp_action::GoalResponse::REJECT;
+        }
         return rclcpp_action::GoalResponse::ACCEPT_AND_EXECUTE;
     }
 

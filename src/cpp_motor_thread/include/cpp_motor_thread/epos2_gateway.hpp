@@ -20,7 +20,11 @@ public:
     Epos2Gateway(const Epos2Gateway&) = delete;
     Epos2Gateway& operator=(const Epos2Gateway&) = delete;
 
+    //position in encoder quadcounts
     int getPosition(unsigned short node);
+
+    //position of the gearbox output [rad], 0 rad = 0 qc
+    double getPositionRad(unsigned short node);
 
     bool inFault(unsigned short node);
 
